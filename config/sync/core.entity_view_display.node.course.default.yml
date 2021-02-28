@@ -1,0 +1,102 @@
+uuid: 2b8f562e-e8fb-4a37-bc51-9331760ec1a5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.course.body
+    - field.field.node.course.field_date_end
+    - field.field.node.course.field_date_start
+    - field.field.node.course.field_duration
+    - field.field.node.course.field_image_course
+    - field.field.node.course.field_lecturer
+    - field.field.node.course.field_price
+    - field.field.node.course.field_program
+    - field.field.node.course.field_view_lecturer
+    - image.style.wide
+    - node.type.course
+  module:
+    - datetime
+    - image
+    - text
+    - user
+    - viewsreference
+id: node.course.default
+targetEntityType: node
+bundle: course
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_end:
+    weight: 5
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_start:
+    weight: 4
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_duration:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_image_course:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: wide
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_price:
+    weight: 7
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_program:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_view_lecturer:
+    weight: 2
+    label: above
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  field_lecturer: true
+  langcode: true
+  links: true

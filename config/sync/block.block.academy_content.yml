@@ -1,0 +1,22 @@
+uuid: 4d3e808b-16a8-4049-8b41-e63fcf7648ac
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - academy
+_core:
+  default_config_hash: aJ6ps0sJm9MtQffqINgRms1JaSQgjsg68REaPdN-BGk
+id: academy_content
+theme: academy
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

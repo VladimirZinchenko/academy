@@ -1,0 +1,20 @@
+uuid: 6942dc4d-67a1-403d-85b7-b425b2ea2dcc
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - academy
+_core:
+  default_config_hash: _0ZyPKUqcQMu9FlcCoa_Y-No4zdv-wUNF4hlSj60yi0
+id: academy_page_title
+theme: academy
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

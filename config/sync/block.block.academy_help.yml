@@ -1,0 +1,22 @@
+uuid: 98ca7e26-249f-4644-86a9-cfd6160fdb8f
+langcode: uk
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - academy
+_core:
+  default_config_hash: JPtjio142VL7z1Y-K1aWkTXu5wId7r4-zNUHozwLqf0
+id: academy_help
+theme: academy
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

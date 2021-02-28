@@ -1,0 +1,23 @@
+uuid: b0e11d05-85ea-4c6c-9136-36d2d43aa087
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lecturer
+  module:
+    - text
+id: node.lecturer.body
+field_name: body
+entity_type: node
+bundle: lecturer
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

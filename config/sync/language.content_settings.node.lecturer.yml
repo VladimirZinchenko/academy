@@ -1,0 +1,11 @@
+uuid: 045cadf3-645b-4791-87c5-6c509896d5e0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.lecturer
+id: node.lecturer
+target_entity_type_id: node
+target_bundle: lecturer
+default_langcode: site_default
+language_alterable: false

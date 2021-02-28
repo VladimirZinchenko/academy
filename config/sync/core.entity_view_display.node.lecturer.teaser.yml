@@ -1,0 +1,65 @@
+uuid: 028d2e1c-66d4-4e9f-a16b-8f971b9fdeec
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lecturer.body
+    - field.field.node.lecturer.field_image_lecturer
+    - image.style.medium
+    - node.type.lecturer
+  module:
+    - advanced_text_formatter
+    - image
+    - user
+id: node.lecturer.teaser
+targetEntityType: node
+bundle: lecturer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: advanced_text
+    weight: 1
+    settings:
+      trim_length: '100'
+      ellipsis: '1'
+      word_boundary: '1'
+      use_summary: '1'
+      filter: input
+      format: plain_text
+      allowed_html:
+        - a
+        - b
+        - br
+        - dd
+        - dl
+        - dt
+        - em
+        - i
+        - li
+        - ol
+        - p
+        - strong
+        - u
+        - ul
+      token_replace: 0
+      autop: 0
+    third_party_settings: {  }
+    region: content
+  field_image_lecturer:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

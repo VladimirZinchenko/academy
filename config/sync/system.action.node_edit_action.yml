@@ -1,0 +1,14 @@
+uuid: acbb17cd-5267-4818-8611-90ed7ac7b38e
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+    - views_bulk_edit
+_core:
+  default_config_hash: 0vLpSGhoYOPeREkfW-7bDeJOwEfW3zeG3nUBwUgsKQI
+id: node_edit_action
+label: 'Редагувати вміст'
+type: node
+plugin: 'entity:edit_action:node'
+configuration: {  }

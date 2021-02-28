@@ -1,0 +1,25 @@
+uuid: 368de132-087c-4d4c-9066-15fa4a504a2c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.lecturers
+  module:
+    - views
+  theme:
+    - academy
+id: academy_views_block__lecturers_block_1
+theme: academy
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:lecturers-block_1'
+settings:
+  id: 'views_block:lecturers-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }
