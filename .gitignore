@@ -4,6 +4,8 @@
 /web/core/
 /web/modules/contrib/
 /web/themes/contrib/
+/web/themes/custom/*/node_modules
+/web/themes/custom/*/.sass-cache/
 /web/profiles/contrib/
 /web/libraries/
 
@@ -22,3 +24,4 @@
 
 # Ignore .env files as they are personal
 /.env
+
