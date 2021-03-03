@@ -75,9 +75,9 @@ display:
           uses_fields: false
           col_xs: col-12
           col_sm: col-sm-6
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_md: col-md-6
+          col_lg: col-lg-6
+          col_xl: col-xl-6
       row:
         type: 'entity:node'
         options:
@@ -157,6 +157,48 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         created:
           id: created
@@ -173,7 +215,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Courses
+      title: Курси
       header: {  }
       footer: {  }
       empty: {  }
@@ -199,7 +241,7 @@ display:
       path: courses
       menu:
         type: normal
-        title: Courses
+        title: Курси
         description: ''
         expanded: false
         parent: ''

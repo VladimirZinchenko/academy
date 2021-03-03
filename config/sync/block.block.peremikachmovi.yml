@@ -1,0 +1,20 @@
+uuid: 858c0881-b570-4085-b5a8-3ba14825ede7
+langcode: uk
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - academy
+id: peremikachmovi
+theme: academy
+region: footer
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Перемикач мови'
+  provider: language
+  label_display: '0'
+visibility: {  }

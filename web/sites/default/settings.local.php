@@ -131,16 +131,16 @@ $settings['rebuild_access'] = TRUE;
 $settings['skip_permissions_hardening'] = TRUE;
 
 
-if (stripos($_SERVER['VIRTUAL_HOST'], '.docksal')) {
-  // Docksal DB connection settings.
-  $databases['default']['default'] = [
-    'database' => 'default',
-    'username' => getenv('MYSQL_USER'),
-    'password' => getenv('MYSQL_PASSWORD'),
-    'host' => 'db',
-    'driver' => 'mysql',
-  ];
-}
+#if (stripos($_SERVER['VIRTUAL_HOST'], '.docksal')) {
+#  // Docksal DB connection settings.
+#  $databases['default']['default'] = [
+#    'database' => 'default',
+#    'username' => getenv('MYSQL_USER'),
+#    'password' => getenv('MYSQL_PASSWORD'),
+#    'host' => 'db',
+#    'driver' => 'mysql',
+#  ];
+#}
 
 
 // Workaround for permission issues with NFS shares

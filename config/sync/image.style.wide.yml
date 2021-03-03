@@ -15,3 +15,11 @@ effects:
       width: 1090
       height: null
       upscale: false
+  5eb51446-4371-4951-837e-0ebc545fba35:
+    uuid: 5eb51446-4371-4951-837e-0ebc545fba35
+    id: image_crop
+    weight: 2
+    data:
+      width: 1090
+      height: 614
+      anchor: center-center

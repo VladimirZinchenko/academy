@@ -13,12 +13,12 @@ dependencies:
     - field.field.node.course.field_price
     - field.field.node.course.field_program
     - field.field.node.course.field_view_lecturer
+    - image.style.wide
     - node.type.course
-    - responsive_image.styles.wide
   module:
     - advanced_text_formatter
     - datetime
-    - responsive_image
+    - image
     - user
 id: node.course.teaser
 targetEntityType: node
@@ -30,7 +30,7 @@ content:
     type: advanced_text
     weight: 1
     settings:
-      trim_length: '100'
+      trim_length: '300'
       ellipsis: '1'
       use_summary: '1'
       filter: input
@@ -83,12 +83,12 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
   field_image_course:
-    type: responsive_image
+    type: image
     weight: 0
     region: content
     label: hidden
     settings:
-      responsive_image_style: wide
+      image_style: wide
       image_link: content
     third_party_settings: {  }
   field_price:

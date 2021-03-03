@@ -15,7 +15,7 @@ bundle: article
 label: Теґи
 description: 'Введіть відокремлений комами перелік. Приклад: Амстердам, Київ, "Клівленд, Огайо".'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,18 @@
+uuid: bb3a7fee-71cf-49a0-905c-64eb381047bd
+langcode: uk
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment
+label: 'Головна сторінка'
+description: 'Адреса домашньої сторінки автора коментаря.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

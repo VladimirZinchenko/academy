@@ -1,1 +1,28 @@
 // Define new variables.
+
+.region-nav-main {
+	display: flex;
+}
+
+.navbar-dark .navbar-brand img {
+	filter: none !important;
+}
+.field--type-image img {
+	max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.field--name-field-image-lecturer img {
+	border-radius: 50%;
+	padding: 3rem;
+}
+.contextual-region.view .contextual:first-child {
+	right: 20px;
+}
+.navbar-dark .navbar-nav .show .nav-link {
+	color: inherit;
+}
+blockquote {
+    font-style: italic;
+    font-size: 1.15rem;
+}

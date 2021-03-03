@@ -1,0 +1,36 @@
+uuid: 9fec104c-d194-4797-9acd-2687b0080537
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.product.body
+    - field.field.node.product.field_image_product
+    - node.type.product
+  module:
+    - image
+    - text
+    - user
+id: node.product.default
+targetEntityType: node
+bundle: product
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_product:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true
+  links: true

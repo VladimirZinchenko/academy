@@ -9,6 +9,7 @@ dependencies:
     - node.type.lecturer
   module:
     - image
+    - imce
     - path
     - text
 id: node.lecturer.default
@@ -35,9 +36,11 @@ content:
   field_image_lecturer:
     weight: 1
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
     type: image_image
     region: content
   langcode:
@@ -81,6 +84,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

@@ -1,0 +1,22 @@
+uuid: a5fce0c3-982d-4499-ae89-37c0664d74bf
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.lecturer
+id: node.lecturer.status
+field_name: status
+entity_type: node
+bundle: lecturer
+label: Опубліковано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

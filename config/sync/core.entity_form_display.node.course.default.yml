@@ -17,6 +17,7 @@ dependencies:
   module:
     - datetime
     - image
+    - imce
     - path
     - text
     - viewsreference
@@ -63,9 +64,11 @@ content:
   field_image_course:
     weight: 1
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
     type: image_image
     region: content
   field_lecturer:
@@ -140,6 +143,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
