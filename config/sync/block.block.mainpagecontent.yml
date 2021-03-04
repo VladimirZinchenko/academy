@@ -1,4 +1,4 @@
-uuid: 4d3e808b-16a8-4049-8b41-e63fcf7648ac
+uuid: 43bb5f2c-408a-4bfc-92c4-f5ff87976950
 langcode: uk
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - system
   theme:
     - academy
-_core:
-  default_config_hash: aJ6ps0sJm9MtQffqINgRms1JaSQgjsg68REaPdN-BGk
-id: academy_content
+id: mainpagecontent
 theme: academy
 region: content
 weight: 0

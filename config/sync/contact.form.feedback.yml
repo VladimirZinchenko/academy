@@ -10,5 +10,5 @@ recipients:
   - acoustic@alligat.com.ua
 reply: ''
 weight: 0
-message: 'Ваше повідомлення було надіслано.'
+message: 'Your message has been sent.'
 redirect: ''

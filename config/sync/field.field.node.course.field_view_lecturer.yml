@@ -21,11 +21,11 @@ default_value:
     options:
       title: 0
       argument: ''
-    display_id: block_1
+    display_id: block_2
     argument: null
     title: 0
     data: null
-    target_uuid: aaad3524-c1ff-4be0-ba92-706cbc92a022
+    target_uuid: 5689d5ff-2044-488d-ac59-4f18a8192f85
 default_value_callback: ''
 settings:
   handler: 'default:view'
@@ -33,8 +33,8 @@ settings:
     target_bundles: null
     auto_create: 0
   plugin_types:
+    default: default
     block: block
-    default: 0
     page: 0
     feed: 0
   preselect_views:
@@ -49,6 +49,7 @@ settings:
     frontpage: 0
     shop: 0
     taxonomy_term: 0
+    test_speackers: 0
     user_admin_people: 0
     watchdog: 0
     who_s_new: 0
