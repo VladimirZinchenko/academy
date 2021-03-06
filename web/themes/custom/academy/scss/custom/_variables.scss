@@ -1,9 +1,9 @@
 // Define new variables.
-
+//Позиционирование формы поиска
 .region-nav-main {
 	display: flex;
 }
-
+//Лого
 .navbar-dark .navbar-brand img {
 	filter: none !important;
 }
@@ -14,18 +14,17 @@
 }
 .field--name-field-image-lecturer img {
 	border-radius: 50%;
-	padding: 3rem;
+	padding: 2rem;
 }
+//Кнопка быстрого редактирования во вьюз
 .contextual-region.view .contextual:first-child {
 	right: 20px;
 }
+//Дропдаун меню
 .navbar-dark .navbar-nav .show .nav-link {
 	color: inherit;
 }
-blockquote {
-    font-style: italic;
-    font-size: 1.15rem;
-}
+//Заголовки в тизерах
 .views-view-grid h2 {
 	font-size: 1.5rem;
 }

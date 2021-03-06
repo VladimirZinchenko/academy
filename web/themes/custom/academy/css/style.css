@@ -15,7 +15,7 @@
 
 .field--name-field-image-lecturer img {
   border-radius: 50%;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .contextual-region.view .contextual:first-child {
@@ -24,11 +24,6 @@
 
 .navbar-dark .navbar-nav .show .nav-link {
   color: inherit;
-}
-
-blockquote {
-  font-style: italic;
-  font-size: 1.15rem;
 }
 
 .views-view-grid h2 {

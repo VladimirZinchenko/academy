@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.lecturer
+    - system.menu.main
   module:
     - node
     - user
@@ -326,6 +327,15 @@ display:
         relationships: false
       arguments: {  }
       relationships: {  }
+      menu:
+        type: normal
+        title: Лектори
+        description: lecturers
+        expanded: false
+        parent: ''
+        weight: -48
+        context: '0'
+        menu_name: main
     display_plugin: page
     display_title: Сторінка
     id: page_1

@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: uvMAn5Qf8Uni989mhr5KY4hx66xkSpP8nFYZMHgj7kY
 id: taxonomy_term
-label: 'Термін таксономії'
+label: 'Taxonomy term'
 module: taxonomy
 description: 'Матеріали, що стосуються певного терміну таксономії.'
 tag: default
