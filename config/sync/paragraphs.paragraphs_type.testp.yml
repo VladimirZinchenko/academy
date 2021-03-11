@@ -1,0 +1,10 @@
+uuid: c35cd216-f0d2-4e76-848b-1a11396cf645
+langcode: uk
+status: true
+dependencies: {  }
+id: testp
+label: testp
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

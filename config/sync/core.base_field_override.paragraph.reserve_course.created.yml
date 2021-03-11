@@ -1,0 +1,18 @@
+uuid: 225aac5d-2918-43ea-bb16-929055d8287b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.reserve_course
+id: paragraph.reserve_course.created
+field_name: created
+entity_type: paragraph
+bundle: reserve_course
+label: Створено
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

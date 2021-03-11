@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.course.field_duration
     - field.field.node.course.field_image_course
     - field.field.node.course.field_lecturer
+    - field.field.node.course.field_paragraph
     - field.field.node.course.field_price
     - field.field.node.course.field_program
     - field.field.node.course.field_view_lecturer
@@ -107,6 +108,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_lecturer: true
+  field_paragraph: true
   field_program: true
   field_view_lecturer: true
   langcode: true

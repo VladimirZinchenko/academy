@@ -1,0 +1,32 @@
+uuid: f514c76d-e8e4-4101-b0fc-a7a343ae71af
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testp.field_text
+    - field.field.paragraph.testp.field_webform
+    - paragraphs.paragraphs_type.testp
+  module:
+    - text
+    - webform
+id: paragraph.testp.default
+targetEntityType: paragraph
+bundle: testp
+mode: default
+content:
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_webform:
+    weight: 0
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden: {  }

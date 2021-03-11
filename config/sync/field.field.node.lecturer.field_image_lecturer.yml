@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image_lecturer
     - node.type.lecturer
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.lecturer.field_image_lecturer
 field_name: field_image_lecturer
 entity_type: node

@@ -1,0 +1,40 @@
+uuid: 99bc0544-095f-4330-b9e6-752618122a9d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testp.field_text
+    - field.field.paragraph.testp.field_webform
+    - paragraphs.paragraphs_type.testp
+  module:
+    - text
+    - webform
+id: paragraph.testp.default
+targetEntityType: paragraph
+bundle: testp
+mode: default
+content:
+  field_text:
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_webform:
+    weight: 0
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

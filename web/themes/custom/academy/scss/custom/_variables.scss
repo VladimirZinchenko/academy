@@ -28,3 +28,38 @@
 .views-view-grid h2 {
 	font-size: 1.5rem;
 }
+//Slider Front page
+.slide-item {
+  height: 200px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+	@media (min-width: 768px) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    height: 400px;
+  }
+}
+
+.slide-1 {
+	background-image: url("/web/sites/default/files/field/image/slide/slide-1.jpg");
+	background-size: cover;
+}
+.slide-2 {
+	background-image: url("/web/sites/default/files/field/image/slide/slide-2.jpg");
+	background-size: cover;
+}
+.slide-3 {
+	background-image: url("/web/sites/default/files/field/image/slide/slide-3.jpg");
+	background-size: cover;
+}
+
+//Site footer
+@media (min-width: 768px) {
+.region.region-footer {
+    flex-direction: row;
+    justify-content: space-between;
+	}
+}

@@ -1,0 +1,22 @@
+uuid: 7b285d97-3dcf-43da-9c1a-a4d39c237e01
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reserve_course.field_text
+    - paragraphs.paragraphs_type.reserve_course
+  module:
+    - text
+id: paragraph.reserve_course.default
+targetEntityType: paragraph
+bundle: reserve_course
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

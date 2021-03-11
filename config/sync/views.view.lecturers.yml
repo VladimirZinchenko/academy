@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.storage.node.body
+    - field.storage.node.field_image_lecturer
     - node.type.lecturer
     - system.menu.main
   module:
+    - advanced_text_formatter
+    - image
     - node
+    - text
     - user
     - views_bootstrap
 _core:
@@ -15,7 +20,7 @@ _core:
 id: lecturers
 label: Lecturers
 module: node
-description: 'Лектори на сторінці, блок на Головній, блок на сторінці Курсів'
+description: 'Лектори Академії. Сторінка, блок на Головній, блок на сторінці Курсів.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -206,7 +211,24 @@ display:
           field: reverse__node__field_lecturer
           entity_type: node
           plugin_id: entity_reverse
-      fields: {  }
+      fields:
+        body:
+          id: body
+          table: node__body
+          field: body
+          plugin_id: field
+        field_image_lecturer:
+          id: field_image_lecturer
+          table: node__field_image_lecturer
+          field: field_image_lecturer
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          plugin_id: field
       arguments:
         nid:
           id: nid
@@ -222,12 +244,15 @@ display:
     position: 0
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_lecturer'
   block_1:
     display_plugin: block
     id: block_1
@@ -246,10 +271,13 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_lecturer'
   block_2:
     display_plugin: block
     id: block_2
@@ -312,11 +340,14 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_lecturer'
   page_1:
     display_options:
       path: lecturers
@@ -333,7 +364,7 @@ display:
         description: lecturers
         expanded: false
         parent: ''
-        weight: -48
+        weight: -47
         context: '0'
         menu_name: main
     display_plugin: page
@@ -342,8 +373,11 @@ display:
     position: 1
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_lecturer'
