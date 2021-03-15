@@ -56,10 +56,6 @@ content:
       image_style: large
       image_link: content
     third_party_settings: {  }
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
+  links: true

@@ -16,7 +16,6 @@ dependencies:
     - image.style.wide
     - node.type.course
   module:
-    - datetime
     - entity_reference_revisions
     - image
     - text
@@ -33,33 +32,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_date_end:
-    weight: 6
-    label: inline
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_date_start:
-    weight: 5
-    label: inline
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_duration:
-    weight: 7
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
     region: content
   field_image_course:
     weight: 0
@@ -78,15 +50,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_price:
-    weight: 8
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
     region: content
   field_program:
     weight: 3
@@ -108,6 +71,10 @@ content:
     type: viewsreference_formatter
     region: content
 hidden:
+  field_date_end: true
+  field_date_start: true
+  field_duration: true
   field_lecturer: true
+  field_price: true
   langcode: true
   links: true

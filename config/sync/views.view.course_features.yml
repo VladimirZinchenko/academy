@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.storage.node.field_date_end
     - field.storage.node.field_date_start
+    - field.storage.node.field_duration
+    - field.storage.node.field_price
     - node.type.course
   module:
     - datetime
     - node
+    - semanticviews
     - user
 id: course_features
 label: 'Course features'
@@ -55,14 +58,22 @@ display:
           items_per_page: 1
           offset: 0
       style:
-        type: html_list
+        type: semanticviews_style
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: false
-          type: ul
-          wrapper_class: 'card bg-dark text-white col-sm-6'
-          class: card-body
+          group:
+            element_type: h3
+            attributes: class|title
+          list:
+            element_type: div
+            attributes: ''
+          row:
+            element_type: div
+            attributes: class|row
+            last_every_nth: '0'
+            first_class: ''
+            last_class: ''
+            striping_classes: ''
       row:
         type: fields
         options:
@@ -79,7 +90,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -107,71 +118,6 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: card-title
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-        field_date_end:
-          id: field_date_end
-          table: node__field_date_end
-          field: field_date_end
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -185,10 +131,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: string
           settings:
-            timezone_override: Europe/Kiev
-            format_type: short
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -199,6 +144,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
           plugin_id: field
         field_date_start:
           id: field_date_start
@@ -249,10 +196,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: datetime_plain
           settings:
             timezone_override: Europe/Kiev
-            format_type: short
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -264,18 +210,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
+        field_date_end:
+          id: field_date_end
+          table: node__field_date_end
+          field: field_date_end
           relationship: none
           group_type: group
-          admin_label: Dates
+          admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: true
-            text: "<p>{{ field_date_start }}</p>\r\n<p>{{ field_date_end }}</p>\r\n"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -300,8 +246,199 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: card-text
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_plain
+          settings:
+            timezone_override: Europe/Kiev
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_duration:
+          id: field_duration
+          table: node__field_duration
+          field: field_duration
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_price:
+          id: field_price
+          table: node__field_price
+          field: field_price
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: Dates
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"col-sm-4 mb-3\">\r\n<div class=\"card h-100\">\r\n<div class=\"card-header text-white bg-info\">Особливості курсу</div>\r\n<div class=\"card-body\">\r\n<div class=\"h4 card-title\">{{ title }}</div>\r\n<p class=\"card-text\">Початок занять: {{ field_date_start }}</p>\r\n<p class=\"card-text\">Завершення: {{ field_date_end }}</p>\r\n<p class=\"card-text\">Тривалість програми: {{ field_duration }}</p>\r\n</div></div></div>\r\n\r\n<div class=\"col-sm-4 mb-3\">\r\n<div class=\"card h-100\">\r\n<div class=\"card-header text-white bg-primary\">Забронювати участь у курсі</div>\r\n<div class=\"card-body\">\r\n<div class=\"h4 card-title\">{{ field_price }}</div>\r\n<p class=\"card-text\">Повна вартісь навчання</p>\r\n<p class=\"text-center\"><a href=\"#\" class=\"btn btn-primary\">Замовити</a></p>\r\n</div></div></div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -339,6 +476,48 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         created:
           id: created
@@ -398,7 +577,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      css_class: row
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -410,6 +589,8 @@ display:
       tags:
         - 'config:field.storage.node.field_date_end'
         - 'config:field.storage.node.field_date_start'
+        - 'config:field.storage.node.field_duration'
+        - 'config:field.storage.node.field_price'
   block_1:
     display_plugin: block
     id: block_1
@@ -428,3 +609,5 @@ display:
       tags:
         - 'config:field.storage.node.field_date_end'
         - 'config:field.storage.node.field_date_start'
+        - 'config:field.storage.node.field_duration'
+        - 'config:field.storage.node.field_price'
