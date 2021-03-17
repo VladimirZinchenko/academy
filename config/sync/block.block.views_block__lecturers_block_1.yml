@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:lecturers-block_1'
 settings:
   id: 'views_block:lecturers-block_1'
-  label: Лектори
+  label: ''
   provider: views
   label_display: visible
-  views_label: Лектори
+  views_label: ''
   items_per_page: none
 visibility:
   request_path:

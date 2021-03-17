@@ -9,7 +9,6 @@ dependencies:
     - node.type.lecturer
     - system.menu.main
   module:
-    - advanced_text_formatter
     - image
     - node
     - text
@@ -201,7 +200,7 @@ display:
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
-      title: ''
+      title: Лектори
       header: {  }
       footer: {  }
       relationships:
@@ -266,6 +265,7 @@ display:
         relationships: false
         arguments: false
         css_class: false
+        title: true
       arguments: {  }
       css_class: mb-5
     cache_metadata:

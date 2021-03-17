@@ -282,28 +282,15 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2>Партнери проєкту</h2>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 mb-3\"><div class=\"card bg-dark text-white\">\r\n  <img src=\"../web/sites/default/files/upload/8.jpg\" class=\"card-img\" alt=\"...\">\r\n  <div class=\"card-img-overlay\">\r\n    <h5 class=\"card-title\">Card title</h5>\r\n    <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n  </div>\r\n</div></div>\r\n    <div class=\"col-sm-6 mb-3\"><div class=\"card bg-dark text-white\">\r\n\t<img src=\"../web/sites/default/files/upload/9.jpg\" class=\"card-img\" alt=\"...\">\r\n  <div class=\"card-img-overlay\">\r\n    <h5 class=\"card-title\">Card title</h5>\r\n    <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n  </div>\r\n</div></div></div>\r\n<p class=\"mb-5\">Тут може бути реклама, посилання на партнерів, анонс події чи якась інша прутня. Consequat dolus erat gravis iustum lobortis quibus sino tum veniam. Aliquam blandit comis ille macto nulla paulatim utrum velit veniam. Amet caecus comis consectetuer esca secundum singularis zelus. Antehabeo lenis macto melior nostrud pecus premo vulputate.</p>\r\n<h2>Новини</h2>"
+            value: "<h2 class=\"mb-5\">Партнери проєкту</h2>\r\n<h2 class=\"mb-4\">Новини</h2>"
             format: full_html
           plugin_id: text
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<h2>Контакти</h2>\r\n<div class=\"card border-light bg-light mb-5\">\r\n<div class=\"row no-gutters\">\r\n<div class=\"col-sm-4\">\r\n<div class=\"card-body\">\r\n<div class=\"h4 card-title\">Академія Дистиляції</div>\r\n<p class=\"card-text\">Some quick example text to<br />\r\nBuild on the card title and make<br />\r\nUp the bulk of the card's content 105</p>\r\n<a class=\"btn btn-primary\" href=\"/contact\" role=\"button\">Ми на зв'язку</a>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-sm-8\">\r\n<div class=\"embed-responsive embed-responsive-16by9\"><iframe allowfullscreen=\"\" class=\"embed-responsive-item\" loading=\"lazy\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7425193050635!2d30.359972287981076!3d50.42726872636621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI1JzM3LjEiTiAzMMKwMjEnMzguMiJF!5e0!3m2!1sru!2sua!4v1585152755781!5m2!1sru!2sua\"></iframe></div>\r\n</div>\r\n</div>\r\n</div>"
-            format: full_html
-          plugin_id: text
+      footer: {  }
       relationships: {  }
       fields: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: mb-5
+      css_class: ''
     display_plugin: default
     display_title: Master
     id: default
@@ -324,8 +311,8 @@ display:
       sitename_title: true
       path: rss.xml
       displays:
-        page_1: page_1
-        default: ''
+        default: '0'
+        page_1: '0'
       pager:
         type: some
         options:

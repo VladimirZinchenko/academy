@@ -1,23 +1,23 @@
-uuid: 495c4e5f-232d-4cb7-b028-9813a7a66bae
+uuid: 97084eea-70e0-449d-a407-254d497c824e
 langcode: uk
-status: open
+status: closed
 dependencies:
   enforced:
     module:
-      - webform
+      - webform_templates
 _core:
-  default_config_hash: Q4QShRpLvlheaOjtXj4lKYXCOGMiuBopVI6GYCCWRK8
+  default_config_hash: nb2hXlHauS5tjBpWkLS23QBV0nl14NgqtQs5quidEkc
 open: null
 close: null
 weight: 0
 uid: null
-template: false
+template: true
 archive: false
-id: contact
-title: 'Зворотний зв''язок'
-description: 'Basic email contact webform.'
+id: template_registration
+title: Registration
+description: 'A registration webform template.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+elements: "personal_information:\n  '#title': 'Your Personal Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\ncontact_information:\n  '#title': 'Your Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nmailinglist:\n  '#title': 'Mailing List'\n  '#type': webform_section\n  subscribe:\n    '#title': 'Please subscribe me to your mailing list.'\n    '#type': checkbox\nadditional_information:\n  '#title': 'Additional Information'\n  '#type': webform_section\n  '#open': true\n  notes:\n    '#title': Comments\n    '#type': textarea\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
 css: ''
 javascript: ''
 settings:
@@ -117,10 +117,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: page
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
-  confirmation_url: '<front>'
+  confirmation_message: 'Thank you for registering.'
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -197,51 +197,14 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_confirmation:
-    id: email
-    label: 'Email confirmation'
-    notes: ''
-    handler_id: email_confirmation
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[current-user:mail]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
   email_notification:
     id: email
-    label: 'Email notification'
+    label: 'Email Notification'
     notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
-    weight: 2
+    weight: 1
     settings:
       states:
         - completed
@@ -253,9 +216,9 @@ handlers:
       bcc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

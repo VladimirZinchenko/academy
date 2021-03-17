@@ -220,7 +220,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: mb-5
           default_row_class: false
           uses_fields: false
           col_xs: col-12
@@ -278,8 +278,8 @@ display:
           offset: 0
       path: taxonomy/term/%/feed
       displays:
-        page_1: page_1
         default: '0'
+        page_1: '0'
       style:
         type: rss
         options:
