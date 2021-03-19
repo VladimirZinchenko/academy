@@ -23,7 +23,13 @@ settings:
     negate: 0
     target_bundles: null
     target_bundles_drag_drop:
-      reserve_course:
-        weight: 2
+      text:
+        weight: 4
+        enabled: false
+      views_reference_field:
+        weight: 5
+        enabled: false
+      webform:
+        weight: 6
         enabled: false
 field_type: entity_reference_revisions

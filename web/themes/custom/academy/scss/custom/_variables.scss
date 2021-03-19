@@ -1,21 +1,42 @@
 // Define new variables.
-//Позиционирование формы поиска
-.region-nav-main {
-	display: flex;
+
+//Лектор
+@media (min-width: 768px) {
+	.node--type-lecturer {
+		.node__content {
+			display: flex;
+	.field--name-body {
+		width: 75%;
+		}
+	}
+	}
 }
-//Лого
+
+.field--name-field-image-lecturer img {
+	border-radius: 50%;
+	padding: 2rem;
+}
+
+//Брендинг
+.navbar-brand .site-title {
+    font-size: 1.25rem !important;
+}
+
+.site-title small {
+	letter-spacing: 2.75px;
+}
+
 .navbar-dark .navbar-brand img {
 	filter: none !important;
 }
+
+//Изображения (временно)
 .field--type-image img {
 	max-width: 100%;
     margin: 0 auto;
     height: auto;
 }
-.field--name-field-image-lecturer img {
-	border-radius: 50%;
-	padding: 2rem;
-}
+
 //Кнопка быстрого редактирования во вьюз
 .contextual-region.view .contextual:first-child {
 	right: 20px;
@@ -28,7 +49,7 @@
 .views-view-grid h2 {
 	font-size: 1.5rem;
 }
-//Slider Front page
+//Слайдер
 .slide-item {
   height: 200px;
   padding-bottom: 50px;
@@ -56,10 +77,21 @@
 	background-size: cover;
 }
 
-//Site footer
+//Футер
 @media (min-width: 768px) {
 .region.region-footer {
     flex-direction: row;
     justify-content: space-between;
 	}
+}
+
+footer.footer-dark a {
+	color: rgba(255, 255, 255, 0.6) !important;
+	&:hover {
+		color: #f8f9fa !important;
+	}
+}
+
+#block-footeraddress {
+	color: rgba(255, 255, 255, 0.6);
 }

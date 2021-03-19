@@ -1,6 +1,23 @@
 @charset "UTF-8";
-.region-nav-main {
-  display: flex;
+@media (min-width: 768px) {
+  .node--type-lecturer .node__content {
+    display: flex;
+  }
+  .node--type-lecturer .node__content .field--name-body {
+    width: 75%;
+  }
+}
+.field--name-field-image-lecturer img {
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.navbar-brand .site-title {
+  font-size: 1.25rem !important;
+}
+
+.site-title small {
+  letter-spacing: 2.75px;
 }
 
 .navbar-dark .navbar-brand img {
@@ -11,11 +28,6 @@
   max-width: 100%;
   margin: 0 auto;
   height: auto;
-}
-
-.field--name-field-image-lecturer img {
-  border-radius: 50%;
-  padding: 2rem;
 }
 
 .contextual-region.view .contextual:first-child {
@@ -67,6 +79,17 @@
     justify-content: space-between;
   }
 }
+footer.footer-dark a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+footer.footer-dark a:hover {
+  color: #f8f9fa !important;
+}
+
+#block-footeraddress {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

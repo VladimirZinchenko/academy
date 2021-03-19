@@ -11,8 +11,6 @@ dependencies:
     - field.field.node.course.field_lecturer
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_price
-    - field.field.node.course.field_program
-    - field.field.node.course.field_view_lecturer
     - image.style.wide
     - node.type.course
   module:
@@ -20,7 +18,6 @@ dependencies:
     - image
     - text
     - user
-    - viewsreference
 id: node.course.default
 targetEntityType: node
 bundle: course
@@ -44,31 +41,12 @@ content:
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 4
+    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_program:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_view_lecturer:
-    weight: 2
-    label: above
-    settings:
-      plugin_types:
-        block: block
-        default: 0
-        page: 0
-        feed: 0
-    third_party_settings: {  }
-    type: viewsreference_formatter
     region: content
 hidden:
   field_date_end: true

@@ -1,0 +1,10 @@
+uuid: 8acae680-c559-4529-8d23-45a54a297ad6
+langcode: uk
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: 'Текст та HTML'
+behavior_plugins: {  }
