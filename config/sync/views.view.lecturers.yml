@@ -192,7 +192,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: mb-5
+          row_class: mb-3
           default_row_class: false
           uses_fields: false
           col_xs: col-12
@@ -267,7 +267,7 @@ display:
         css_class: false
         title: true
       arguments: {  }
-      css_class: mb-5
+      css_class: mb-2
     cache_metadata:
       max-age: -1
       contexts:
@@ -300,6 +300,7 @@ display:
       defaults:
         relationships: false
         arguments: false
+        css_class: false
       arguments:
         nid:
           id: nid
@@ -337,6 +338,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
+      css_class: mb-2
     cache_metadata:
       max-age: -1
       contexts:

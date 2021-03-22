@@ -266,7 +266,20 @@ display:
       link_display: page_1
       link_url: ''
       css_class: ''
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"row no-gutters\">\r\n<div class=\"col-sm-4 mb-5\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8\">\r\n<div class=\"card border-light mb-5\">\r\n<div class=\"card-body\">\r\n<div class=\"h2 card-title\">Чому Українська Академія Дистиляції?</div>\r\n<p class=\"card-text\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"card border-light bg-light mb-5\">\r\n<div class=\"row no-gutters\">\r\n<div class=\"col-sm-4\"><img alt=\"Про Академію\" class=\"img-fluid\" src=\"/sites/default/files/upload/about-home.jpg\" /></div>\r\n<div class=\"col-sm-8\">\r\n<div class=\"card-body\">\r\n<h3 class=\"card-title\">Кому буде цікаво навчатися в Академії Дистиляції?</h3>\r\n<p class=\"card-text\">Підприємцям, зацікавленим у відкритті власного виробництва алкогольної продукції.</p>\r\n<p class=\"card-text\">Власникам / технологам вже існуючих підприємств із виробництва алкогольної продукції.</p>\r\n<p class=\"card-text\">Студентам навчальних закладів, які здобувають освіту за спеціальністю «Харчові технології», «Крафтові технології» та планують кар’єру в галузі виробництва алкогольної продукції.</p>\r\n<p class=\"card-text\">Виробникам крафтових напоїв, які хочуть поглибити знання про технологію та окремі категорії алкогольних напоїв.</p>\r\n<p class=\"card-text\">Усім, хто цікавиться міцними напоями та працює з алкоголем в готельно-ресторанній сфері.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"mb-4\">Навчальні програми та курси</h2>"
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
