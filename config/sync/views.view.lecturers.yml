@@ -192,7 +192,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: mb-5
           default_row_class: false
           uses_fields: false
           col_xs: col-12

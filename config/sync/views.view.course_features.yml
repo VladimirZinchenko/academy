@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_date_end
     - field.storage.node.field_date_start
     - field.storage.node.field_duration
+    - field.storage.node.field_format
     - field.storage.node.field_price
     - node.type.course
   module:
@@ -69,7 +70,7 @@ display:
             attributes: ''
           row:
             element_type: div
-            attributes: class|row
+            attributes: ''
             last_every_nth: '0'
             first_class: ''
             last_class: ''
@@ -196,9 +197,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_plain
+          type: datetime_default
           settings:
             timezone_override: Europe/Kiev
+            format_type: custo
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -337,6 +339,69 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_format:
+          id: field_format
+          table: node__field_format
+          field: field_format
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_price:
           id: field_price
           table: node__field_price
@@ -412,7 +477,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"col-sm-4 mb-3\">\r\n<div class=\"card h-100\">\r\n<div class=\"card-header text-white bg-info\">Особливості курсу</div>\r\n<div class=\"card-body\">\r\n<div class=\"h4 card-title\">{{ title }}</div>\r\n<p class=\"card-text\">Початок занять: {{ field_date_start }}</p>\r\n<p class=\"card-text\">Завершення: {{ field_date_end }}</p>\r\n<p class=\"card-text\">Тривалість програми: {{ field_duration }}</p>\r\n</div></div></div>\r\n\r\n<div class=\"col-sm-4 mb-3\">\r\n<div class=\"card h-100\">\r\n<div class=\"card-header text-white bg-primary\">Забронювати участь у курсі</div>\r\n<div class=\"card-body\">\r\n<div class=\"h4 card-title\">{{ field_price }}</div>\r\n<p class=\"card-text\">Повна вартісь навчання</p>\r\n<p class=\"text-center\"><a href=\"#\" class=\"btn btn-primary\">Замовити</a></p>\r\n</div></div></div>"
+            text: "<div class=\"row\">\r\n  <div class=\"col-sm-6 mb-3\">\r\n<div class=\"card h-100\">\r\n  <div class=\"card-body\">\r\n  <div class=\"h3 card-title\">Курс «{{ title }}»</div>\r\n    <p class=\"card-text\"><b>Формат навчання</b><br>\r\n\t{{ field_format }}</p>\r\n    <p class=\"card-text\"><b>Старт потоку</b><br>\r\n\t{{ field_date_start }}</p>\r\n\t<p class=\"card-text\"><b>Тривалість курсу</b><br>\r\n\t{{ field_duration }}</p>\r\n\t<a class=\"webform-dialog webform-dialog-narrow btn btn-primary\" href=\"/web/form/course-reservation\">Забронювати місце</a>\r\n\t</div></div></div>\r\n\t<div class=\"col-sm-6 mb-3\">\r\n\t<div class=\"card h-100\">\r\n  <div class=\"card-body\">\r\n  <div class=\"h3 card-title\">Вартість навчання</div>\r\n\t<div class=\"display-3 card-title mb-3\">{{ field_price }}</div>\r\n\t<p class=\"card-text\"><b>Все включено</b><br>\r\n\tлекції, лабораторні роботи, практичні заняття, кофе-брейки, дегустації, витрати на проживання в період виїзних сесій</p>\r\n\t<a class=\"webform-dialog webform-dialog-narrow btn btn-success\" href=\"/web/form/course-registration\">Зареєструватися</a>\r\n</div>\r\n\r\n</div>\r\n\r\n</div></div>"
             make_link: false
             path: ''
             absolute: false
@@ -590,6 +655,7 @@ display:
         - 'config:field.storage.node.field_date_end'
         - 'config:field.storage.node.field_date_start'
         - 'config:field.storage.node.field_duration'
+        - 'config:field.storage.node.field_format'
         - 'config:field.storage.node.field_price'
   block_1:
     display_plugin: block
@@ -610,4 +676,5 @@ display:
         - 'config:field.storage.node.field_date_end'
         - 'config:field.storage.node.field_date_start'
         - 'config:field.storage.node.field_duration'
+        - 'config:field.storage.node.field_format'
         - 'config:field.storage.node.field_price'

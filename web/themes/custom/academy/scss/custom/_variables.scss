@@ -1,5 +1,8 @@
 // Define new variables.
-
+.close,
+.ui-dialog-titlebar-close {
+content: "&times;";
+}
 //Лектор
 @media (min-width: 768px) {
 	.node--type-lecturer {
@@ -65,15 +68,15 @@
 }
 
 .slide-1 {
-	background-image: url("/web/sites/default/files/field/image/slide/slide-1.jpg");
+	background-image: url("/sites/default/files/field/image/slide/slide-1.jpg");
 	background-size: cover;
 }
 .slide-2 {
-	background-image: url("/web/sites/default/files/field/image/slide/slide-2.jpg");
+	background-image: url("/sites/default/files/field/image/slide/slide-2.jpg");
 	background-size: cover;
 }
 .slide-3 {
-	background-image: url("/web/sites/default/files/field/image/slide/slide-3.jpg");
+	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
 	background-size: cover;
 }
 

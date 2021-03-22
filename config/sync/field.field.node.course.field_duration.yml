@@ -9,7 +9,7 @@ id: node.course.field_duration
 field_name: field_duration
 entity_type: node
 bundle: course
-label: Duration
+label: 'Тривалість курсу'
 description: ''
 required: false
 translatable: false

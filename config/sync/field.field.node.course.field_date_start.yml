@@ -11,7 +11,7 @@ id: node.course.field_date_start
 field_name: field_date_start
 entity_type: node
 bundle: course
-label: 'Date start'
+label: 'Старт потоку'
 description: ''
 required: false
 translatable: false

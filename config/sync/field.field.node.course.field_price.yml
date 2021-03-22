@@ -9,7 +9,7 @@ id: node.course.field_price
 field_name: field_price
 entity_type: node
 bundle: course
-label: Price
+label: Ціна
 description: ''
 required: false
 translatable: false
