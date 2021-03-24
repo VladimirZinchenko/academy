@@ -1,0 +1,18 @@
+uuid: 23187490-e996-4cef-b132-79d3109027df
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.created
+field_name: created
+entity_type: node
+bundle: slide
+label: Створено
+description: 'Час створення матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

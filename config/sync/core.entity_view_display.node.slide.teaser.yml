@@ -1,0 +1,46 @@
+uuid: 5757f2e5-61f0-4b7b-9ba4-2014d60d63e4
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slide.body
+    - field.field.node.slide.field_bg
+    - field.field.node.slide.field_image_slide
+    - field.field.node.slide.field_link
+    - node.type.slide
+  module:
+    - image
+    - text
+    - user
+id: node.slide.teaser
+targetEntityType: node
+bundle: slide
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image_slide:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bg: true
+  field_link: true
+  langcode: true

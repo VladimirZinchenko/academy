@@ -1,0 +1,17 @@
+uuid: 080ac45a-ea0f-47c1-ae17-1e68d2a7910e
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Slide
+type: slide
+description: 'Слайд для каруселі'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

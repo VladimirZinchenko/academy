@@ -1,0 +1,14 @@
+uuid: e109eb13-e15e-4fec-8f8a-c60db84967ae
+langcode: uk
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: term
+label: term
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

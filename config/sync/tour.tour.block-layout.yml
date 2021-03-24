@@ -1,0 +1,51 @@
+uuid: b0c08add-fa50-49af-bdd0-5cf0084e3464
+langcode: uk
+status: true
+dependencies:
+  module:
+    - block
+_core:
+  default_config_hash: p0RFIRt3fQULgsg3B2wHgLjJqxliqEIcDCxve9Yn0rU
+id: block-layout
+label: 'Сторінка схеми блоків'
+module: block
+routes:
+  -
+    route_name: block.admin_display
+tips:
+  block-layout:
+    id: block-layout
+    plugin: text
+    label: 'Схема блоків'
+    body: 'Блоки  – це поля вмісту, відтворювані в певній частині або області вебсторінки, які можуть відображатися в областях (наприклад, нижній колонтитул або бічна панель) на сторінці.'
+    weight: 1
+  place-block:
+    id: place-block
+    plugin: text
+    label: 'Розміщення блоків'
+    body: 'Будь-який спеціальний або внесений блок можна додати до певної області, натиснувши кнопку Розмістити блок. Також натисканням цієї кнопки можна створити новий блок.'
+    weight: 2
+    attributes:
+      data-class: button--small
+  block-region:
+    id: block-region
+    plugin: text
+    label: 'Область блоку'
+    body: 'Вкажіть або змініть область блоку, натиснувши тут. З''явиться розкривний список з усіма доступними областями. Один блок можливо розмістити у декількох областях.'
+    weight: 3
+    attributes:
+      data-class: block-region-select
+  configure-block:
+    id: configure-block
+    plugin: text
+    label: 'Налаштувати блок'
+    body: 'Натиснувши кнопку "Налаштувати" можна продовжувати редагувати вміст блоку, розібратися з налаштуваннями видимості та навіть змінити розташування блоку в темі.'
+    weight: 4
+    attributes:
+      data-class: dropbutton-widget
+  custom-block-library:
+    id: custom-block-library
+    plugin: text
+    label: 'Бібліотека власних блоків'
+    body: 'Екран керування блоками також має ще одну вкладку вгорі, яка використовується для додавання Власних блоків. Назва цієї вкладки - "Бібліотека власних блоків". Ця вкладка зрештою містить посилання для додавання власних блоків.'
+    weight: 5

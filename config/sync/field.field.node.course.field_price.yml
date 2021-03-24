@@ -1,0 +1,23 @@
+uuid: 409f90d3-7d63-4422-a741-2e816c16a81b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.course
+id: node.course.field_price
+field_name: field_price
+entity_type: node
+bundle: course
+label: Ціна
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' ₴'
+field_type: integer

@@ -1,0 +1,18 @@
+uuid: 60dd8e7b-c83c-4e09-ba09-b24ac9d3bbe1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.course
+id: node.course.changed
+field_name: changed
+entity_type: node
+bundle: course
+label: Змінено
+description: 'Час останнього редагування матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

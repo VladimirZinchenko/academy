@@ -1,0 +1,22 @@
+uuid: f1576558-3370-4a68-a1d3-59d8bb6f7e8f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.lecturer
+id: node.lecturer.sticky
+field_name: sticky
+entity_type: node
+bundle: lecturer
+label: 'Прикріплено зверху списків'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

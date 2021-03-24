@@ -1,0 +1,29 @@
+uuid: 33f4f835-deb3-41b7-a661-5f5756c47f21
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - academy
+id: views_block__slider_block_1
+theme: academy
+region: header
+weight: -10
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

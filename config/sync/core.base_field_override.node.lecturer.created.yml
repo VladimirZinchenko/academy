@@ -1,0 +1,18 @@
+uuid: d766df0f-9d02-4a10-9661-77e4a796ff05
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.lecturer
+id: node.lecturer.created
+field_name: created
+entity_type: node
+bundle: lecturer
+label: Створено
+description: 'Час створення матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

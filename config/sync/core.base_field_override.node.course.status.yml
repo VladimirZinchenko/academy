@@ -1,0 +1,22 @@
+uuid: 178af478-0ce2-4c92-90b9-854f937b6cb4
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.course
+id: node.course.status
+field_name: status
+entity_type: node
+bundle: course
+label: Опубліковано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: a4260ff3-5ec3-477b-a2fb-0de6e502e7e5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.course
+id: node.course.promote
+field_name: promote
+entity_type: node
+bundle: course
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean
