@@ -1,8 +1,0 @@
-uuid: ac0e235f-6337-459b-9fa0-2bf216b764ad
-langcode: uk
-status: true
-dependencies: {  }
-id: custo
-label: Custom
-locked: false
-pattern: 'd F o'

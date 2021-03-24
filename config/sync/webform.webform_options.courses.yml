@@ -1,9 +1,0 @@
-uuid: 1e1b5650-274c-44be-a6b9-930325d814d1
-langcode: uk
-status: true
-dependencies: {  }
-id: courses
-label: Courses
-category: Custom
-likert: false
-options: "'Gin workshop': 'Gin workshop'\n'Whisky workshop': 'Whisky workshop'"
