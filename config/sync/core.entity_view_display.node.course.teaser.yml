@@ -59,7 +59,7 @@ content:
     type: datetime_default
     weight: 2
     region: content
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
       format_type: custo
@@ -68,7 +68,7 @@ content:
     type: number_integer
     weight: 3
     region: content
-    label: inline
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -86,7 +86,7 @@ content:
     type: number_integer
     weight: 4
     region: content
-    label: inline
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true

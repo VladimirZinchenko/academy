@@ -59,6 +59,7 @@
   padding-top: 50px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   filter: brightness(0.8);
 }
 @media (min-width: 768px) {
@@ -71,17 +72,14 @@
 
 .slide-1 {
   background-image: url("/sites/default/files/field/image/slide/slide-1.jpg");
-  background-size: cover;
 }
 
 .slide-2 {
   background-image: url("/sites/default/files/field/image/slide/slide-2.jpg");
-  background-size: cover;
 }
 
 .slide-3 {
   background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
-  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -99,6 +97,43 @@ footer.footer-dark a:hover {
 
 #block-footeraddress {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.teaser .field--name-field-date-start,
+.teaser .field--name-field-duration,
+.teaser .field--name-field-price {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.teaser .field--name-field-date-start::before,
+.teaser .field--name-field-duration::before,
+.teaser .field--name-field-price::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.teaser .field--name-field-date-start::before {
+  content: "";
+}
+
+.teaser .field--name-field-duration::before {
+  content: "";
+}
+
+.teaser .field--name-field-price::before {
+  content: "";
+  margin-bottom: 1rem;
 }
 
 /*!
