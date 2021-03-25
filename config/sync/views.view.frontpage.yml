@@ -282,7 +282,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 class=\"mb-4\">Партнери проєкту</h2>\r\n<h2 class=\"mb-4\">Новини гадузі</h2>"
+            value: '<h2 class="mb-4">Новини галузі</h2>'
             format: full_html
           plugin_id: text
       footer:

@@ -1,8 +1,14 @@
 @charset "UTF-8";
 @import 'icons/bootstrap-icons.css';
-.close,
-.ui-dialog-titlebar-close {
-  content: "&times;";
+.page-title {
+  margin-bottom: 3rem;
+}
+.path-frontpage .page-title {
+  padding-top: 3rem;
+}
+
+.image-style-wide {
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -32,7 +38,6 @@
 
 .field--type-image img {
   max-width: 100%;
-  margin: 0 auto;
   height: auto;
 }
 

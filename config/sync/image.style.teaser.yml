@@ -1,0 +1,23 @@
+uuid: 61508009-f7e7-4a53-839c-e03ec669e922
+langcode: uk
+status: true
+dependencies: {  }
+name: teaser
+label: Teaser
+effects:
+  201226c0-dc54-467a-99ff-9a669045efd5:
+    uuid: 201226c0-dc54-467a-99ff-9a669045efd5
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false
+  4b50482a-0f7d-4853-959d-ca82eb95f5fb:
+    uuid: 4b50482a-0f7d-4853-959d-ca82eb95f5fb
+    id: image_crop
+    weight: 2
+    data:
+      width: 480
+      height: 270
+      anchor: center-center

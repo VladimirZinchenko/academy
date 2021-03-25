@@ -13,7 +13,7 @@ dependencies:
     - field.field.node.course.field_lecturer
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_price
-    - image.style.wide
+    - image.style.teaser
     - node.type.course
   module:
     - advanced_text_formatter
@@ -79,7 +79,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: wide
+      image_style: teaser
       image_link: content
     third_party_settings: {  }
   field_price:
