@@ -1,4 +1,4 @@
-uuid: 9a89e183-5a75-4f2d-9ab6-2d5f67a051d2
+uuid: 0eae436a-1b7d-401e-aca9-e309dd0f7151
 langcode: uk
 status: true
 dependencies:
@@ -8,12 +8,10 @@ dependencies:
     - system
   theme:
     - academy
-_core:
-  default_config_hash: 35BFwuaW_wb2mnnYk1tNg7T9Ro9RaewrCqOTtyQ7VJE
-id: academy_main_navigation
+id: mainnavigation_2
 theme: academy
 region: nav_main
-weight: -6
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

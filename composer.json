@@ -27,6 +27,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/semanticviews": "^2.3",
+        "drupal/simplenews": "^2.0@beta",
         "drupal/token": "^1.9",
         "drupal/twig_tweak": "^3.0",
         "drupal/views_bootstrap": "^4.3",

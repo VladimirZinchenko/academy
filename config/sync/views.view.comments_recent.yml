@@ -249,7 +249,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Блок
+    display_title: Block
     position: 1
     display_options:
       block_description: 'Останні коментарі'

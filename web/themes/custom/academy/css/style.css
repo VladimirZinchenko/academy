@@ -136,6 +136,20 @@ footer.footer-dark a:hover {
   margin-bottom: 1rem;
 }
 
+ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+  color: #f8f9fa;
+  background-color: var(--dark);
+}
+@media (min-width: 768px) {
+  ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+    top: 30px;
+    display: block;
+  }
+  ul.navbar-nav li.dropdown:hover > ul.dropdown-menu li:first-child {
+    padding-top: 1.25rem;
+  }
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

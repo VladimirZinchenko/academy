@@ -198,7 +198,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Ім''я користувача'
+          label: Username
           exclude: false
           alter:
             alter_text: false
@@ -250,7 +250,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Стан
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -295,7 +295,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Активно
+            format_custom_true: Active
             format_custom_false: Заблоковано
           entity_type: user
           entity_field: status
@@ -650,7 +650,7 @@ display:
             operator_list: {  }
           is_grouped: true
           group_info:
-            label: Стан
+            label: Status
             description: ''
             identifier: status
             optional: true
@@ -661,7 +661,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Активно
+                title: Active
                 operator: '='
                 value: '1'
               2:
@@ -894,7 +894,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Сторінка
+    display_title: Page
     position: 1
     display_options:
       path: admin/people/list

@@ -695,7 +695,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Сторінка
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

@@ -128,3 +128,15 @@ line-height: 1.75;
 .teaser .field--name-field-date-start::before { content: "\f20e"; }
 .teaser .field--name-field-duration::before { content: "\f292"; }
 .teaser .field--name-field-price::before { content: "\f5b0"; margin-bottom: 1rem; }
+
+ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+color: #f8f9fa;
+background-color: var(--dark);
+@media (min-width: 768px) {
+top: 30px;
+display: block;
+& li:first-child {
+padding-top: 1.25rem;
+}
+}
+}
