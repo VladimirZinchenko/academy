@@ -31,10 +31,12 @@
 //Брендинг
 .navbar-brand .site-title {
     font-size: 1.25rem !important;
+	line-height: 1.25rem;
 }
 
 .site-title small {
-	letter-spacing: 2.75px;
+	letter-spacing: 4.5px;
+    text-transform: lowercase;
 }
 
 .navbar-dark .navbar-brand img {
@@ -55,8 +57,13 @@
 .navbar-dark .navbar-nav .show .nav-link {
 	color: inherit;
 }
-.navbar-nav .dropdown-toggle::after {
+.navbar-nav {
+& .dropdown-toggle::after {
 display: none;
+}
+& .dropdown-menu {
+min-width: 12rem;
+}
 }
 //Заголовки в тизерах
 .views-view-grid h2 {
@@ -128,7 +135,7 @@ line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 1.5rem;
-      margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 .teaser .field--name-field-date-start::before { content: "\f20e"; }
 .teaser .field--name-field-duration::before { content: "\f292"; }
@@ -143,5 +150,34 @@ display: block;
 & li:first-child {
 padding-top: 1.25rem;
 }
+}
+}
+.path-frontpage main .webform-submission-form {
+@media (min-width: 768px) {
+width: 50%;
+    padding-right: 1rem;
+}
+}
+.node-readmore {
+font-size: 1.25rem;
+&::after {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f134";
+  padding-left: 0.25rem;
+}
+}
+.page-node-type-course main .webform-submission-course-registration-form {
+@media (min-width: 768px) {
+	width: 50%;
+    padding-right: 1rem;
 }
 }

@@ -28,10 +28,12 @@
 
 .navbar-brand .site-title {
   font-size: 1.25rem !important;
+  line-height: 1.25rem;
 }
 
 .site-title small {
-  letter-spacing: 2.75px;
+  letter-spacing: 4.5px;
+  text-transform: lowercase;
 }
 
 .navbar-dark .navbar-brand img {
@@ -53,6 +55,9 @@
 
 .navbar-nav .dropdown-toggle::after {
   display: none;
+}
+.navbar-nav .dropdown-menu {
+  min-width: 12rem;
 }
 
 .views-view-grid h2 {
@@ -153,6 +158,38 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
   }
   ul.navbar-nav li.dropdown:hover > ul.dropdown-menu li:first-child {
     padding-top: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .path-frontpage main .webform-submission-form {
+    width: 50%;
+    padding-right: 1rem;
+  }
+}
+
+.node-readmore {
+  font-size: 1.25rem;
+}
+.node-readmore::after {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  padding-left: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .page-node-type-course main .webform-submission-course-registration-form {
+    width: 50%;
+    padding-right: 1rem;
   }
 }
 
