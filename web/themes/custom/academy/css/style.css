@@ -9,6 +9,8 @@
 
 .image-style-wide {
   margin-bottom: 1.25rem;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -47,6 +49,10 @@
 
 .navbar-dark .navbar-nav .show .nav-link {
   color: inherit;
+}
+
+.navbar-nav .dropdown-toggle::after {
+  display: none;
 }
 
 .views-view-grid h2 {

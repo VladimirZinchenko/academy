@@ -1,22 +1,22 @@
-uuid: 31492a0c-9445-4418-a62c-3f65a717db91
+uuid: 89492848-57b5-4c8b-bdf5-778354bc472d
 langcode: uk
 status: true
 dependencies:
   config:
-    - views.view.courses
+    - views.view.slider
   module:
     - system
     - views
   theme:
     - academy
-id: views_block__courses_block_1
+id: views_block__slider_block_2
 theme: academy
-region: content
-weight: -2
+region: header
+weight: -7
 provider: null
-plugin: 'views_block:courses-block_1'
+plugin: 'views_block:slider-block_2'
 settings:
-  id: 'views_block:courses-block_1'
+  id: 'views_block:slider-block_2'
   label: ''
   provider: views
   label_display: '0'

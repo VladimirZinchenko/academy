@@ -13,7 +13,7 @@ _core:
 id: academy_account_menu
 theme: academy
 region: nav_additional
-weight: -5
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:

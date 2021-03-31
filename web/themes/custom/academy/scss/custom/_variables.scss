@@ -7,6 +7,8 @@
 }
 .image-style-wide {
 	margin-bottom: 1.25rem;
+	max-width: 100%;
+    height: auto;
 }
  
 //Лектор
@@ -52,6 +54,9 @@
 //Дропдаун меню (временно)
 .navbar-dark .navbar-nav .show .nav-link {
 	color: inherit;
+}
+.navbar-nav .dropdown-toggle::after {
+display: none;
 }
 //Заголовки в тизерах
 .views-view-grid h2 {
