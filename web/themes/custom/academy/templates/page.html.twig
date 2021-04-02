@@ -57,7 +57,7 @@ set footer_classes = ' ' ~
 %}
 
 <header>
-  {{ page.header }}  
+   
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}  
   <nav class="{{ nav_classes }}">
@@ -81,7 +81,7 @@ set footer_classes = ' ' ~
     </div>
   </nav>
   {% endif %}
-
+{{ page.header }} 
 </header>
 
 <main role="main">

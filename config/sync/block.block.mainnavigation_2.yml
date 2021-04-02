@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation_2
 theme: academy
 region: nav_main
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
