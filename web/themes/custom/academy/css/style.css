@@ -40,7 +40,8 @@
   filter: none !important;
 }
 
-.field--type-image img {
+.field--type-image img,
+.view img {
   max-width: 100%;
   height: auto;
 }
@@ -205,6 +206,18 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
     width: 50%;
     padding-right: 1rem;
   }
+}
+
+.view-courses .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  display: none;
+  color: #fff;
+}
+.view-courses .h1, .view-courses .h2, .view-courses .h5 {
+  margin-bottom: 0;
+}
+.view-courses .card:hover .card-img-overlay {
+  display: block;
 }
 
 /*!

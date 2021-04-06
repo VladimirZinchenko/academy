@@ -1,4 +1,4 @@
-uuid: 31492a0c-9445-4418-a62c-3f65a717db91
+uuid: 7bb20b15-e8f3-497f-8fbe-7bd45941b8e7
 langcode: uk
 status: true
 dependencies:
@@ -9,19 +9,19 @@ dependencies:
     - views
   theme:
     - academy
-id: views_block__courses_block_1
+id: views_block__courses_block_2
 theme: academy
 region: content
-weight: -3
+weight: -2
 provider: null
-plugin: 'views_block:courses-block_1'
+plugin: 'views_block:courses-block_2'
 settings:
-  id: 'views_block:courses-block_1'
+  id: 'views_block:courses-block_2'
   label: ''
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: none
+  items_per_page: '4'
 visibility:
   request_path:
     id: request_path

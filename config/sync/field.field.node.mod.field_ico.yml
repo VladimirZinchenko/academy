@@ -1,0 +1,24 @@
+uuid: 312287f6-f318-42ab-b157-5766c570c135
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ico
+    - node.type.mod
+  module:
+    - text
+id: node.mod.field_ico
+field_name: field_ico
+entity_type: node
+bundle: mod
+label: Ico
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<i class="bi bi-clipboard-data">&shy;</i>'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text

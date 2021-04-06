@@ -1,0 +1,23 @@
+uuid: 5b8685fb-c997-4bd0-9a58-e3e27e26facf
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mod
+  module:
+    - text
+id: node.mod.body
+field_name: body
+entity_type: node
+bundle: mod
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 38c02886-65fb-4e70-9480-c9f69ec23f2b
+langcode: uk
+status: true
+dependencies: {  }
+name: square
+label: Square
+effects:
+  7ed7e004-4857-44ad-9359-d5897601f811:
+    uuid: 7ed7e004-4857-44ad-9359-d5897601f811
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 480
+      upscale: false
+  34a5badd-844f-44eb-8b45-d93d742ff3ba:
+    uuid: 34a5badd-844f-44eb-8b45-d93d742ff3ba
+    id: image_crop
+    weight: 2
+    data:
+      width: 480
+      height: 480
+      anchor: center-center

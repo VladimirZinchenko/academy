@@ -1,0 +1,51 @@
+uuid: 06b21190-8fb5-4164-8222-76abf47ea3f1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mod.body
+    - field.field.node.mod.field_ico
+    - field.field.node.mod.field_image_mod
+    - field.field.node.mod.field_style
+    - field.field.node.mod.field_tags
+    - image.style.square
+    - node.type.mod
+  module:
+    - image
+    - text
+    - user
+id: node.mod.teaser
+targetEntityType: node
+bundle: mod
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_ico:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image_mod:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: square
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_style: true
+  field_tags: true
+  langcode: true
+  links: true

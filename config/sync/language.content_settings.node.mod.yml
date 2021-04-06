@@ -1,0 +1,16 @@
+uuid: ffaa8ca7-90a3-4b83-a0ba-48e2fb9421e1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.mod
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.mod
+target_entity_type_id: node
+target_bundle: mod
+default_langcode: site_default
+language_alterable: true

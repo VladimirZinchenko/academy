@@ -1,0 +1,23 @@
+uuid: 61e1a9f8-e2b8-4071-a655-50fcb64c6fe5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_style
+    - node.type.mod
+  module:
+    - options
+id: node.mod.field_style
+field_name: field_style
+entity_type: node
+bundle: mod
+label: Style
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

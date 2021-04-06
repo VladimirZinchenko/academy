@@ -1,0 +1,49 @@
+uuid: 8244c395-b3fc-4df9-b3bc-06bceaaa2bac
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.mod.body
+    - field.field.node.mod.field_ico
+    - field.field.node.mod.field_image_mod
+    - field.field.node.mod.field_style
+    - field.field.node.mod.field_tags
+    - image.style.square
+    - node.type.mod
+  module:
+    - image
+    - text
+    - user
+id: node.mod.default
+targetEntityType: node
+bundle: mod
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ico:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_mod:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: square
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_style: true
+  field_tags: true
+  langcode: true
+  links: true

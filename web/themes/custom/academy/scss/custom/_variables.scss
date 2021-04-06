@@ -44,7 +44,8 @@
 }
 
 //Изображения (временно)
-.field--type-image img {
+.field--type-image img,
+.view img {
 	max-width: 100%;
     height: auto;
 }
@@ -192,5 +193,19 @@ font-size: 1.25rem;
 @media (min-width: 768px) {
 	width: 50%;
     padding-right: 1rem;
+}
+}
+
+.view-courses {
+.card-img-overlay {
+background-color: rgb(0 0 0 / 35%);
+display: none;
+color: #fff;
+}
+& .h1,.h2,.h5 {
+margin-bottom: 0;
+}
+& .card:hover .card-img-overlay {
+display: block;
 }
 }
