@@ -102,7 +102,7 @@
 }
 
 .carousel-caption h3 {
-  font-size: 2.75rem;
+  font-size: 3.25rem;
 }
 .carousel-caption.d-none {
   display: block !important;
@@ -218,6 +218,10 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
 }
 .view-courses .card:hover .card-img-overlay {
   display: block;
+}
+
+.display-4.page-title {
+  font-weight: 500;
 }
 
 /*!

@@ -409,7 +409,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"card h-100 text-center {{ field_style }}\">\r\n<div class=\"card-img-top\">{{ field_image_mod }}</div>\r\n<div class=\"card-body\">\r\n<div class=\"h1 mb-3\">{{ field_ico }}</div>\r\n<div class=\"h5 card-title\">{{ title }}</div>\r\n<div class=\"bg-light\">\r\n<hr></div>\r\n<p class=\"card-text\">{{ body }}</p>\r\n</div>\r\n</div>"
+            text: "<div class=\"card h-100 text-center {{ field_style }}\">\r\n<div class=\"card-img-top\">{{ field_image_mod }}</div>\r\n<div class=\"card-body\">\r\n<div class=\"h1 mb-3 text-warning\">{{ field_ico }}</div>\r\n<div class=\"h5 card-title\">{{ title }}</div>\r\n<div class=\"bg-light\">\r\n<hr></div>\r\n<p class=\"card-text\">{{ body }}</p>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -542,6 +542,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: mb-3
     cache_metadata:
       max-age: -1
       contexts:

@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.storage.node.body
     - field.storage.node.field_image_course
     - image.style.large
     - image.style.square
     - node.type.course
     - system.menu.main
+    - views.view.mods
   module:
+    - advanced_text_formatter
     - image
     - node
     - user
@@ -335,20 +338,7 @@ display:
       link_display: page_1
       link_url: ''
       css_class: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<div class=\"row no-gutters\">\r\n<div class=\"col-sm-4 mb-5\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8\">\r\n<div class=\"card border-light mb-5\">\r\n<div class=\"card-body\">\r\n<div class=\"h2 card-title\">Чому Українська Академія Дистиляції?</div>\r\n<p class=\"card-text\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"card border-light bg-light mb-5\">\r\n<div class=\"row no-gutters\">\r\n<div class=\"col-sm-4\"><img alt=\"Про Академію\" class=\"img-fluid\" src=\"/sites/default/files/upload/about-home.jpg\" /></div>\r\n<div class=\"col-sm-8\">\r\n<div class=\"card-body\">\r\n<h3 class=\"card-title\">Кому буде цікаво навчатися в Академії Дистиляції?</h3>\r\n<p class=\"card-text\">Підприємцям, зацікавленим у відкритті власного виробництва алкогольної продукції.</p>\r\n<p class=\"card-text\">Власникам / технологам вже існуючих підприємств із виробництва алкогольної продукції.</p>\r\n<p class=\"card-text\">Студентам навчальних закладів, які здобувають освіту за спеціальністю «Харчові технології», «Крафтові технології» та планують кар’єру в галузі виробництва алкогольної продукції.</p>\r\n<p class=\"card-text\">Виробникам крафтових напоїв, які хочуть поглибити знання про технологію та окремі категорії алкогольних напоїв.</p>\r\n<p class=\"card-text\">Усім, хто цікавиться міцними напоями та працює з алкоголем в готельно-ресторанній сфері.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"mb-4\">Навчальні програми та курси</h2>"
-            format: full_html
-          plugin_id: text
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -382,19 +372,56 @@ display:
       link_display: page_1
       link_url: ''
       css_class: ''
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"row no-gutters bg-light mb-5\">\r\n<div class=\"col-sm-4 mb-3 d-flex align-items-center\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8 d-flex align-items-center\">\r\n<div class=\"card border-light bg-light\">\r\n<div class=\"card-body\">\r\n<p class=\"card-text text-justify\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text text-justify\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"mb-4\">Кому буде цікаво</h2>"
+            format: full_html
+          plugin_id: text
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          view_to_insert: 'mods:block_1'
+          inherit_arguments: true
+          plugin_id: view
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2 class="mb-4">Навчальні програми та курси</h2>'
+            format: full_html
+          plugin_id: text
       display_description: ''
       style:
         type: views_bootstrap_grid
         options:
           grouping: {  }
-          row_class: mb-5
+          row_class: 'mb-5 h-100'
           default_row_class: false
           col_xs: col-12
           col_sm: col-sm-6
           col_md: col-md-4
-          col_lg: col-lg-3
-          col_xl: col-xl-3
+          col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: fields
         options:
@@ -503,8 +530,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: 'card-img-overlay h5'
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -532,6 +559,144 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: advanced_text
+          settings:
+            trim_length: '300'
+            ellipsis: 1
+            word_boundary: 0
+            use_summary: 1
+            token_replace: 0
+            filter: input
+            format: plain_text
+            allowed_html:
+              - a
+              - b
+              - br
+              - dd
+              - dl
+              - dt
+              - em
+              - i
+              - li
+              - ol
+              - p
+              - strong
+              - u
+              - ul
+            autop: 0
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: view
+          output_url_as_text: true
+          absolute: true
+          entity_type: node
+          plugin_id: entity_link
         nothing:
           id: nothing
           table: views
@@ -543,7 +708,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"card border-light\">\r\n<div class=\"class=\"card-img\">{{ field_image_course }}</div>\r\n<div class=\"card-img-overlay h5\">{{ title }}</div>\r\n</div>"
+            text: "<div class=\"card border-light\">\r\n<div class=\"card-img\">{{ field_image_course }}</div>\r\n<div class=\"card-img-overlay h5\">{{ title }}</div>\r\n</div>\r\n<div class=\"pt-3\">{{ body }}</div>\r\n<div class=\"align-self-end\">\r\n<a href=\"{{ view_node }}\" role=\"button\" class=\"btn btn-warning btn-lg btn-block\">Реєстрація</a></div>"
             make_link: false
             path: ''
             absolute: false
@@ -589,6 +754,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image_course'
   page_1:
     display_plugin: page

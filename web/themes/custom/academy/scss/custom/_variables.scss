@@ -103,7 +103,7 @@ min-width: 12rem;
 
 .carousel-caption {
 & h3 {
-font-size: 2.75rem;
+font-size: 3.25rem;
 }
 &.d-none {
 display: block !important;
@@ -208,4 +208,7 @@ margin-bottom: 0;
 & .card:hover .card-img-overlay {
 display: block;
 }
+}
+.display-4.page-title {
+font-weight: 500;
 }
