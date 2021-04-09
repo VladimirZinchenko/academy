@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.body
+    - field.storage.node.field_date_start
+    - field.storage.node.field_duration
+    - field.storage.node.field_format
     - field.storage.node.field_image_course
     - image.style.large
     - image.style.square
@@ -13,6 +16,7 @@ dependencies:
     - views.view.mods
   module:
     - advanced_text_formatter
+    - datetime
     - image
     - node
     - user
@@ -358,7 +362,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 3
           offset: 0
       defaults:
         pager: false
@@ -369,6 +373,7 @@ display:
         style: false
         row: false
         fields: false
+        footer: false
       link_display: page_1
       link_url: ''
       css_class: ''
@@ -383,7 +388,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row no-gutters bg-light mb-5\">\r\n<div class=\"col-sm-4 mb-3 d-flex align-items-center\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8 d-flex align-items-center\">\r\n<div class=\"card border-light bg-light\">\r\n<div class=\"card-body\">\r\n<p class=\"card-text text-justify\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text text-justify\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"mb-4\">Кому буде цікаво</h2>"
+            value: "<div class=\"row no-gutters bg-light mb-5\">\r\n<div class=\"col-sm-4 mb-3 d-flex align-items-center\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8 d-flex align-items-center\">\r\n<div class=\"card border-light bg-light\">\r\n<div class=\"card-body\">\r\n<p class=\"card-text text-justify\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text text-justify\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"block-title pt-5 pb-4 mb-5 text-center\">Кому буде цікаво</h2>"
             format: full_html
           plugin_id: text
         view:
@@ -407,7 +412,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="mb-4">Навчальні програми та курси</h2>'
+            value: '<h2 class="block-title pt-5 pb-4 mb-5 text-center">Навчальні програми та курси</h2>'
             format: full_html
           plugin_id: text
       display_description: ''
@@ -418,7 +423,7 @@ display:
           row_class: 'mb-5 h-100'
           default_row_class: false
           col_xs: col-12
-          col_sm: col-sm-6
+          col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
@@ -697,6 +702,197 @@ display:
           absolute: true
           entity_type: node
           plugin_id: entity_link
+        field_format:
+          id: field_format
+          table: node__field_format
+          field: field_format
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Формат
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_duration:
+          id: field_duration
+          table: node__field_duration
+          field: field_duration
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_date_start:
+          id: field_date_start
+          table: node__field_date_start
+          field: field_date_start
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: custo
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -708,7 +904,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"card border-light\">\r\n<div class=\"card-img\">{{ field_image_course }}</div>\r\n<div class=\"card-img-overlay h5\">{{ title }}</div>\r\n</div>\r\n<div class=\"pt-3\">{{ body }}</div>\r\n<div class=\"align-self-end\">\r\n<a href=\"{{ view_node }}\" role=\"button\" class=\"btn btn-warning btn-lg btn-block\">Реєстрація</a></div>"
+            text: "<div class=\"card border-light\">\r\n<div class=\"card-img\">{{ field_image_course }}</div>\r\n<div class=\"card-img-overlay\">\r\n<div class=\"h5 mb-3\">{{ title }}</div>\r\n<p>Формат: <span class=\"float-right\">{{ field_format }}</span></p>\r\n<p>Старт потоку: <span class=\"float-right\">{{ field_date_start }}</span></p>\r\n<p>Тривалість курсу: <span class=\"float-right\">{{ field_duration }}</span></p>\r\n</div>\r\n</div>\r\n<div class=\"pt-3\">{{ body }}</div>\r\n<div class=\"\">\r\n<a href=\"{{ view_node }}\" role=\"button\" title=\"{{ title }}\" class=\"btn btn-warning btn-lg btn-block\">Перейти до курсу<span class=\"visually-hidden\"> {{ title }}</span></a></div>"
             make_link: false
             path: ''
             absolute: false
@@ -746,6 +942,20 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"row justify-content-center\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/courses\" role=\"button\" title=\"Переглянути всі курси\" class=\"btn btn-info btn-lg btn-block\">Переглянути всі курси</a></div></div>"
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -755,6 +965,9 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_date_start'
+        - 'config:field.storage.node.field_duration'
+        - 'config:field.storage.node.field_format'
         - 'config:field.storage.node.field_image_course'
   page_1:
     display_plugin: page
@@ -774,6 +987,9 @@ display:
         context: '0'
         menu_name: main
         enabled: true
+      footer: {  }
+      defaults:
+        footer: false
     cache_metadata:
       max-age: -1
       contexts:
