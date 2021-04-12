@@ -78,7 +78,7 @@ min-width: 12rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(0.8);
+  filter: brightness(0.6);
 	@media (min-width: 768px) {
     padding-bottom: 400px;
     //padding-top: 50px;
@@ -165,7 +165,6 @@ width: 50%;
 }
 }
 .node-readmore {
-font-size: 1.25rem;
 &::after {
   display: inline-block;
   font-family: bootstrap-icons !important;

@@ -5,13 +5,9 @@ dependencies:
   config:
     - field.field.node.mod.body
     - field.field.node.mod.field_ico
-    - field.field.node.mod.field_image_mod
-    - field.field.node.mod.field_style
     - field.field.node.mod.field_tags
-    - image.style.thumbnail
     - node.type.mod
   module:
-    - image
     - path
     - text
 id: node.mod.default
@@ -42,20 +38,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
-    region: content
-  field_image_mod:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_style:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_tags:
     weight: 4

@@ -6,4 +6,4 @@ id: courses
 label: Courses
 category: Custom
 likert: false
-options: "'Gin workshop': 'Gin workshop'\n'Whisky workshop': 'Whisky workshop'"
+options: "'Майстер дистиляції': 'Майстер дистиляції'\n'Майстерня віскі': 'Майстерня віскі'\n'Зернові дистиляти': 'Зернові дистиляти'\n'Майстерня джину': 'Майстерня джину'\n'Майстерня сенсорного аналізу': 'Майстерня сенсорного аналізу'"

@@ -904,7 +904,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"card border-light\">\r\n<div class=\"card-img\">{{ field_image_course }}</div>\r\n<div class=\"card-img-overlay\">\r\n<div class=\"h5 mb-3\">{{ title }}</div>\r\n<p>Формат: <span class=\"float-right\">{{ field_format }}</span></p>\r\n<p>Старт потоку: <span class=\"float-right\">{{ field_date_start }}</span></p>\r\n<p>Тривалість курсу: <span class=\"float-right\">{{ field_duration }}</span></p>\r\n</div>\r\n</div>\r\n<div class=\"pt-3\">{{ body }}</div>\r\n<div class=\"\">\r\n<a href=\"{{ view_node }}\" role=\"button\" title=\"{{ title }}\" class=\"btn btn-warning btn-lg btn-block\">Перейти до курсу<span class=\"visually-hidden\"> {{ title }}</span></a></div>"
+            text: "<div class=\"card border-light\">\r\n<div class=\"card-img\">{{ field_image_course }}</div>\r\n<div class=\"card-img-overlay\">\r\n<div class=\"h5 mb-4 pt-3 text-center\">{{ title }}</div>\r\n<p>Формат: <span class=\"float-right\">{{ field_format }}</span></p>\r\n<p>Старт потоку: <span class=\"float-right\">{{ field_date_start }}</span></p>\r\n<p>Тривалість курсу: <span class=\"float-right\">{{ field_duration }}</span></p>\r\n</div>\r\n</div>\r\n<div class=\"pt-3\">{{ body }}</div>\r\n<p><a href=\"{{ view_node }}\" role=\"button\" title=\"{{ title }}\" class=\"btn btn-warning btn-lg btn-block\"><b>Перейти до курсу</b><span class=\"visually-hidden\"> {{ title }}</span></a></p>\r\n<a href=\"/form/course-registration\" class=\"btn btn-dark btn-lg btn-block webform-dialog webform-dialog-narrow\" role=\"button\"><b>Зареєструватись</b></a>"
             make_link: false
             path: ''
             absolute: false
@@ -953,7 +953,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row justify-content-center\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/courses\" role=\"button\" title=\"Переглянути всі курси\" class=\"btn btn-info btn-lg btn-block\">Переглянути всі курси</a></div></div>"
+            value: "<div class=\"row justify-content-center\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/courses\" role=\"button\" title=\"Переглянути всі курси\" class=\"btn btn-dark btn-lg btn-block\"><b>Переглянути всі курси</b></a></div></div>"
             format: full_html
           plugin_id: text
     cache_metadata:
