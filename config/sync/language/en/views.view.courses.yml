@@ -2,7 +2,3 @@ display:
   default:
     display_options:
       title: Courses
-  page_1:
-    display_options:
-      menu:
-        title: Courses
