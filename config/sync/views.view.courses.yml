@@ -90,7 +90,7 @@ display:
             attributes: ''
           row:
             element_type: div
-            attributes: 'class|row mb-5'
+            attributes: "class|row mb-5\r\nstyle|background-color:#ffeb3b"
             last_every_nth: '0'
             first_class: ''
             last_class: ''
@@ -154,7 +154,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -283,7 +283,7 @@ display:
           click_sort_column: value
           type: advanced_text
           settings:
-            trim_length: '150'
+            trim_length: '600'
             ellipsis: 1
             word_boundary: 0
             use_summary: 1
@@ -636,7 +636,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"col-md-5 col-lg-4\">{{ field_image_course }}</div>\r\n<div class=\"col-md-7 col-lg-5\">\r\n<div class=\"p-3\">\r\n<h2 class=\"text-decoration-none\">{{ title }}</h2>\r\n{{ body }}\r\n<a class=\"btn btn-warning\" role=\"button\" href=\"{{ view_node }}\">Перейти до курсу</a>\r\n</div>\r\n</div>\r\n<div class=\"col-md-12 col-lg-3\">\r\n<div class=\"p-3 p-md-0 py-md-3 pl-lg-3 d-flex flex-column flex-lg-column flex-md-row justify-content-md-between\">\r\n<div class=\"d-flex mb-3 align-items-center justify-content-between\"><i class=\"h3 mb-0 mr-3 bi bi-code-square\"></i><div class=\"text-right\">Формат навчання<br>{{ field_format }}</div></div>\r\n<div class=\"d-flex mb-3 align-items-center justify-content-between\"><i class=\"h3 mb-0 mr-3 bi bi-calendar2-event\"></i><div class=\"text-right\">Старт потоку<br>{{ field_date_start }}</div></div>\r\n<div class=\"d-flex mb-3 align-items-center justify-content-between\"><i class=\"h3 mb-0 mr-3 bi bi-clock-history\"></i><div class=\"text-right\">Тривалість курсу<br>{{ field_duration }}</div></div>\r\n<div class=\"d-flex mb-3 align-items-center justify-content-between\"><i class=\"h3 mb-0 mr-3 bi bi-tag\"></i><div class=\"text-right\">Вартість<br>{{ field_price }}</div></div>\r\n</div>\r\n</div>"
+            text: "<div class=\"col-md-3\">\r\n<div class=\"p-3 h-100\">\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 text-yellow mb-0 mr-4 bi bi-code-square\"></i><div>Формат навчання<br><span class=\"\"><b>{{ field_format }}</b></span></div></div>\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-calendar2-event\"></i><div>Старт потоку<br><span class=\"\"><b>{{ field_date_start }}</b></span></div></div>\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-clock-history\"></i><div>Тривалість курсу<br><span class=\"\"><b>{{ field_duration }}</b></span></div></div>\r\n<div class=\"d-flex mb-3 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-tag\"></i><div>Вартість<br><span class=\"h5\">{{ field_price }}</span></div></div>\r\n<div class=\"p-3\">\r\n<a href=\"/form/course-registration\" class=\"btn btn-dark webform-dialog webform-dialog-narrow\" role=\"button\">Зареєструватись</a>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-md-4\">\r\n<div class=\"p-3\">{{ field_image_course }}</div>\r\n</div>\r\n<div class=\"col-md-5\">\r\n<div class=\"p-3 h-100\">\r\n<h2 class=\"brick-title\">{{ title }}</h2>\r\n{{ body }}\r\n<a class=\"btn btn-warning\" role=\"button\" href=\"{{ view_node }}\">Перейти до курсу</a>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
