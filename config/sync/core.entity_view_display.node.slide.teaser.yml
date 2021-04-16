@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.slide.field_bg
     - field.field.node.slide.field_image_slide
     - field.field.node.slide.field_link
+    - field.field.node.slide.field_tags
     - node.type.slide
   module:
     - image
@@ -43,4 +44,5 @@ content:
 hidden:
   field_bg: true
   field_link: true
+  field_tags: true
   langcode: true

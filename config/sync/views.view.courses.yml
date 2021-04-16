@@ -1432,6 +1432,7 @@ display:
       footer: {  }
       defaults:
         footer: false
+        title: true
       display_description: ''
     cache_metadata:
       max-age: -1
