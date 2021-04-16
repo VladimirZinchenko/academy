@@ -78,7 +78,7 @@ min-width: 12rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.5);
 	@media (min-width: 768px) {
     padding-bottom: 400px;
     //padding-top: 50px;
@@ -98,6 +98,12 @@ min-width: 12rem;
 	background-image: url("/sites/default/files/field/image/slide/slide-2.jpg");
 }
 .slide-3 {
+	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
+}
+.slide-4 {
+	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
+}
+.slide-5 {
 	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
 }
 
@@ -204,6 +210,12 @@ display: block;
 .carousel-caption .display-4 {
 font-weight: 500;
 }
+.display-4.page-title {
+text-transform: uppercase;
+color: #281500;
+}
 .block-title {
 border-bottom: solid 2px #ed7600;
+text-transform: uppercase;
+color: #281500;
 }

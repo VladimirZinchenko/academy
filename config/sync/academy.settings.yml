@@ -8,7 +8,7 @@ logo:
 favicon:
   use_default: 1
 b4_top_container: container
-b4_body_schema: light
+b4_body_schema: none
 b4_body_bg_schema: none
 b4_navbar_schema: dark
 b4_navbar_bg_schema: dark

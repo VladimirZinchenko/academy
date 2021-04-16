@@ -90,7 +90,7 @@ display:
             attributes: ''
           row:
             element_type: div
-            attributes: "class|mb-5 row\r\nstyle|background-color:#ffeb3ba6"
+            attributes: "class|mb-5 row\r\nstyle|background-color:#ebe4c1"
             last_every_nth: '0'
             first_class: ''
             last_class: ''
@@ -631,12 +631,12 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: Відображення
           label: ''
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"col-lg-3 col-md-6\">\r\n<div class=\"card h-100 border-0 bg-transparent\">\r\n<div class=\"card-body\">\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-code-square\"></i><div>Формат навчання<br><span class=\"\"><b>{{ field_format }}</b></span></div></div>\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-calendar2-event\"></i><div>Старт потоку<br><span class=\"\"><b>{{ field_date_start }}</b></span></div></div>\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-clock-history\"></i><div>Тривалість курсу<br><span class=\"\"><b>{{ field_duration }}</b></span></div></div>\r\n<div class=\"d-flex align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-tag\"></i><div>Вартість<br><span class=\"h5\">{{ field_price }}</span></div></div>\r\n</div>\r\n<div class=\"card-footer bg-transparent border-0 pb-4\">\r\n<a href=\"/form/course-registration\" class=\"btn btn-dark webform-dialog webform-dialog-narrow\" role=\"button\">Зареєструватись</a>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-lg-4 col-md-6\">\r\n<div class=\"card border-0 bg-transparent\">\r\n<div class=\"card-body\">\r\n{{ field_image_course }}\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-lg-5 col-md-12\">\r\n<div class=\"card h-100 border-0 bg-transparent\">\r\n<div class=\"card-body\">\r\n<h2>{{ title }}</h2>\r\n{{ body }}\r\n</div>\r\n<div class=\"card-footer bg-transparent border-0 pb-4\">\r\n<a class=\"btn btn-warning\" role=\"button\" href=\"{{ view_node }}\">Перейти до курсу</a>\r\n</div>\r\n</div>\r\n</div>"
+            text: "<div class=\"col-lg-3 col-md-6\">\r\n<div class=\"card h-100 border-0 bg-transparent\">\r\n<div class=\"card-body\">\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-code-square\"></i><div>Формат навчання<br><span class=\"\"><b>{{ field_format }}</b></span></div></div>\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-calendar2-event\"></i><div>Старт потоку<br><span class=\"\"><b>{{ field_date_start }}</b></span></div></div>\r\n<div class=\"d-flex mb-2 align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-clock-history\"></i><div>Тривалість курсу<br><span class=\"\"><b>{{ field_duration }}</b></span></div></div>\r\n<div class=\"d-flex align-items-center\"><i class=\"h3 mb-0 mr-4 bi bi-tag\"></i><div>Вартість<br><span class=\"h5\">{{ field_price }}</span></div></div>\r\n</div>\r\n<div class=\"card-footer bg-transparent border-0 pb-4\">\r\n<a href=\"/form/course-registration\" class=\"btn btn-dark webform-dialog webform-dialog-narrow\" role=\"button\">Зареєструватись</a>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-lg-4 col-md-6\">\r\n<div class=\"card border-0 bg-transparent\">\r\n<div class=\"card-body\">\r\n{{ field_image_course }}\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-lg-5 col-md-12\">\r\n<div class=\"card h-100 border-0 bg-transparent\">\r\n<div class=\"card-body\">\r\n<h2 class=\"text-uppercase\">{{ title }}</h2>\r\n{{ body }}\r\n</div>\r\n<div class=\"card-footer bg-transparent border-0 pb-4\">\r\n<a class=\"btn btn-warning\" role=\"button\" href=\"{{ view_node }}\">Перейти до курсу</a>\r\n</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
