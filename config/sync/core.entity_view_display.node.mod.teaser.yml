@@ -6,9 +6,13 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.mod.body
     - field.field.node.mod.field_ico
+    - field.field.node.mod.field_image_mod
+    - field.field.node.mod.field_link
     - field.field.node.mod.field_tags
+    - image.style.square
     - node.type.mod
   module:
+    - image
     - text
     - user
 id: node.mod.teaser
@@ -31,7 +35,25 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_image_mod:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: square
+      image_link: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_entity_view
+    weight: 3
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
 hidden:
-  field_tags: true
+  field_link: true
   langcode: true
   links: true

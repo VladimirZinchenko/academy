@@ -1,20 +1,20 @@
-uuid: dc24ed62-58b3-46f7-8f0b-1e3f4561a49a
+uuid: 0d42dbfd-f4d6-447a-89e1-c87dcbd42fe0
 langcode: uk
 status: true
 dependencies:
   config:
-    - node.type.mod
-id: node.mod.promote
+    - node.type.simplenews_issue
+id: node.simplenews_issue.promote
 field_name: promote
 entity_type: node
-bundle: mod
+bundle: simplenews_issue
 label: 'Винесено на головну сторінку'
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: Увімкнено

@@ -1,14 +1,14 @@
-uuid: dc24ed62-58b3-46f7-8f0b-1e3f4561a49a
+uuid: d3db936c-876c-4c63-894f-6b777277cc1b
 langcode: uk
 status: true
 dependencies:
   config:
-    - node.type.mod
-id: node.mod.promote
-field_name: promote
+    - node.type.simplenews_issue
+id: node.simplenews_issue.sticky
+field_name: sticky
 entity_type: node
-bundle: mod
-label: 'Винесено на головну сторінку'
+bundle: simplenews_issue
+label: 'Прикріплено зверху списків'
 description: ''
 required: false
 translatable: false

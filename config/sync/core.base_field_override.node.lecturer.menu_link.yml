@@ -1,0 +1,20 @@
+uuid: ba5662a9-24ed-49d2-8976-53f39afbad2c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.lecturer
+id: node.lecturer.menu_link
+field_name: menu_link
+entity_type: node
+bundle: lecturer
+label: 'Посилання меню'
+description: 'Обчислене посилання меню для матеріала (доступно лише під час збереження матеріала).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

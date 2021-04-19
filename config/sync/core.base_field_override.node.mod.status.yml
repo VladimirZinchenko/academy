@@ -1,20 +1,20 @@
-uuid: dc24ed62-58b3-46f7-8f0b-1e3f4561a49a
+uuid: d659c326-d0d7-4ccd-917b-721e3d10eeca
 langcode: uk
 status: true
 dependencies:
   config:
     - node.type.mod
-id: node.mod.promote
-field_name: promote
+id: node.mod.status
+field_name: status
 entity_type: node
 bundle: mod
-label: 'Винесено на головну сторінку'
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: Увімкнено

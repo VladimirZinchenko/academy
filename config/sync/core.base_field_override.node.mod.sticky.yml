@@ -1,14 +1,14 @@
-uuid: dc24ed62-58b3-46f7-8f0b-1e3f4561a49a
+uuid: 23a25ca1-b1ef-4707-96c8-7631bc944584
 langcode: uk
 status: true
 dependencies:
   config:
     - node.type.mod
-id: node.mod.promote
-field_name: promote
+id: node.mod.sticky
+field_name: sticky
 entity_type: node
 bundle: mod
-label: 'Винесено на головну сторінку'
+label: 'Прикріплено зверху списків'
 description: ''
 required: false
 translatable: false

@@ -1,0 +1,18 @@
+uuid: f8b58b56-a430-4bc7-a863-3aab52dd50a1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.mod
+id: node.mod.created
+field_name: created
+entity_type: node
+bundle: mod
+label: Створено
+description: 'Час створення матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

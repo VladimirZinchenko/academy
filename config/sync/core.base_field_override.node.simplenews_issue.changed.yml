@@ -1,0 +1,18 @@
+uuid: 80e8ffeb-f9f6-489b-a0b8-576a3afbb30c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.simplenews_issue
+id: node.simplenews_issue.changed
+field_name: changed
+entity_type: node
+bundle: simplenews_issue
+label: Змінено
+description: 'Час останнього редагування матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

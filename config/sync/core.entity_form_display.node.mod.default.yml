@@ -5,9 +5,15 @@ dependencies:
   config:
     - field.field.node.mod.body
     - field.field.node.mod.field_ico
+    - field.field.node.mod.field_image_mod
+    - field.field.node.mod.field_link
     - field.field.node.mod.field_tags
+    - image.style.thumbnail
     - node.type.mod
   module:
+    - image
+    - imce
+    - link
     - path
     - text
 id: node.mod.default
@@ -39,8 +45,26 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
-  field_tags:
+  field_image_mod:
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_link:
     weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_tags:
+    weight: 5
     settings:
       match_operator: CONTAINS
       match_limit: 10
