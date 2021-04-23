@@ -1,0 +1,21 @@
+uuid: 015b37f1-1ae4-4217-9c15-eb2397445a63
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.webform
+  module:
+    - text
+id: paragraph.webform.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: webform
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

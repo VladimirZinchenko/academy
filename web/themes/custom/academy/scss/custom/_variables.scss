@@ -215,7 +215,34 @@ text-transform: uppercase;
 color: #281500;
 }
 .block-title {
-border-bottom: solid 2px #ed7600;
-text-transform: uppercase;
 color: #281500;
+.path-frontpage & {
+border-bottom: solid 1px #ed7600;
+text-transform: uppercase;
+}
+}
+.bg-filler {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 15rem;
+}
+.filler-1 {
+  background-image: url("/sites/default/files/upload/filler-1.jpg");
+}
+.filler-2 {
+  background-image: url("/sites/default/files/upload/filler-2.jpg");
+}
+.filler-3 {
+  background-image: url("/sites/default/files/upload/filler-3.jpg");
+}
+.filler-4 {
+  background-image: url("/sites/default/files/upload/filler-4.jpg");
+}
+.filler-5 {
+  background-image: url("/sites/default/files/upload/filler-5.jpg");
+}
+.filler-6 {
+  background-image: url("/sites/default/files/upload/filler-6.jpg");
 }

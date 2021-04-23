@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_body
-    - field.field.paragraph.text.field_title
+    - field.field.paragraph.text.field_heading
     - paragraphs.paragraphs_type.text
   module:
     - text
@@ -14,18 +14,17 @@ bundle: text
 mode: default
 content:
   field_body:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_title:
+  field_heading:
     weight: 0
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: text_default
     region: content
 hidden: {  }

@@ -3,17 +3,26 @@ langcode: uk
 status: true
 dependencies:
   config:
+    - field.field.paragraph.webform.field_heading
     - field.field.paragraph.webform.field_webform
     - paragraphs.paragraphs_type.webform
   module:
+    - text
     - webform
 id: paragraph.webform.default
 targetEntityType: paragraph
 bundle: webform
 mode: default
 content:
-  field_webform:
+  field_heading:
     weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_webform:
+    weight: 1
     label: hidden
     settings:
       source_entity: true

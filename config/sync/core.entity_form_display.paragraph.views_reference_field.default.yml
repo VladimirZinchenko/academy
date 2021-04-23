@@ -3,15 +3,25 @@ langcode: uk
 status: true
 dependencies:
   config:
+    - field.field.paragraph.views_reference_field.field_heading
     - field.field.paragraph.views_reference_field.field_views_reference
     - paragraphs.paragraphs_type.views_reference_field
   module:
+    - text
     - viewsreference
 id: paragraph.views_reference_field.default
 targetEntityType: paragraph
 bundle: views_reference_field
 mode: default
 content:
+  field_heading:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_views_reference:
     weight: 1
     settings:
