@@ -830,7 +830,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row no-gutters bg-light mb-5\">\r\n<div class=\"col-sm-4 mb-3 d-flex align-items-center\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8 d-flex align-items-center\">\r\n<div class=\"card border-light bg-light\">\r\n<div class=\"card-body\">\r\n<p class=\"card-text text-justify\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text text-justify\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"block-title pt-5 pb-4 mb-5 text-center\">Кому буде цікаво</h2>"
+            value: "<div class=\"row no-gutters bg-light mb-5\">\r\n<div class=\"col-sm-4 mb-3 d-flex align-items-center\"><img alt=\"...\" class=\"img-fluid\" src=\"/sites/default/files/upload/logo.png\" /></div>\r\n<div class=\"col-sm-8 d-flex align-items-center\">\r\n<div class=\"card border-light bg-light\">\r\n<div class=\"card-body\">\r\n<p class=\"card-text text-justify\">Ми об'єднали фахівців з усіх областей алкогольної промисловості: науково-дослідні інститути, крафтові виробництва, підприємства лікеро-горілчаної та спиртової промисловості, виробників обладнання та сировини, фахівців з маркетингу та юристів під одним дахом, щоб забезпечити повноцінне та якісне навчання, практичні заняття та дослідження.</p>\r\n<p class=\"card-text text-justify\">Студенти Академії матимуть можливість проводити певний час на сучасних виробництвах, проходити практику, а також зможуть отримати консультації від кураторів курсів та фахівців.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"block-title py-3 mb-5 text-center\">Кому буде цікаво</h2>"
             format: full_html
           plugin_id: text
         view:
@@ -854,7 +854,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="block-title pt-5 pb-4 mb-5 text-center">Навчальні програми та курси</h2>'
+            value: '<h2 class="block-title py-3 mb-5 text-center">Навчальні програми та курси</h2>'
             format: full_html
           plugin_id: text
       display_description: ''
@@ -1395,7 +1395,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row justify-content-center\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/courses\" role=\"button\" title=\"Переглянути всі курси\" class=\"btn btn-dark btn-lg btn-block\"><b>Переглянути всі курси</b></a></div></div>"
+            value: "<div class=\"row justify-content-center mb-5\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/courses\" role=\"button\" title=\"Переглянути всі курси\" class=\"btn btn-dark btn-lg btn-block\"><b>Переглянути всі курси</b></a></div></div>"
             format: full_html
           plugin_id: text
     cache_metadata:

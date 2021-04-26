@@ -281,7 +281,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="block-title pt-5 pb-4 mb-5 text-center">Лектори Академії</h2>'
+            value: '<h2 class="block-title py-3 mb-5 text-center">Лектори Академії</h2>'
             format: full_html
           plugin_id: text
       footer:
@@ -295,7 +295,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row justify-content-center\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/lecturers\" role=\"button\" title=\"Дізнатись про всіх лекторів\" class=\"btn btn-dark btn-lg btn-block\"><b>Дізнатись про всіх лекторів</b></a></div></div>"
+            value: "<div class=\"row justify-content-center mb-5\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/lecturers\" role=\"button\" title=\"Дізнатись про всіх лекторів\" class=\"btn btn-dark btn-lg btn-block\"><b>Дізнатись про всіх лекторів</b></a></div></div>"
             format: full_html
           plugin_id: text
     cache_metadata:

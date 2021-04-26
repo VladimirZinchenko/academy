@@ -5,23 +5,18 @@
 	padding-top: 3rem;
 	}
 }
-.image-style-wide {
-	margin-bottom: 1.25rem;
-	max-width: 100%;
-    height: auto;
-}
  
 //Лектор
-@media (min-width: 768px) {
-	.node--type-lecturer {
-		.node__content {
-			display: flex;
-	.field--name-body {
-		width: 75%;
-		}
-	}
-	}
-}
+//@media (min-width: 768px) {
+//	.node--type-lecturer {
+//		.node__content {
+//			display: flex;
+//	.field--name-body {
+//		width: 75%;
+//		}
+//	}
+//	}
+//}
 
 .field--name-field-image-lecturer img {
 	border-radius: 50%;
@@ -49,23 +44,17 @@
 	max-width: 100%;
     height: auto;
 }
+.image-style-wide {
+	margin-bottom: 1.25rem;
+	max-width: 100%;
+    height: auto;
+}
 
 //Кнопка быстрого редактирования во вьюз
 .contextual-region.view .contextual:first-child {
 	right: 20px;
 }
-//Дропдаун меню (временно)
-.navbar-dark .navbar-nav .show .nav-link {
-	color: inherit;
-}
-.navbar-nav {
-& .dropdown-toggle::after {
-display: none;
-}
-& .dropdown-menu {
-min-width: 12rem;
-}
-}
+
 //Заголовки в тизерах
 .views-view-grid h2 {
 	font-size: 1.5rem;
@@ -126,32 +115,19 @@ footer.footer-dark a {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.teaser .field--name-field-date-start,
-.teaser .field--name-field-duration,
-.teaser .field--name-field-price {
-font-size: 1.25rem;
-line-height: 1.75;
+//Дропдаун меню (временно)
+.navbar-dark .navbar-nav .show .nav-link {
+	color: inherit;
 }
 
-.teaser .field--name-field-date-start::before,
-.teaser .field--name-field-duration::before,
-.teaser .field--name-field-price::before {
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 1.5rem;
-  margin-right: 0.5rem;
+.navbar-nav {
+& .dropdown-toggle::after {
+display: none;
 }
-.teaser .field--name-field-date-start::before { content: "\f20e"; }
-.teaser .field--name-field-duration::before { content: "\f292"; }
-.teaser .field--name-field-price::before { content: "\f5b0"; margin-bottom: 1rem; }
+& .dropdown-menu {
+min-width: 12rem;
+}
+}
 
 ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
 color: #f8f9fa;
@@ -164,12 +140,14 @@ padding-top: 1.25rem;
 }
 }
 }
+//Вэбформа на Главной
 .path-frontpage main .webform-submission-form {
 @media (min-width: 768px) {
 width: 50%;
     padding-right: 1rem;
 }
 }
+//Ссылка в тизерах
 .node-readmore {
 &::after {
   display: inline-block;
@@ -186,6 +164,8 @@ width: 50%;
   padding-left: 0.25rem;
 }
 }
+
+//Вэбформа в курсе
 .page-node-type-course main .webform-submission-course-registration-form {
 @media (min-width: 768px) {
 	width: 50%;
@@ -193,6 +173,7 @@ width: 50%;
 }
 }
 
+//Курсы на главной
 .view-courses {
 .card-img-overlay {
 background-color: rgb(0 0 0 / 60%);
@@ -206,6 +187,8 @@ margin-bottom: 0;
 display: block;
 }
 }
+
+//Заголовки
 .display-4.page-title,
 .carousel-caption .display-4 {
 font-weight: 500;
@@ -216,11 +199,12 @@ color: #281500;
 }
 .block-title {
 color: #281500;
-.path-frontpage & {
 border-bottom: solid 1px #ed7600;
+.path-frontpage & {
 text-transform: uppercase;
 }
 }
+//Заполнитель подложки на странице курса
 .bg-filler {
   background-position: center;
   background-repeat: no-repeat;
