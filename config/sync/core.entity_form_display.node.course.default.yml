@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.course.field_image_course
     - field.field.node.course.field_lecturer
     - field.field.node.course.field_paragraph
+    - field.field.node.course.field_partner
     - field.field.node.course.field_price
     - image.style.thumbnail
     - node.type.course
@@ -38,31 +39,31 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   field_date_end:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_date_start:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_duration:
-    weight: 7
+    weight: 8
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_format:
-    weight: 8
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -91,7 +92,7 @@ content:
     region: content
   field_paragraph:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 5
     settings:
       title: Абзац
       title_plural: Абзаци
@@ -101,8 +102,18 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
+  field_partner:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_price:
-    weight: 9
+    weight: 10
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -110,14 +121,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 10
+    weight: 11
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -125,21 +136,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 18
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
@@ -151,13 +162,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60

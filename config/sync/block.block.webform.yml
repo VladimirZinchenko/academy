@@ -19,12 +19,12 @@ settings:
   id: webform_block
   label: 'Зворотний зв''язок'
   provider: webform
-  label_display: visible
+  label_display: '0'
   webform_id: contact
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/contacts"
+    pages: /contacts
     negate: false

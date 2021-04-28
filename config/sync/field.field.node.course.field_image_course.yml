@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image_course
     - node.type.course
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
 id: node.course.field_image_course
 field_name: field_image_course
 entity_type: node
@@ -14,7 +21,7 @@ bundle: course
 label: 'Image course'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -22,7 +29,7 @@ settings:
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
-  min_resolution: 1088x612
+  min_resolution: ''
   alt_field: true
   alt_field_required: false
   title_field: false

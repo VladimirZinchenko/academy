@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.views_reference_field.field_heading
+    - field.field.paragraph.views_reference_field.field_title
     - field.field.paragraph.views_reference_field.field_views_reference
     - paragraphs.paragraphs_type.views_reference_field
   module:
@@ -15,6 +16,13 @@ bundle: views_reference_field
 mode: default
 content:
   field_heading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
     weight: 0
     label: hidden
     settings: {  }
@@ -22,7 +30,7 @@ content:
     type: text_default
     region: content
   field_views_reference:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       plugin_types:

@@ -1,0 +1,10 @@
+uuid: 87aba550-9645-427a-8708-8a67b73a2d06
+langcode: uk
+status: true
+dependencies: {  }
+id: feedback
+label: Feedback
+icon_uuid: null
+icon_default: null
+description: 'Абзац з формою зворотнього зв''язку та посилянням на канали комунікації'
+behavior_plugins: {  }

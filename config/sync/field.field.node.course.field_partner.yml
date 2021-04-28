@@ -1,0 +1,29 @@
+uuid: 901c18d1-373c-41a1-bac5-8a6b4fda6db0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner
+    - node.type.course
+    - node.type.mod
+id: node.course.field_partner
+field_name: field_partner
+entity_type: node
+bundle: course
+label: Partner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mod: mod
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

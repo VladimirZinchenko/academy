@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image_mod
     - node.type.mod
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
 id: node.mod.field_image_mod
 field_name: field_image_mod
 entity_type: node
@@ -14,7 +21,7 @@ bundle: mod
 label: 'Image mod'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,24 @@
+uuid: 4dd10a73-b4eb-4d06-9ad7-327cac0e75ad
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.feedback
+  module:
+    - text
+id: paragraph.feedback.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: feedback
+label: Body
+description: 'Кнопки з посиланнями на канали зв''язку'
+required: false
+translatable: true
+default_value:
+  -
+    value: "<div class=\"connect-block\">\r\n<ul class=\"list-inline\">\r\n\t<li class=\"list-inline-item m-3\"><a href=\"viber://chat?number=%2B380677511110\" rel=\"noopener nofollow\"><img alt=\"Call or chat in Viber\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/viber-icon.png\" title=\"Viber\" width=\"48\" /></a></li>\r\n\t<li class=\"list-inline-item m-3\"><a href=\"tel:0677511110\" rel=\"noopener nofollow\"><img alt=\"Call\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/kievstar-icon.png\" title=\"Call\" width=\"48\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-none m-3\"><a href=\"tg://resolve?domain=acousticalligat\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram\" width=\"48\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-inline-block d-none m-3\"><a href=\"https://telegram.me/acousticalligat\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram on PC\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram on PC\" width=\"48\" /></a></li>\r\n</ul>\r\n</div>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

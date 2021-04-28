@@ -1,11 +1,11 @@
 // Define new variables.
 .page-title {
-	margin-bottom: 3rem;
-	.path-frontpage & {
-	padding-top: 3rem;
-	}
+margin-bottom: 3rem;
+.path-frontpage & {
+padding-top: 3rem;
 }
- 
+}
+
 //Лектор
 //@media (min-width: 768px) {
 //	.node--type-lecturer {
@@ -19,105 +19,103 @@
 //}
 
 .field--name-field-image-lecturer img {
-	border-radius: 50%;
-	padding: 2rem;
+border-radius: 50%;
+padding: 2rem;
 }
 
 //Брендинг
 .navbar-brand .site-title {
-    font-size: 1.25rem !important;
-	line-height: 1.25rem;
+font-size: 1.25rem !important;
+line-height: 1.25rem;
 }
 
 .site-title small {
-	letter-spacing: 4.5px;
-    text-transform: lowercase;
+letter-spacing: 4.5px;
+text-transform: lowercase;
 }
 
 .navbar-dark .navbar-brand img {
-	filter: none !important;
+filter: none !important;
 }
 
 //Изображения (временно)
 .field--type-image img,
 .view img {
-	max-width: 100%;
-    height: auto;
+max-width: 100%;
+height: auto;
 }
 .image-style-wide {
-	margin-bottom: 1.25rem;
-	max-width: 100%;
-    height: auto;
+margin-bottom: 1.25rem;
+max-width: 100%;
+height: auto;
 }
 
 //Кнопка быстрого редактирования во вьюз
 .contextual-region.view .contextual:first-child {
-	right: 20px;
+right: 20px;
 }
 
 //Заголовки в тизерах
 .views-view-grid h2 {
-	font-size: 1.5rem;
+font-size: 1.5rem;
 }
 //Слайдер
 .slide-item {
-  height: 20rem;
-  padding-bottom: 200px;
-  //padding-top: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(0.5);
-	@media (min-width: 768px) {
-    padding-bottom: 400px;
-    //padding-top: 50px;
-  }
-  @media (min-width: 992px) {
-    padding-bottom: 500px;
-  }
-  @media (min-width: 1200px) {
-    padding-bottom: 600px;
-  }
+height: 20rem;
+padding-bottom: 200px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: brightness(0.5);
+@media (min-width: 768px) {
+padding-bottom: 400px;
+}
+@media (min-width: 992px) {
+padding-bottom: 500px;
+}
+@media (min-width: 1200px) {
+padding-bottom: 600px;
+}
 }
 
 .slide-1 {
-	background-image: url("/sites/default/files/field/image/slide/slide-1.jpg");
+background-image: url("/sites/default/files/field/image/slide/slide-1.jpg");
 }
 .slide-2 {
-	background-image: url("/sites/default/files/field/image/slide/slide-2.jpg");
+background-image: url("/sites/default/files/field/image/slide/slide-2.jpg");
 }
 .slide-3 {
-	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
+background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
 }
 .slide-4 {
-	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
+background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
 }
 .slide-5 {
-	background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
+background-image: url("/sites/default/files/field/image/slide/slide-3.jpg");
 }
 
 //Футер
 @media (min-width: 768px) {
 .region.region-footer {
-    flex-direction: row;
-    justify-content: space-between;
-	}
+flex-direction: row;
+justify-content: space-between;
+}
 }
 
 footer.footer-dark a {
-	color: rgba(255, 255, 255, 0.6) !important;
-	&:hover {
-		color: #f8f9fa !important;
-	}
+color: rgba(255, 255, 255, 0.6) !important;
+&:hover {
+color: #f8f9fa !important;
+}
 }
 
 #block-footeraddress {
-	color: rgba(255, 255, 255, 0.6);
+color: rgba(255, 255, 255, 0.6);
 }
 
 //Дропдаун меню (временно)
 .navbar-dark .navbar-nav .show .nav-link {
-	color: inherit;
+color: inherit;
 }
 
 .navbar-nav {
@@ -140,36 +138,29 @@ padding-top: 1.25rem;
 }
 }
 }
-//Вэбформа на Главной
-.path-frontpage main .webform-submission-form {
+
+//Вэбформа
+.webform-submission-form {
 @media (min-width: 768px) {
-width: 50%;
-    padding-right: 1rem;
-}
-}
-//Ссылка в тизерах
-.node-readmore {
-&::after {
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f134";
-  padding-left: 0.25rem;
+padding-right: 1rem;
 }
 }
 
-//Вэбформа в курсе
-.page-node-type-course main .webform-submission-course-registration-form {
-@media (min-width: 768px) {
-	width: 50%;
-    padding-right: 1rem;
+//Ссылка в тизерах
+.node-readmore {
+&::after {
+display: inline-block;
+font-family: bootstrap-icons !important;
+font-style: normal;
+font-weight: normal !important;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+vertical-align: -.125em;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+content: "\f134";
+padding-left: 0.25rem;
 }
 }
 
@@ -204,29 +195,62 @@ border-bottom: solid 1px #ed7600;
 text-transform: uppercase;
 }
 }
+
 //Заполнитель подложки на странице курса
 .bg-filler {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  min-height: 15rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+min-height: 15rem;
 }
 .filler-1 {
-  background-image: url("/sites/default/files/upload/filler-1.jpg");
+background-image: url("/sites/default/files/upload/filler-1.jpg");
 }
 .filler-2 {
-  background-image: url("/sites/default/files/upload/filler-2.jpg");
+background-image: url("/sites/default/files/upload/filler-2.jpg");
 }
 .filler-3 {
-  background-image: url("/sites/default/files/upload/filler-3.jpg");
+background-image: url("/sites/default/files/upload/filler-3.jpg");
 }
 .filler-4 {
-  background-image: url("/sites/default/files/upload/filler-4.jpg");
+background-image: url("/sites/default/files/upload/filler-4.jpg");
 }
 .filler-5 {
-  background-image: url("/sites/default/files/upload/filler-5.jpg");
+background-image: url("/sites/default/files/upload/filler-5.jpg");
 }
 .filler-6 {
-  background-image: url("/sites/default/files/upload/filler-6.jpg");
+background-image: url("/sites/default/files/upload/filler-6.jpg");
+}
+.filler-7 {
+background-image: url("/sites/default/files/upload/filler-6.jpg");
+}
+.filler-8 {
+background-image: url("/sites/default/files/upload/filler-6.jpg");
+}
+.filler-9 {
+background-image: url("/sites/default/files/upload/filler-6.jpg");
+}
+.filler-10 {
+background-image: url("/sites/default/files/upload/filler-6.jpg");
+}
+
+//Параграф фидбэк
+.paragraph--type--feedback {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+@media (min-width: 768px) {
+flex-direction: row;
+}
+& .field--name-field-body {
+margin-left: auto;
+margin-right: auto;
+@media (min-width: 768px) {
+width: 50%;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+}
 }
