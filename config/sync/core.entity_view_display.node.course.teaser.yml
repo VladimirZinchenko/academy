@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.course.field_duration
     - field.field.node.course.field_format
     - field.field.node.course.field_image_course
+    - field.field.node.course.field_image_place
     - field.field.node.course.field_lecturer
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_partner
@@ -95,6 +96,7 @@ content:
 hidden:
   field_date_end: true
   field_format: true
+  field_image_place: true
   field_lecturer: true
   field_paragraph: true
   field_partner: true

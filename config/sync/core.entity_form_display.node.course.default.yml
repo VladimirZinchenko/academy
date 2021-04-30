@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.course.field_duration
     - field.field.node.course.field_format
     - field.field.node.course.field_image_course
+    - field.field.node.course.field_image_place
     - field.field.node.course.field_lecturer
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_partner
@@ -72,6 +73,16 @@ content:
     region: content
   field_image_course:
     weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_image_place:
+    weight: 26
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber

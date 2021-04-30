@@ -1,4 +1,4 @@
-uuid: f91e9523-5370-4e97-a38a-61bc23b9e8dd
+uuid: 7eae233c-2484-44f6-b826-a3f33640f60c
 langcode: uk
 status: true
 dependencies:
@@ -9,21 +9,21 @@ dependencies:
     - views
   theme:
     - academy
-id: views_block__lecturers_block_1
+id: views_block__lecturers_block_3
 theme: academy
 region: content
-weight: -2
+weight: 0
 provider: null
-plugin: 'views_block:lecturers-block_1'
+plugin: 'views_block:lecturers-block_3'
 settings:
-  id: 'views_block:lecturers-block_1'
+  id: 'views_block:lecturers-block_3'
   label: ''
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: none
+  items_per_page: '12'
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /team
     negate: false

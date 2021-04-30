@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.lecturer.body
     - field.field.node.lecturer.field_image_lecturer
+    - field.field.node.lecturer.field_tags
     - image.style.large
     - node.type.lecturer
   module:
@@ -33,5 +34,6 @@ content:
     type: image
     region: content
 hidden:
+  field_tags: true
   langcode: true
   links: true
