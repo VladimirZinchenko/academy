@@ -9,7 +9,7 @@ id: node.course.field_format
 field_name: field_format
 entity_type: node
 bundle: course
-label: Format
+label: 'Формат навчання'
 description: ''
 required: false
 translatable: false

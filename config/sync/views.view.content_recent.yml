@@ -1,6 +1,6 @@
 uuid: cba1546c-4181-4812-bd80-4325e63d831b
 langcode: uk
-status: true
+status: false
 dependencies:
   module:
     - node

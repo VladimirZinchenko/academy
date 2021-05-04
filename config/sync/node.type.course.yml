@@ -8,10 +8,10 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:views_view:views.courses.page_1'
-name: Course
+    parent: 'main:'
+name: Курс
 type: course
-description: ''
+description: 'Курс чи освітня програма'
 help: ''
 new_revision: false
 preview_mode: 1

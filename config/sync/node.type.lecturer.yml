@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Lecturer
+name: Лектор
 type: lecturer
-description: ''
+description: 'Лектор чи учасник команди'
 help: ''
 new_revision: false
 preview_mode: 1

@@ -10,7 +10,7 @@ id: node.course.field_lecturer
 field_name: field_lecturer
 entity_type: node
 bundle: course
-label: Lecturer
+label: Лектори
 description: ''
 required: false
 translatable: false

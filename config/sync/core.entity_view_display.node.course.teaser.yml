@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.course.field_date_end
     - field.field.node.course.field_date_start
     - field.field.node.course.field_duration
+    - field.field.node.course.field_file
     - field.field.node.course.field_format
     - field.field.node.course.field_image_course
     - field.field.node.course.field_image_place
@@ -59,7 +60,7 @@ content:
     region: content
   field_date_start:
     type: datetime_default
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings:
@@ -68,12 +69,20 @@ content:
     third_party_settings: {  }
   field_duration:
     type: number_integer
-    weight: 3
+    weight: 4
     region: content
     label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
+    third_party_settings: {  }
+  field_format:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_image_course:
     type: image
@@ -86,7 +95,7 @@ content:
     third_party_settings: {  }
   field_price:
     type: number_integer
-    weight: 4
+    weight: 5
     region: content
     label: hidden
     settings:
@@ -95,7 +104,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_date_end: true
-  field_format: true
+  field_file: true
   field_image_place: true
   field_lecturer: true
   field_paragraph: true

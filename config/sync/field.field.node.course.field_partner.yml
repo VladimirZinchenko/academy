@@ -10,7 +10,7 @@ id: node.course.field_partner
 field_name: field_partner
 entity_type: node
 bundle: course
-label: Partner
+label: 'Партнери курсу'
 description: ''
 required: false
 translatable: false

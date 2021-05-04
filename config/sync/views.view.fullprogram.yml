@@ -1,23 +1,19 @@
-uuid: 407be91c-05e0-4018-bbda-4b6af1ad46e2
+uuid: 131709fd-822a-43c8-aff9-4a29a235bd56
 langcode: uk
 status: true
 dependencies:
-  config:
-    - field.storage.node.field_image_place
-    - image.style.teaser
-    - node.type.course
   module:
-    - image
+    - file
     - node
+    - semanticviews
     - user
-    - views_bootstrap
-id: places
-label: Місця
+id: fullprogram
+label: 'Програма курсу'
 module: views
-description: 'Фото з місць проведення навчання'
+description: 'Посилання на завантаження повної програми курсу'
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: file_managed
+base_field: fid
 display:
   default:
     display_plugin: default
@@ -53,39 +49,89 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 12
+          items_per_page: 1
           offset: 0
       style:
-        type: views_bootstrap_grid
-        options:
-          grouping: {  }
-          row_class: mb-4
-          default_row_class: false
-          col_xs: col-12
-          col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+        type: semanticviews_style
       row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+        type: semanticviews_row
       fields:
-        field_image_place:
-          id: field_image_place
-          table: node__field_image_place
-          field: field_image_place
+        filename:
+          id: filename
+          table: file_managed
+          field: filename
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: file
+          entity_field: filename
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<div class="pt-3 mb-5"><a href=/sites/default/files/field/file/{{ filename }} class="btn-warning btn" role="button">Завантажити повну програму курсу</a></div>'
             make_link: false
             path: ''
             absolute: false
@@ -121,54 +167,14 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: teaser
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: false
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          hide_alter_empty: false
+          plugin_id: custom
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            course: course
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
         langcode:
           id: langcode
           table: node_field_data
           field: langcode
-          relationship: none
+          relationship: reverse_field_file_node
           group_type: group
           admin_label: ''
           operator: in
@@ -206,33 +212,28 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
+      sorts: {  }
       title: ''
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        reverse_field_file_node:
+          id: reverse_field_file_node
+          table: file_managed
+          field: reverse_field_file_node
+          relationship: none
+          group_type: group
+          admin_label: field_file
+          required: false
+          entity_type: file
+          plugin_id: entity_reverse
       arguments:
         nid:
           id: nid
           table: node_field_data
           field: nid
-          relationship: none
+          relationship: reverse_field_file_node
           group_type: group
           admin_label: ''
           default_action: default
@@ -271,14 +272,12 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image_place'
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Фото з місць навчання'
+    display_title: 'Повна програма курсу'
     position: 1
     display_options:
       display_extenders: {  }
@@ -289,7 +288,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image_place'
+      tags: {  }

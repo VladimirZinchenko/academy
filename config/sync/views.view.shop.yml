@@ -11,7 +11,7 @@ dependencies:
     - user
     - views_bootstrap
 id: shop
-label: Shop
+label: Магазин
 module: views
 description: 'Товари. Сторінка.'
 tag: ''

@@ -1,0 +1,27 @@
+uuid: 0ec98fab-445a-439a-9cc0-e20d305fc401
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.course
+  module:
+    - file
+id: node.course.field_file
+field_name: field_file
+entity_type: node
+bundle: course
+label: 'Повна програма'
+description: 'Файл з повною програмою курсу. Дозволені формати txt, xlsx, docx. Назва файлу без пробілів.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field/file
+  file_extensions: 'txt xlsx docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

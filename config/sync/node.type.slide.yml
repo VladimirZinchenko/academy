@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Slide
+name: Слайд
 type: slide
-description: 'Слайд для каруселі'
+description: 'Слайд вгорі сторінки. Може бути використаний для каруселі'
 help: ''
 new_revision: false
 preview_mode: 1

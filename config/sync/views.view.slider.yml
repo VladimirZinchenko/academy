@@ -22,9 +22,9 @@ dependencies:
     - user
     - views_bootstrap
 id: slider
-label: Slider
+label: Слайдер
 module: views
-description: 'Слайдер. Блок на Головній.'
+description: 'Слайдер вгорі сторінки'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -493,7 +493,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Slider
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
@@ -517,10 +517,11 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Головна
     position: 1
     display_options:
       display_extenders: {  }
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -537,7 +538,7 @@ display:
   block_3:
     display_plugin: block
     id: block_3
-    display_title: 'Block courses'
+    display_title: Курси
     position: 1
     display_options:
       display_extenders: {  }

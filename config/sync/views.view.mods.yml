@@ -25,9 +25,9 @@ dependencies:
     - user
     - views_bootstrap
 id: mods
-label: Mods
+label: Моди
 module: views
-description: ''
+description: 'Блоки з різними модами'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -1076,7 +1076,20 @@ display:
         options:
           items_per_page: 4
           offset: 0
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2 class="block-title mb-5 py-3"><i class="bi bi-square-fill text-warning">&nbsp;</i>Кому буде цікаво</h2>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -1091,7 +1104,7 @@ display:
   block_3:
     display_plugin: block
     id: block_3
-    display_title: 'Лого партнерів на Головній'
+    display_title: 'Партнери на Головній'
     position: 3
     display_options:
       display_extenders: {  }
@@ -1473,6 +1486,7 @@ display:
         pager: false
         style: false
         row: false
+        header: false
       display_description: ''
       filters:
         status:
@@ -1615,6 +1629,7 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -1889,7 +1904,20 @@ display:
         options:
           items_per_page: 6
           offset: 0
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2 class="block-title mb-5 py-3"><i class="bi bi-square-fill text-warning">&nbsp;</i>Як це працює</h2>'
+            format: full_html
+          plugin_id: text
       filters:
         status:
           value: '1'
@@ -2005,7 +2033,7 @@ display:
   block_5:
     display_plugin: block
     id: block_5
-    display_title: 'Лого партнерів Курсу'
+    display_title: 'Партнери Курсу'
     position: 3
     display_options:
       display_extenders: {  }
@@ -2389,6 +2417,7 @@ display:
         row: false
         relationships: false
         arguments: false
+        header: false
       display_description: ''
       filters:
         status:
@@ -2587,6 +2616,20 @@ display:
           replica: false
           query_comment: ''
           query_tags: null
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2 class="block-title mb-5 py-3"><i class="bi bi-square-fill text-warning">&nbsp;</i>Освітні партнери курсу</h2>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:

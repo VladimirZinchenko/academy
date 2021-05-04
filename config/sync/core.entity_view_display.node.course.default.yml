@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.course.field_date_end
     - field.field.node.course.field_date_start
     - field.field.node.course.field_duration
+    - field.field.node.course.field_file
     - field.field.node.course.field_format
     - field.field.node.course.field_image_course
     - field.field.node.course.field_image_place
@@ -55,6 +56,7 @@ hidden:
   field_date_end: true
   field_date_start: true
   field_duration: true
+  field_file: true
   field_format: true
   field_image_place: true
   field_lecturer: true

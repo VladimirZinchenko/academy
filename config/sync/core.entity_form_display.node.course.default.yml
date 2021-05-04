@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.course.field_date_end
     - field.field.node.course.field_date_start
     - field.field.node.course.field_duration
+    - field.field.node.course.field_file
     - field.field.node.course.field_format
     - field.field.node.course.field_image_course
     - field.field.node.course.field_image_place
@@ -18,6 +19,7 @@ dependencies:
     - node.type.course
   module:
     - datetime
+    - file
     - image
     - imce
     - paragraphs
@@ -40,31 +42,40 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 14
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   field_date_end:
-    weight: 7
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_date_start:
-    weight: 6
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_duration:
-    weight: 8
+    weight: 10
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
+  field_file:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: file_generic
+    region: content
   field_format:
-    weight: 9
+    weight: 7
     settings:
       size: 60
       placeholder: ''
@@ -82,7 +93,7 @@ content:
     type: image_image
     region: content
   field_image_place:
-    weight: 26
+    weight: 12
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
@@ -103,7 +114,7 @@ content:
     region: content
   field_paragraph:
     type: entity_reference_paragraphs
-    weight: 5
+    weight: 6
     settings:
       title: Абзац
       title_plural: Абзаци
@@ -124,7 +135,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_price:
-    weight: 10
+    weight: 11
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -132,14 +143,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 11
+    weight: 13
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 17
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -147,21 +158,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 17
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 20
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 18
     region: content
     third_party_settings: {  }
   title:
@@ -173,13 +184,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 12
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60

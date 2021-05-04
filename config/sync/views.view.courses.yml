@@ -22,7 +22,7 @@ dependencies:
     - user
     - views_bootstrap
 id: courses
-label: Courses
+label: Курси
 module: views
 description: 'Курси Академії. Сторінка, блок на Головній.'
 tag: ''
@@ -688,18 +688,6 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            course: course
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
         langcode:
           id: langcode
           table: node_field_data
@@ -742,6 +730,19 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            course: course
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
       sorts:
         sticky:
           id: sticky
@@ -772,13 +773,17 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Курси
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -797,7 +802,7 @@ display:
   block_2:
     display_plugin: block
     id: block_2
-    display_title: 'Блок плитка'
+    display_title: 'Курси на Головній'
     position: 2
     display_options:
       display_extenders: {  }
@@ -816,6 +821,9 @@ display:
         row: false
         fields: false
         footer: false
+        sorts: false
+        filters: false
+        filter_groups: false
       link_display: page_1
       link_url: ''
       css_class: ''
@@ -1398,6 +1406,149 @@ display:
             value: "<div class=\"row justify-content-center mb-5\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/courses\" role=\"button\" title=\"Переглянути всі курси\" class=\"btn btn-dark btn-lg btn-block\"><b>Переглянути всі курси</b></a></div></div>"
             format: full_html
           plugin_id: text
+      sorts:
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      filters:
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: promote
+          plugin_id: boolean
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            course: course
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -1414,7 +1565,7 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: 'Page brick'
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

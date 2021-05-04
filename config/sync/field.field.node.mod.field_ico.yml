@@ -11,7 +11,7 @@ id: node.mod.field_ico
 field_name: field_ico
 entity_type: node
 bundle: mod
-label: Ico
+label: Іконка
 description: ''
 required: false
 translatable: false

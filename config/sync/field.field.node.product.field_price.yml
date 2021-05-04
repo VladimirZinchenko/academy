@@ -9,8 +9,8 @@ id: node.product.field_price
 field_name: field_price
 entity_type: node
 bundle: product
-label: Price
-description: ''
+label: Ціна
+description: 'Ціна товару'
 required: false
 translatable: false
 default_value: {  }
