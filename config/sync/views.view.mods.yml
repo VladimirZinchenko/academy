@@ -2006,7 +2006,7 @@ display:
             attributes: 'class|row no-gutters'
           row:
             element_type: div
-            attributes: 'class|col-sm-6 col-md-4 col-lg-2 mb-5'
+            attributes: 'class|col-6 col-md-4 col-lg-2 mb-5'
             last_every_nth: '0'
             first_class: first
             last_class: last
@@ -2548,8 +2548,8 @@ display:
           grouping: {  }
           row_class: mb-5
           default_row_class: false
-          col_xs: col-12
-          col_sm: col-sm-1
+          col_xs: col-6
+          col_sm: col-sm-6
           col_md: col-md-4
           col_lg: col-lg-3
           col_xl: col-xl-3

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_webform
     - paragraphs.paragraphs_type.feedback
-    - webform.webform.contact
+    - webform.webform.consultation
   module:
     - webform
 id: paragraph.feedback.field_webform
@@ -22,7 +22,7 @@ default_value:
     status: open
     open: ''
     close: ''
-    target_uuid: 495c4e5f-232d-4cb7-b028-9813a7a66bae
+    target_uuid: 442acbb5-5d8d-4e56-997f-df037f29fb3b
 default_value_callback: ''
 settings:
   handler: 'default:webform'

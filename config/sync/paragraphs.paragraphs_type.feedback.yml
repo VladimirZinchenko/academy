@@ -6,5 +6,5 @@ id: feedback
 label: Feedback
 icon_uuid: null
 icon_default: null
-description: 'Абзац з формою зворотнього зв''язку та посилянням на канали комунікації'
+description: 'Форма зворотнього зв''язку для консультації'
 behavior_plugins: {  }

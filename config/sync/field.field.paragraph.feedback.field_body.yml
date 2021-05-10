@@ -17,7 +17,7 @@ required: false
 translatable: true
 default_value:
   -
-    value: "<div class=\"connect-block\">\r\n<ul class=\"list-inline\">\r\n\t<li class=\"list-inline-item m-3\"><a href=\"viber://chat?number=%2B380677511110\" rel=\"noopener nofollow\"><img alt=\"Call or chat in Viber\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/viber-icon.png\" title=\"Viber\" width=\"48\" /></a></li>\r\n\t<li class=\"list-inline-item m-3\"><a href=\"tel:0677511110\" rel=\"noopener nofollow\"><img alt=\"Call\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/kievstar-icon.png\" title=\"Call\" width=\"48\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-none m-3\"><a href=\"tg://resolve?domain=acousticalligat\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram\" width=\"48\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-inline-block d-none m-3\"><a href=\"https://telegram.me/acousticalligat\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram on PC\" class=\"img-responsive\" height=\"48\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram on PC\" width=\"48\" /></a></li>\r\n</ul>\r\n</div>\r\n"
+    value: "<div class=\"h-100 bg-dark p-3\">\r\n<div class=\"p-3 p-md-5\">\r\n<div class=\"h1 text-warning mb-3\">Не визначились з курсом?</div>\r\n\r\n<p class=\"h4 text-white\">Залишайте заявку і отримаєте безкоштовну консультацію у одного з наших менеджерів</p>\r\n</div>\r\n</div>\r\n"
     format: full_html
 default_value_callback: ''
 settings: {  }
