@@ -47,7 +47,7 @@
 }
 
 .slide-item {
-  height: 20rem;
+  height: 25rem;
   padding-bottom: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,9 +106,38 @@ footer.footer-dark a:hover {
 #block-footeraddress {
   color: rgba(255, 255, 255, 0.6);
 }
+#block-footeraddress .bi {
+  font-size: 1.55rem;
+}
+#block-footeraddress .social {
+  padding-left: 0.5rem;
+  margin-bottom: 4px;
+}
+#block-footeraddress .social .list-inline-item {
+  margin-right: 0.75rem;
+}
 
 .navbar-dark .navbar-nav .show .nav-link {
   color: inherit;
+}
+
+.navbar-dark .social {
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+  padding-bottom: 4px;
+  padding-top: 6px;
+  font-size: 20px;
+}
+.navbar-dark .social a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.navbar-dark .social a:hover, .navbar-dark .social a:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.region-nav-additional {
+  display: flex;
+  flex-basis: auto;
 }
 
 .navbar-nav .dropdown-toggle::after {
@@ -249,6 +278,9 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
     width: 50%;
   }
 }
+.paragraph--type--feedback .field--name-field-webform {
+  background-color: #ebe4c1;
+}
 @media (min-width: 768px) {
   .paragraph--type--feedback .field--name-field-webform {
     width: 50%;
@@ -260,7 +292,6 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
 }
 @media (min-width: 768px) {
   .paragraph--type--feedback .webform-submission-consultation-form {
-    padding: 2rem;
     padding-right: 4rem;
   }
 }
@@ -289,6 +320,27 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
 .view-id-mods.view-display-id-block_4 .card .bi,
 .view-id-mods.view-display-id-block_2 .card .bi {
   font-size: 3rem;
+}
+
+.filler-bottom {
+  background-image: url("/sites/default/files/upload/filler-bottom.jpg");
+}
+@media (min-width: 768px) {
+  .filler-bottom .row {
+    height: 300px;
+    position: relative;
+    bottom: 3rem;
+  }
+}
+.filler-bottom .bi {
+  font-size: 3rem;
+}
+.filler-bottom a {
+  color: #FFF;
+}
+.filler-bottom a:hover,
+.filler-bottom a:focus {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /*!

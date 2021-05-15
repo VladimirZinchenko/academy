@@ -1617,8 +1617,8 @@ display:
           grouping: {  }
           row_class: mb-5
           default_row_class: false
-          col_xs: col-12
-          col_sm: col-sm-4
+          col_xs: col-6
+          col_sm: col-sm-6
           col_md: col-md-3
           col_lg: col-lg-2
           col_xl: col-xl-2

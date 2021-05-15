@@ -61,7 +61,7 @@ font-size: 1.5rem;
 }
 //Слайдер
 .slide-item {
-height: 20rem;
+height: 25rem;
 padding-bottom: 200px;
 background-position: center;
 background-repeat: no-repeat;
@@ -111,11 +111,40 @@ color: #f8f9fa !important;
 
 #block-footeraddress {
 color: rgba(255, 255, 255, 0.6);
+& .bi {
+font-size: 1.55rem;
+}
+& .social {
+padding-left: 0.5rem;
+margin-bottom: 4px;
+}
+& .social .list-inline-item {
+margin-right: 0.75rem;
+}
 }
 
-//Дропдаун меню (временно)
+//Navbar (временно)
 .navbar-dark .navbar-nav .show .nav-link {
 color: inherit;
+}
+
+.navbar-dark .social {
+margin-bottom: 0;
+padding-left: 0.5rem;
+padding-bottom: 4px;
+padding-top: 6px;
+font-size: 20px;
+& a {
+color: rgba(255, 255, 255, 0.6);
+}
+& a:hover,
+& a:focus {
+color: rgba(255, 255, 255, 0.75);
+}
+}
+.region-nav-additional {
+display: flex;
+flex-basis: auto;
 }
 
 .navbar-nav {
@@ -234,7 +263,7 @@ background-image: url("/sites/default/files/upload/filler-11.jpg");
 background-image: url("/sites/default/files/upload/filler-12.jpg");
 }
 
-//Параграф фидбэк
+//Параграф feedback
 .paragraph--type--feedback {
 display: flex;
 flex-direction: column;
@@ -251,6 +280,7 @@ width: 50%;
 }
 
 & .field--name-field-webform {
+background-color: #ebe4c1;
 @media (min-width: 768px) {
 width: 50%;
 }
@@ -260,7 +290,6 @@ width: 50%;
 padding: 2rem;
 z-index: 1;
 @media (min-width: 768px) {
-padding: 2rem;
 padding-right: 4rem;
 }
 @media (min-width: 992px) {
@@ -286,4 +315,25 @@ right: 2rem;
 .view-id-mods.view-display-id-block_4 .card .bi,
 .view-id-mods.view-display-id-block_2 .card .bi {
 font-size: 3rem;
+}
+
+.filler-bottom {
+background-image: url("/sites/default/files/upload/filler-bottom.jpg");
+.row {
+@media (min-width: 768px) {
+height: 300px;
+position: relative;
+bottom: 3rem;
+}
+}
+.bi {
+font-size: 3rem;
+}
+a {
+color: #FFF;
+}
+a:hover,
+a:focus {
+color: rgba(255, 255, 255, 0.75);
+}
 }

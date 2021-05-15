@@ -13,6 +13,8 @@ dependencies:
     - node.type.course
     - system.menu.main
     - views.view.mods
+  content:
+    - 'paragraph:feedback:f48751ef-17e5-4e07-bedc-bec06c4c3f3a'
   module:
     - advanced_text_formatter
     - datetime
@@ -773,7 +775,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: ''
+      title: Курси
       header: {  }
       footer: {  }
       empty: {  }
@@ -1580,7 +1582,20 @@ display:
         context: '0'
         menu_name: main
         enabled: true
-      footer: {  }
+      footer:
+        entity_paragraph:
+          id: entity_paragraph
+          table: views
+          field: entity_paragraph
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: f48751ef-17e5-4e07-bedc-bec06c4c3f3a
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       defaults:
         footer: false
         title: true

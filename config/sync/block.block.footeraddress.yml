@@ -1,0 +1,25 @@
+uuid: 218a0e8d-8430-47c2-ae80-54b049642606
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1a0fa2b3-8de9-4349-b907-80e2f3d51a18'
+  module:
+    - block_content
+  theme:
+    - academy
+id: footeraddress
+theme: academy
+region: footer
+weight: 3
+provider: null
+plugin: 'block_content:1a0fa2b3-8de9-4349-b907-80e2f3d51a18'
+settings:
+  id: 'block_content:1a0fa2b3-8de9-4349-b907-80e2f3d51a18'
+  label: 'Footer address'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 2cb949fb-ca91-4a98-bdac-4ae06622ec85
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ae05cd57-9e99-4bf6-a7a7-5b039282fa81'
+  module:
+    - block_content
+  theme:
+    - academy
+id: headerlinks
+theme: academy
+region: nav_additional
+weight: 0
+provider: null
+plugin: 'block_content:ae05cd57-9e99-4bf6-a7a7-5b039282fa81'
+settings:
+  id: 'block_content:ae05cd57-9e99-4bf6-a7a7-5b039282fa81'
+  label: 'Header links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
