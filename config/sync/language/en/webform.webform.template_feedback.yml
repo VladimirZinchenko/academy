@@ -3,6 +3,7 @@ description: 'A basic feedback template.'
 elements: "type:\n  '#title': 'Type of Feedback'\n  '#type': webform_radios_other\n  '#required': true\n  '#options':\n    Comments: Comments\n    'Report a Bug': 'Report a Bug'\n    Questions: Questions\n  '#options_display': side_by_side\ncomments:\n  '#title': 'Your Feedback'\n  '#type': textarea\n  '#required': true\nname:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Submit feedback'\n"
 settings:
   confirmation_message: 'Thank you for your feedback.'
+  confirmation_url: '<front>'
 handlers:
   email_confirmation:
     label: 'Email confirmation'

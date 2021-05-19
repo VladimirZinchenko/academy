@@ -4,6 +4,7 @@ elements: "introduction:\n  '#markup': 'After you submit the form, a care specia
 settings:
   confirmation_title: 'Thank You'
   confirmation_message: 'Your request has been sent. A care specialist will call you back within XX hours to schedule an appointment.'
+  confirmation_url: '<front>'
 handlers:
   email_notification:
     label: 'Email notification'

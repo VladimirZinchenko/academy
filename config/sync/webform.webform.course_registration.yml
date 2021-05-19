@@ -74,7 +74,7 @@ settings:
   submission_exception_message: ''
   submission_locked_message: ''
   submission_excluded_elements: {  }
-  submission_exclude_empty: false
+  submission_exclude_empty: true
   submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
@@ -211,12 +211,13 @@ handlers:
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      from_name: _default
       subject: _default
       body: _default
-      excluded_elements: {  }
+      excluded_elements:
+        subscribe: subscribe
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -224,11 +225,49 @@ handlers:
       html: true
       attachments: false
       twig: false
-      theme_name: ''
-      parameters: {  }
       debug: false
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_confirmation:
+    id: email
+    label: 'Email Confirmation'
+    notes: ''
+    handler_id: email_confirmation
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:contact:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: '<a href="/courses/maysternya-dzhynu" hreflang="uk"><img alt="" class="image-style-square" height="480" loading="lazy" src="/sites/default/files/styles/square/public/field/image/course/Aaf5085167e3c3fd871506452911-1443941.Jpg?itok=sjfMBVsv" typeof="Image" width="480" /> </a>'
+      excluded_elements:
+        subscribe: subscribe
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }

@@ -11,7 +11,7 @@ uid: 1
 template: false
 archive: false
 id: course_reservation
-title: 'Course Reservation'
+title: 'Забронювати місце'
 description: 'Коротка форма'
 category: ''
 elements: "contact:\n  '#type': webform_contact\n  '#title': Contact\n  '#name__title': 'Ім''я'\n  '#company__access': false\n  '#email__access': false\n  '#phone__title': Телефон\n  '#address__access': false\n  '#address_2__access': false\n  '#city__access': false\n  '#state_province__access': false\n  '#postal_code__access': false\n  '#country__access': false\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Надіслати"
@@ -119,7 +119,7 @@ settings:
   confirmation_message: 'Thank you for registering.'
   confirmation_url: ''
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
@@ -211,9 +211,9 @@ handlers:
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: '[site:mail]'
       from_options: {  }
-      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      from_name: _default
       subject: _default
       body: _default
       excluded_elements: {  }
@@ -224,11 +224,11 @@ handlers:
       html: true
       attachments: false
       twig: false
-      theme_name: ''
-      parameters: {  }
       debug: false
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }
