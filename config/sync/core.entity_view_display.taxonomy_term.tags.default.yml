@@ -1,0 +1,24 @@
+uuid: a475782d-f314-4e54-a647-f1fb5ac3e1c1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tags.field_metatags
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_metatags: true
+  langcode: true

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.slide.field_bg
     - field.field.node.slide.field_image_slide
     - field.field.node.slide.field_link
+    - field.field.node.slide.field_metatags
     - field.field.node.slide.field_tags
     - node.type.slide
   module:
@@ -56,6 +57,7 @@ content:
     type: link
     region: content
 hidden:
+  field_metatags: true
   field_tags: true
   langcode: true
   links: true

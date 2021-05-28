@@ -4,17 +4,19 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: wUmchtQ3Bj3srSvNnA9Ey2UBgRpUvuDDN1FLH44VH4c
-name: 'Default newsletter'
+name: 'Новини Академії'
 id: default
-description: 'This is an example newsletter. Change it.'
-format: plain
+description: 'Новини Української Академії Дистиляції'
+format: html
 priority: 0
-receipt: true
-from_name: Academy
+receipt: false
+from_name: 'Академія Дистиляції'
 subject: '[[simplenews-newsletter:name]] [node:title]'
-from_address: acoustic@alligat.com.ua
-hyperlinks: false
-allowed_handlers: {  }
-new_account: none
-opt_inout: double
+from_address: info@distillingacademy.com.ua
+hyperlinks: true
+allowed_handlers:
+  0: '0'
+  simplenews_all: '0'
+new_account: 'on'
+opt_inout: single
 weight: 0

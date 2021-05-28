@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.slide.field_bg
     - field.field.node.slide.field_image_slide
     - field.field.node.slide.field_link
+    - field.field.node.slide.field_metatags
     - field.field.node.slide.field_tags
     - image.style.thumbnail
     - node.type.slide
@@ -14,6 +15,7 @@ dependencies:
     - image
     - imce
     - link
+    - metatag
     - path
     - text
 id: node.slide.default
@@ -62,6 +64,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_metatags:
+    weight: 27
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_tags:
     weight: 26

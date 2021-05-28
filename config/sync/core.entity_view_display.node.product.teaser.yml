@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
     - field.field.node.product.field_image_product
+    - field.field.node.product.field_metatags
     - field.field.node.product.field_price
     - image.style.large
     - node.type.product
@@ -45,5 +46,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
 hidden:
+  field_metatags: true
   langcode: true
   links: true

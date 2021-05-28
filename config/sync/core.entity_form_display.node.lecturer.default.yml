@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.lecturer.body
     - field.field.node.lecturer.field_image_lecturer
+    - field.field.node.lecturer.field_metatags
     - field.field.node.lecturer.field_tags
     - image.style.thumbnail
     - node.type.lecturer
   module:
     - image
     - imce
+    - metatag
     - path
     - text
 id: node.lecturer.default
@@ -43,6 +45,13 @@ content:
       imce:
         enabled: true
     type: image_image
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_tags:
     weight: 3

@@ -1,0 +1,22 @@
+uuid: 66576de4-ab42-4a85-aa18-eaf3bb530a17
+langcode: uk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.feedback
+id: paragraph.feedback.status
+field_name: status
+entity_type: paragraph
+bundle: feedback
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

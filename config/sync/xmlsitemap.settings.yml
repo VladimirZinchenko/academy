@@ -1,5 +1,5 @@
-minimum_lifetime: 0
-xsl: 1
+minimum_lifetime: 86400
+xsl: 0
 prefetch_aliases: 1
 chunk_size: auto
 batch_limit: 100

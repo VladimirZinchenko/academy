@@ -1,0 +1,19 @@
+uuid: d673c061-69a2-4b82-b402-b5a4583111fd
+langcode: uk
+status: true
+dependencies:
+  module:
+    - metatag
+    - taxonomy
+id: taxonomy_term.field_metatags
+field_name: field_metatags
+entity_type: taxonomy_term
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.slide.field_bg
     - field.field.node.slide.field_image_slide
     - field.field.node.slide.field_link
+    - field.field.node.slide.field_metatags
     - field.field.node.slide.field_tags
     - node.type.slide
   module:
@@ -36,13 +37,10 @@ content:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_bg: true
   field_link: true
+  field_metatags: true
   field_tags: true
   langcode: true
+  links: true

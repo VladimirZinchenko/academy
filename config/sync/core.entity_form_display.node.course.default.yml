@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.course.field_image_course
     - field.field.node.course.field_image_place
     - field.field.node.course.field_lecturer
+    - field.field.node.course.field_metatags
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_partner
     - field.field.node.course.field_price
@@ -22,6 +23,7 @@ dependencies:
     - file
     - image
     - imce
+    - metatag
     - paragraphs
     - path
     - text
@@ -111,6 +113,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_paragraph:
     type: entity_reference_paragraphs

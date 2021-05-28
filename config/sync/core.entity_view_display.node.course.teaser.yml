@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.course.field_image_course
     - field.field.node.course.field_image_place
     - field.field.node.course.field_lecturer
+    - field.field.node.course.field_metatags
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_partner
     - field.field.node.course.field_price
@@ -107,6 +108,7 @@ hidden:
   field_file: true
   field_image_place: true
   field_lecturer: true
+  field_metatags: true
   field_paragraph: true
   field_partner: true
   langcode: true

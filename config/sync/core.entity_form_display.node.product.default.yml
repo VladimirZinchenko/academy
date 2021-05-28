@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.product.body
     - field.field.node.product.field_image_product
+    - field.field.node.product.field_metatags
     - field.field.node.product.field_price
     - image.style.thumbnail
     - node.type.product
   module:
     - image
     - imce
+    - metatag
     - path
     - text
 id: node.product.default
@@ -43,6 +45,13 @@ content:
       imce:
         enabled: true
     type: image_image
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_price:
     weight: 3

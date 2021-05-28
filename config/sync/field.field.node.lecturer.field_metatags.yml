@@ -1,0 +1,21 @@
+uuid: beb8d57a-6b5a-4edb-b55b-dba8e63c1045
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.lecturer
+  module:
+    - metatag
+id: node.lecturer.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: lecturer
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.product.body
     - field.field.node.product.field_image_product
+    - field.field.node.product.field_metatags
     - field.field.node.product.field_price
     - node.type.product
   module:
@@ -42,5 +43,6 @@ content:
     type: number_integer
     region: content
 hidden:
+  field_metatags: true
   langcode: true
   links: true

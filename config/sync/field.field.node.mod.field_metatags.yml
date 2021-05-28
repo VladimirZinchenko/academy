@@ -1,0 +1,21 @@
+uuid: adf4080c-c8db-4246-a571-86e0c6bb426b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.mod
+  module:
+    - metatag
+id: node.mod.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: mod
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

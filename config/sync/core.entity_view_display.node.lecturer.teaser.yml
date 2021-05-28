@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.lecturer.body
     - field.field.node.lecturer.field_image_lecturer
+    - field.field.node.lecturer.field_metatags
     - field.field.node.lecturer.field_tags
     - image.style.large
     - node.type.lecturer
@@ -36,6 +37,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  field_metatags: true
   field_tags: true
   langcode: true
   links: true
