@@ -14,7 +14,62 @@ id: course_registration
 title: 'Реєстрація на курс'
 description: 'Розгорнута форма реєстрації'
 category: ''
-elements: "personal_information:\n  '#title': 'Персональна інформація'\n  '#type': webform_section\n  first_name:\n    '#type': textfield\n    '#title': 'Ім''я'\n    '#required': true\n  last_name:\n    '#title': Прізвище\n    '#type': textfield\n    '#required': true\ncontact_information:\n  '#title': 'Контактна інформація'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#name__access': false\n    '#company__access': false\n    '#email__title': email\n    '#email__required': true\n    '#phone__title': Телефон\n    '#address__access': false\n    '#address_2__access': false\n    '#city__access': false\n    '#state_province__access': false\n    '#postal_code__access': false\n    '#country__access': false\nmailinglist:\n  '#type': webform_section\n  '#title': 'Mailing List'\n  '#access': false\n  subscribe:\n    '#type': checkbox\n    '#title': 'Please subscribe me to your mailing list.'\n    '#disabled': true\nreserve_a_course:\n  '#type': webform_section\n  '#title': Зареєструватись\n  course:\n    '#type': select\n    '#title': 'Виберіть курс'\n    '#options': courses\n    '#required': true\nadditional_information:\n  '#title': 'Додаткова інформація'\n  '#type': webform_section\n  '#open': true\n  notes:\n    '#title': Коментар\n    '#type': textarea\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Зареєструватись"
+elements: |-
+  personal_information:
+    '#title': 'Персональна інформація'
+    '#type': webform_section
+    first_name:
+      '#type': textfield
+      '#title': 'Ім''я'
+      '#required': true
+    last_name:
+      '#title': Прізвище
+      '#type': textfield
+      '#required': true
+  contact_information:
+    '#title': 'Контактна інформація'
+    '#type': webform_section
+    contact:
+      '#type': webform_contact
+      '#title': Contact
+      '#name__access': false
+      '#company__access': false
+      '#email__title': email
+      '#email__required': true
+      '#phone__title': Телефон
+      '#address__access': false
+      '#address_2__access': false
+      '#city__access': false
+      '#state_province__access': false
+      '#postal_code__access': false
+      '#country__access': false
+  mailinglist:
+    '#type': webform_section
+    '#title': 'Mailing List'
+    '#access': false
+    subscribe:
+      '#type': checkbox
+      '#title': 'Please subscribe me to your mailing list.'
+      '#disabled': true
+  reserve_a_course:
+    '#type': webform_section
+    '#title': Зареєструватись
+    course:
+      '#type': select
+      '#title': 'Виберіть курс'
+      '#options': courses
+      '#required': true
+  additional_information:
+    '#title': 'Додаткова інформація'
+    '#type': webform_section
+    '#open': true
+    notes:
+      '#title': Коментар
+      '#type': textarea
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Зареєструватись
 css: ''
 javascript: ''
 settings:

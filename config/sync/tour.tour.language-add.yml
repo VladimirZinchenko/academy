@@ -25,8 +25,7 @@ tips:
     label: 'Вибір мови'
     body: '<p>Оберіть мову з переліку, або оберіть пункт "Власна мова...", що в кінці списку.</p><p>Обравши мову, натисніть кнопку "Додати мову" .</p><p>При додаванні власної мови, з''явиться додаткова форма, де буде необхідно ввести назву, код і напрямок мови.</p>'
     weight: 2
-    attributes:
-      data-id: edit-predefined-langcode
+    selector: '#edit-predefined-langcode'
   language-add-continue:
     id: language-add-continue
     plugin: text

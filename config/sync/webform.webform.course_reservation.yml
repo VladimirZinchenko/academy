@@ -14,7 +14,24 @@ id: course_reservation
 title: 'Забронювати місце'
 description: 'Коротка форма'
 category: ''
-elements: "contact:\n  '#type': webform_contact\n  '#title': Contact\n  '#name__title': 'Ім''я'\n  '#company__access': false\n  '#email__access': false\n  '#phone__title': Телефон\n  '#address__access': false\n  '#address_2__access': false\n  '#city__access': false\n  '#state_province__access': false\n  '#postal_code__access': false\n  '#country__access': false\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Надіслати"
+elements: |-
+  contact:
+    '#type': webform_contact
+    '#title': Contact
+    '#name__title': 'Ім''я'
+    '#company__access': false
+    '#email__access': false
+    '#phone__title': Телефон
+    '#address__access': false
+    '#address_2__access': false
+    '#city__access': false
+    '#state_province__access': false
+    '#postal_code__access': false
+    '#country__access': false
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Надіслати
 css: ''
 javascript: ''
 settings:

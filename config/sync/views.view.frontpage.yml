@@ -358,7 +358,7 @@ display:
       display_extenders: {  }
       css_class: ''
     display_plugin: default
-    display_title: Master
+    display_title: Базово
     id: default
     position: 0
     cache_metadata:

@@ -194,7 +194,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 0
           offset: 0
       query:
         type: views_query
@@ -335,6 +335,7 @@ display:
         filters: false
         filter_groups: false
         sorts: false
+        pager: false
       arguments: {  }
       header:
         area:
@@ -581,6 +582,11 @@ display:
           granularity: second
           entity_type: node
           entity_field: created
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

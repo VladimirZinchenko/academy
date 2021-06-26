@@ -1,3 +1,5 @@
 title: Registration
 description: 'A registration webform template.'
-elements: "actions:\n  '#submit__label': Register\n"
+elements: |
+  actions:
+    '#submit__label': Register

@@ -25,24 +25,21 @@ tips:
     label: 'Розміщення блоків'
     body: 'Будь-який спеціальний або внесений блок можна додати до певної області, натиснувши кнопку Розмістити блок. Також натисканням цієї кнопки можна створити новий блок.'
     weight: 2
-    attributes:
-      data-class: button--small
+    selector: .button--small
   block-region:
     id: block-region
     plugin: text
     label: 'Область блоку'
     body: 'Вкажіть або змініть область блоку, натиснувши тут. З''явиться розкривний список з усіма доступними областями. Один блок можливо розмістити у декількох областях.'
     weight: 3
-    attributes:
-      data-class: block-region-select
+    selector: .block-region-select
   configure-block:
     id: configure-block
     plugin: text
     label: 'Налаштувати блок'
     body: 'Натиснувши кнопку "Налаштувати" можна продовжувати редагувати вміст блоку, розібратися з налаштуваннями видимості та навіть змінити розташування блоку в темі.'
     weight: 4
-    attributes:
-      data-class: dropbutton-widget
+    selector: .dropbutton-widget
   custom-block-library:
     id: custom-block-library
     plugin: text

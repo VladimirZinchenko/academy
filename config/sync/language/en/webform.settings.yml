@@ -7,13 +7,10 @@ settings:
   default_preview_message: 'Please review your submission. Your submission is not complete until you press the &quot;Submit&quot; button!'
   default_confirmation_message: 'New submission added to [webform:title].'
   dialog_options:
-    narrow: {  }
     normal:
       title: Normal
-    wide: {  }
 element:
   default_section_title_tag: h2
-file: {  }
 mail:
   default_body_html: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
 test:

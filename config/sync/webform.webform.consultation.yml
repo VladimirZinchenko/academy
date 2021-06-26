@@ -14,7 +14,31 @@ id: consultation
 title: 'Залишились питання?'
 description: 'Замовити консультацію'
 category: ''
-elements: "contact:\n  '#type': webform_contact\n  '#title': Contact\n  '#name__title': 'Ім''я'\n  '#company__access': false\n  '#phone__title': Телефон\n  '#address__access': false\n  '#address_2__access': false\n  '#city__access': false\n  '#state_province__access': false\n  '#postal_code__access': false\n  '#country__access': false\naccept:\n  '#type': checkbox\n  '#title': Погоджуюсь\n  '#description': 'Я ознайомився (-лась) і погоджуюсь з умовами <a href=\"/privacy\" rel=\"nofollow\" target=\"_blank\">політики конфіденційності</a> та збору даних'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Надіслати\n  '#submit__attributes':\n    class:\n      - btn-warning"
+elements: |-
+  contact:
+    '#type': webform_contact
+    '#title': Contact
+    '#name__title': 'Ім''я'
+    '#company__access': false
+    '#phone__title': Телефон
+    '#address__access': false
+    '#address_2__access': false
+    '#city__access': false
+    '#state_province__access': false
+    '#postal_code__access': false
+    '#country__access': false
+  accept:
+    '#type': checkbox
+    '#title': Погоджуюсь
+    '#description': 'Я ознайомився (-лась) і погоджуюсь з умовами <a href="/privacy" rel="nofollow" target="_blank">політики конфіденційності</a> та збору даних'
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Надіслати
+    '#submit__attributes':
+      class:
+        - btn-warning
 css: ''
 javascript: ''
 settings:

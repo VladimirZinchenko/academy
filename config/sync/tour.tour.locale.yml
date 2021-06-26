@@ -25,48 +25,42 @@ tips:
     label: 'Мова перекладу'
     body: 'Оберіть мову, з якої необхідно перекладати.'
     weight: 2
-    attributes:
-      data-id: edit-langcode
+    selector: '#edit-langcode'
   locale-search:
     id: locale-search
     plugin: text
     label: Пошук
     body: 'Введіть певне слово або речення, що потрібно перекласти, також можна ввести лише частину слова.'
     weight: 3
-    attributes:
-      data-id: edit-string
+    selector: '#edit-string'
   locale-filter:
     id: locale-filter
     plugin: text
     label: 'Фільтрація результатів пошуку'
     body: 'Можна здійснювати пошуку лише за неперекладеними рядками, якщо потрібно перекласти поки неперекладене. Якщо необхідно змінити наявні переклади, можна виконати пошук лише за перекладеними рядками.'
     weight: 4
-    attributes:
-      data-id: edit-translation
+    selector: '#edit-translation'
   locale-submit:
     id: locale-submit
     plugin: text
     label: 'Застосування критерію пошуку'
     body: 'Для застосування вибраного критерію пошуку, натисніть кнопку <em>Фільтр</em>.'
     weight: 5
-    attributes:
-      data-id: edit-submit
+    selector: '#edit-submit'
   locale-translate:
     id: locale-translate
     plugin: text
     label: Перекласти
     body: 'В текстових полях правої колонки можна запропонувати свій власний варіант перекладу. Щоб виконати переклад якомога точніше спробуйте з''ясувати, в якому контексті буде застосовуватись текст.'
     weight: 6
-    attributes:
-      data-class: js-form-type-textarea
+    selector: .js-form-type-textarea
   locale-validate:
     id: locale-validate
     plugin: text
     label: 'Підтвердження перекладу'
     body: 'Після завершення перекладів натисніть кнопку <em>Зберегти переклади</em>. Необхідно зберігати переклади щоразу після зміни сторінки або виконання нового пошуку.'
     weight: 7
-    attributes:
-      data-id: edit-submit--2
+    selector: '#edit-submit--2'
   locale-continue:
     id: locale-continue
     plugin: text
