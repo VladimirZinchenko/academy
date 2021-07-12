@@ -126,7 +126,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Кнопка Завантажити'
           label: ''
           exclude: false
           alter:
@@ -222,11 +222,11 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Кнопки комунікацій'
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"card bg-light mb-5\">\r\n<div class=\"row\">\r\n<div class=\"col-md-6\">\r\n<div class=\"card-body\"><i class=\"h1 text-warning float-left mr-3 mb-0 bi bi-question-circle\">&nbsp;</i>\r\n\r\n<p class=\"h5\">Виникли питання?</p>\r\n\r\n<p class=\"card-text\">Зверніться до організаторів:<span class=\"h5\"> +38 067 751 1110</span></p>\r\n\r\n<ul class=\"list-inline mr-3\">\r\n\t<li class=\"list-inline-item\"><a href=\"viber://chat?number=%2B380677511110\" rel=\"noopener nofollow\"><img alt=\"Call or chat in Viber\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/viber-icon.png\" title=\"Viber\" width=\"32\" /></a></li>\r\n\t<li class=\"list-inline-item\"><a href=\"tel:0677511110\" rel=\"noopener nofollow\"><img alt=\"Call\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/kievstar-icon.png\" title=\"Call\" width=\"32\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-none\"><a href=\"tg://resolve?domain=acousticalligat\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram\" width=\"32\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-inline-block d-none\"><a href=\"https://telegram.me/acousticalligat\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram on PC\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram on PC\" width=\"32\" /></a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-md-6 d-flex align-items-center text-center\">\r\n<div class=\"card-body\"><a class=\"btn btn-warning btn-lg webform-dialog webform-dialog-narrow\" href=\"/form/course-registration\" role=\"button\">Зареєструватись на курс</a></div>\r\n</div>\r\n</div>\r\n</div>"
+            value: "<div class=\"card bg-light mb-5\">\r\n<div class=\"row\">\r\n<div class=\"col-md-6\">\r\n<div class=\"card-body\"><i class=\"h1 text-warning float-left mr-3 mb-0 bi bi-question-circle\">&nbsp;</i>\r\n\r\n<p class=\"h5\">Виникли питання?</p>\r\n\r\n<p class=\"card-text\">Зверніться до організаторів:<span class=\"h5\"> +38 067 751 1110</span></p>\r\n\r\n<ul class=\"list-inline mr-3\">\r\n\t<li class=\"list-inline-item\"><a href=\"viber://chat?number=%2B380677511110\" rel=\"noopener nofollow\"><img alt=\"Call or chat in Viber\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/viber-icon.png\" title=\"Viber\" width=\"32\" /></a></li>\r\n\t<li class=\"list-inline-item\"><a href=\"tel:0677511110\" rel=\"noopener nofollow\"><img alt=\"Call\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/kievstar-icon.png\" title=\"Call\" width=\"32\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-none\"><a href=\"tg://resolve?domain=distillingacademy\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram\" width=\"32\" /></a></li>\r\n\t<li class=\"list-inline-item d-md-inline-block d-none\"><a href=\"https://telegram.me/distillingacademy\" rel=\"noopener nofollow\" target=\"_blank\"><img alt=\"Call or chat in Telegram on PC\" class=\"img-responsive\" height=\"32\" src=\"/sites/default/files/upload/telegram-icon.png\" title=\"Telegram on PC\" width=\"32\" /></a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-md-6 d-flex align-items-center text-center\">\r\n<div class=\"card-body\"><a class=\"btn btn-warning btn-lg webform-dialog webform-dialog-narrow\" href=\"/form/course-registration\" role=\"button\">Зареєструватись на курс</a></div>\r\n</div>\r\n</div>\r\n</div>"
             format: full_html
           plugin_id: text
       empty: {  }

@@ -1,7 +1,7 @@
 features:
-  node_user_picture: 1
-  comment_user_picture: 1
-  comment_user_verification: 1
+  node_user_picture: 0
+  comment_user_picture: 0
+  comment_user_verification: 0
   favicon: 1
 logo:
   use_default: 1
@@ -14,6 +14,7 @@ b4_navbar_schema: dark
 b4_navbar_bg_schema: dark
 b4_footer_schema: dark
 b4_footer_bg_schema: dark
-subtheme_folder: ''
-subtheme_name: ''
-subtheme_machine_name: ''
+subtheme_folder: themes/custom
+subtheme_name: 'B4 subtheme'
+subtheme_machine_name: b4subtheme
+b4_top_container_config: ''

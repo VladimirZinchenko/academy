@@ -420,7 +420,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Features'
           operator: or
           value:
             - 6
@@ -1083,7 +1083,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Кому буде цікаво'
           empty: false
           tokenize: false
           content:
@@ -1520,7 +1520,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Logo'
           operator: or
           value:
             - 10
@@ -1911,7 +1911,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Як це працює'
           empty: false
           tokenize: false
           content:
@@ -1950,7 +1950,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Process'
           operator: or
           value:
             - 11
@@ -2451,7 +2451,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Logo'
           operator: or
           value:
             - 10
@@ -2623,7 +2623,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Освітні партнери курсу'
           empty: false
           tokenize: false
           content:

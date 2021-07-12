@@ -257,7 +257,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Лектори'
           empty: false
           tokenize: false
           content:
@@ -944,7 +944,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Comando'
           operator: or
           value:
             - 12

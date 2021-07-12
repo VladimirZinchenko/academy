@@ -96,6 +96,14 @@
     justify-content: space-between;
   }
 }
+.region.region-footer .navbar-nav {
+  flex-direction: column;
+}
+
+.region.region-footer .navbar {
+  display: block;
+}
+
 footer.footer-dark a {
   color: rgba(255, 255, 255, 0.6) !important;
 }
@@ -343,6 +351,11 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
   color: rgba(255, 255, 255, 0.75);
 }
 
+@media (max-width: 767px) {
+  .navbar-expand .navbar-nav {
+    flex-direction: column !important;
+  }
+}
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

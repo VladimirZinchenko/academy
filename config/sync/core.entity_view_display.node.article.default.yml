@@ -37,14 +37,6 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
   links:
     weight: 3
     region: content
@@ -53,4 +45,5 @@ content:
 hidden:
   comment: true
   field_metatags: true
+  field_tags: true
   langcode: true

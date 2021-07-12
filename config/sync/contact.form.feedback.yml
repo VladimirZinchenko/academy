@@ -8,6 +8,7 @@ id: feedback
 label: 'Зворотний зв''язок вебсайту'
 recipients:
   - acoustic@alligat.com.ua
+  - craft.spirits.ua@gmail.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

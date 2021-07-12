@@ -281,7 +281,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Партнери'
           empty: false
           tokenize: false
           content:
@@ -294,7 +294,7 @@ display:
           field: view
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Блок Лектори'
           empty: false
           view_to_insert: 'mods:block_3'
           inherit_arguments: false
@@ -305,7 +305,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Новини галузі'
           empty: false
           tokenize: false
           content:
@@ -319,7 +319,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Блок Контакти'
           empty: false
           tokenize: false
           content:
@@ -332,7 +332,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Зворотний зв''язок'
           empty: false
           tokenize: false
           content:
@@ -345,7 +345,7 @@ display:
           field: entity_paragraph
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Не визначились з курсом?'
           empty: false
           tokenize: true
           target: f48751ef-17e5-4e07-bedc-bec06c4c3f3a

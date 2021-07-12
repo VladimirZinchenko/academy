@@ -836,7 +836,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Блок з лого'
           empty: false
           tokenize: false
           content:
@@ -849,7 +849,7 @@ display:
           field: view
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Блок Кому буде цікаво?'
           empty: false
           view_to_insert: 'mods:block_1'
           inherit_arguments: true
@@ -860,7 +860,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Заголовок Навчальні програми та курси'
           empty: false
           tokenize: false
           content:
@@ -923,8 +923,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: card-img
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1401,7 +1401,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Кнопка Переглянути всі курси'
           empty: false
           tokenize: false
           content:
@@ -1589,7 +1589,7 @@ display:
           field: entity_paragraph
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Залишились питання?'
           empty: false
           tokenize: true
           target: f48751ef-17e5-4e07-bedc-bec06c4c3f3a

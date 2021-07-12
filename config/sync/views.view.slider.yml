@@ -437,7 +437,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Home'
           operator: or
           value:
             - 7
@@ -575,7 +575,7 @@ display:
           field: field_tags_target_id
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Теґи Courses'
           operator: or
           value:
             - 8
