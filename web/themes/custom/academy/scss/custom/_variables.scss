@@ -40,9 +40,9 @@ height: auto;
 }
 
 //Кнопка быстрого редактирования во вьюз
-.contextual-region.view .contextual:first-child {
-right: 20px;
-}
+//.contextual-region.view .contextual:first-child {
+//right: 20px;
+//}
 
 //Заголовки в тизерах
 .views-view-grid h2 {
@@ -91,14 +91,6 @@ justify-content: space-between;
 }
 }
 
-.region.region-footer .navbar-nav {
-flex-direction: column;
-}
-
-.region.region-footer .navbar {
-display: block;
-}
-
 footer.footer-dark a {
 color: rgba(255, 255, 255, 0.6) !important;
 &:hover {
@@ -121,9 +113,9 @@ margin-right: 0.75rem;
 }
 
 //Navbar (временно)
-.navbar-dark .navbar-nav .show .nav-link {
-color: inherit;
-}
+//.navbar-dark .navbar-nav .show .nav-link {
+//color: inherit;
+//}
 
 .navbar-dark .social {
 margin-bottom: 0;
@@ -334,9 +326,9 @@ a:focus {
 color: rgba(255, 255, 255, 0.75);
 }
 }
-
-@media (max-width: 767px) {
-.navbar-expand .navbar-nav {
-flex-direction: column !important;
-}
-}
+//Косяки в мобильной версии навбара
+//@media (max-width: 767px) {
+//.navbar-expand .navbar-nav {
+//flex-direction: column !important;
+//}
+//}

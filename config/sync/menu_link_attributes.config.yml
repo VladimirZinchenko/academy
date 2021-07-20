@@ -8,3 +8,4 @@ attributes:
   target:
     label: Target
     description: 'Set target'
+langcode: uk

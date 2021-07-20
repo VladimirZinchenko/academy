@@ -23,7 +23,7 @@ _core:
 id: lecturers
 label: Лектори
 module: node
-description: 'Лектори Академії. Сторінка, блок на Головній, блок на сторінці Курсів.'
+description: 'Лектори, спікери та куратори Академії Дистиляції'
 tag: default
 base_table: node_field_data
 base_field: nid

@@ -13,8 +13,6 @@ dependencies:
     - node.type.course
     - system.menu.main
     - views.view.mods
-  content:
-    - 'paragraph:feedback:f48751ef-17e5-4e07-bedc-bec06c4c3f3a'
   module:
     - advanced_text_formatter
     - datetime
@@ -26,7 +24,7 @@ dependencies:
 id: courses
 label: Курси
 module: views
-description: 'Курси Академії. Сторінка, блок на Головній.'
+description: 'Освітні програми та навчальні курси Академії Дистиляції'
 tag: ''
 base_table: node_field_data
 base_field: nid
