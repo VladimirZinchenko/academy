@@ -11,8 +11,8 @@ dependencies:
     - node.type.slide
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:c6f47dc5-4afb-41ee-838b-45b123654200'
-    - 'taxonomy_term:tags:fcaf7926-47ce-4c02-b2a9-7329825f9a64'
+    - 'taxonomy_term:tags:34c51e91-ef24-4f2a-9731-d4c14847e8ad'
+    - 'taxonomy_term:tags:b86870a4-998a-4cda-bac7-4968ee71fa87'
   module:
     - image
     - link
@@ -440,7 +440,7 @@ display:
           admin_label: 'Теґи Home'
           operator: or
           value:
-            - 7
+            - 5
           group: 1
           exposed: false
           expose:
@@ -578,7 +578,7 @@ display:
           admin_label: 'Теґи Courses'
           operator: or
           value:
-            - 8
+            - 3
           group: 1
           exposed: false
           expose:

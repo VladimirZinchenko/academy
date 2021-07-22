@@ -13,6 +13,8 @@ dependencies:
     - node.type.course
     - system.menu.main
     - views.view.mods
+  content:
+    - 'paragraph:feedback:c25fc5ab-9ecf-46c6-955f-63e23db66b39'
   module:
     - advanced_text_formatter
     - datetime
@@ -1590,7 +1592,7 @@ display:
           admin_label: 'Залишились питання?'
           empty: false
           tokenize: true
-          target: f48751ef-17e5-4e07-bedc-bec06c4c3f3a
+          target: c25fc5ab-9ecf-46c6-955f-63e23db66b39
           view_mode: default
           bypass_access: false
           plugin_id: entity

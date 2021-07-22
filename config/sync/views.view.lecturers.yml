@@ -10,7 +10,7 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:4db29d2f-ba1f-4edb-9b37-8b53a35a68bb'
+    - 'taxonomy_term:tags:a13cb42f-1d0b-4a5b-b038-7b4500ae0718'
   module:
     - image
     - node
@@ -947,7 +947,7 @@ display:
           admin_label: 'Теґи Comando'
           operator: or
           value:
-            - 12
+            - 8
           group: 1
           exposed: false
           expose:

@@ -12,9 +12,9 @@ dependencies:
     - node.type.mod
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:1ea7b1c1-22d1-43b9-bb4c-eb2dbb0315a8'
-    - 'taxonomy_term:tags:29c085ed-3427-4244-809f-3596d3ef21fa'
-    - 'taxonomy_term:tags:e4fadcb6-3b64-422f-88bc-a2cd6a02a54c'
+    - 'taxonomy_term:tags:070c068f-af7d-4c17-8d4c-10061a08a82e'
+    - 'taxonomy_term:tags:1ce8b7ec-2f46-4ff8-9820-9f6463547459'
+    - 'taxonomy_term:tags:def20f15-7793-42d0-8343-576ce7082376'
   module:
     - image
     - link
@@ -423,7 +423,7 @@ display:
           admin_label: 'Теґи Features'
           operator: or
           value:
-            - 6
+            - 2
           group: 1
           exposed: false
           expose:
@@ -1523,7 +1523,7 @@ display:
           admin_label: 'Теґи Logo'
           operator: or
           value:
-            - 10
+            - 6
           group: 1
           exposed: false
           expose:
@@ -1953,7 +1953,7 @@ display:
           admin_label: 'Теґи Process'
           operator: or
           value:
-            - 11
+            - 7
           group: 1
           exposed: false
           expose:
@@ -2454,7 +2454,7 @@ display:
           admin_label: 'Теґи Logo'
           operator: or
           value:
-            - 10
+            - 6
           group: 1
           exposed: false
           expose:

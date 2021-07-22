@@ -1,0 +1,25 @@
+uuid: c9c94bf3-b696-46d1-bb68-2a74ae8c5b92
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
+  module:
+    - block_content
+  theme:
+    - academy
+id: bottomcontact
+theme: academy
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
+settings:
+  id: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
+  label: 'Bottom contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

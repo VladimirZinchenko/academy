@@ -1,4 +1,4 @@
-uuid: 7eae233c-2484-44f6-b826-a3f33640f60c
+uuid: b3055683-41de-42bf-8a12-2bc2ab64cb6e
 langcode: uk
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__lecturers_block_3
 theme: academy
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'views_block:lecturers-block_3'
 settings:
@@ -21,7 +21,7 @@ settings:
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: '12'
+  items_per_page: none
 visibility:
   request_path:
     id: request_path
