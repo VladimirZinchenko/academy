@@ -310,7 +310,9 @@ display:
         type: views_query
         options: {  }
       path: taxonomy/term/%
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
     cache_metadata:
       contexts:
         - 'languages:language_interface'
