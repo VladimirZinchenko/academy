@@ -1,8 +1,0 @@
-uuid: 9821cdd9-f341-40af-896b-fb67db1aee70
-langcode: uk
-status: true
-dependencies: {  }
-id: node__lecturer
-label: 'Content: Лектор'
-tags:
-  robots: noindex

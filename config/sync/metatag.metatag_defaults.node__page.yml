@@ -1,0 +1,7 @@
+uuid: c96b1657-3572-46d7-bf26-93af14bbbdd0
+langcode: uk
+status: true
+dependencies: {  }
+id: node__page
+label: 'Content: Проста сторінка'
+tags: {  }

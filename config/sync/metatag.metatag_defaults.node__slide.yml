@@ -1,8 +1,0 @@
-uuid: 54e7874b-d943-4825-a043-725c9ccc1d6f
-langcode: uk
-status: true
-dependencies: {  }
-id: node__slide
-label: 'Content: Слайд'
-tags:
-  robots: noindex

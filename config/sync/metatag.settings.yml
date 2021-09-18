@@ -1,0 +1,10 @@
+entity_type_groups:
+  node:
+    article:
+      open_graph: open_graph
+      schema_article: schema_article
+    course:
+      open_graph: open_graph
+      schema_course: schema_course
+    page:
+      advanced: advanced

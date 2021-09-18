@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0071f219d932d309226fc0eb52f353e1",
+    "content-hash": "77b9dcd5d63dc970efbb5703d9fae8f1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -112,16 +112,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.11.0",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "ae03311f45dfe194412081526be2e003960df74b"
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/ae03311f45dfe194412081526be2e003960df74b",
-                "reference": "ae03311f45dfe194412081526be2e003960df74b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
                 "shasum": ""
             },
             "require": {
@@ -220,6 +220,7 @@
                 "modx",
                 "moodle",
                 "osclass",
+                "pantheon",
                 "phpbb",
                 "piwik",
                 "ppi",
@@ -254,7 +255,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-28T06:42:17+00:00"
+            "time": "2021-09-13T08:19:44+00:00"
         },
         {
             "name": "composer/semver",
@@ -1750,17 +1751,17 @@
         },
         {
             "name": "drupal/advanced_text_formatter",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/advanced_text_formatter.git",
-                "reference": "2.1.0"
+                "reference": "2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/advanced_text_formatter-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "552df10e4a03c47ba6f0e6762426c5208a224fd4"
+                "url": "https://ftp.drupal.org/files/projects/advanced_text_formatter-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "c656349ce20bf6ca1f561b18bd223a993700bc6f"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -1768,8 +1769,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1631014827",
+                    "version": "2.1.1",
+                    "datestamp": "1631794804",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1848,16 +1849,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.2.5",
+            "version": "9.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "96bb4da48ed4d5892247b8afed55ca3db9bc47f6"
+                "reference": "c51e9d9e28c08e284ff57ca42504cfe0ec9522db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/96bb4da48ed4d5892247b8afed55ca3db9bc47f6",
-                "reference": "96bb4da48ed4d5892247b8afed55ca3db9bc47f6",
+                "url": "https://api.github.com/repos/drupal/core/zipball/c51e9d9e28c08e284ff57ca42504cfe0ec9522db",
+                "reference": "c51e9d9e28c08e284ff57ca42504cfe0ec9522db",
                 "shasum": ""
             },
             "require": {
@@ -2095,11 +2096,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2021-09-01T21:51:44+00:00"
+            "time": "2021-09-14T22:07:47+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.2.5",
+            "version": "9.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2146,7 +2147,7 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.2.5",
+            "version": "9.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -2184,16 +2185,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.2.5",
+            "version": "9.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "a6738810628a3ee04a49265191b43b2b2de5aa60"
+                "reference": "e9bbd6d45dddc02157ea675b557c604feb31c80d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a6738810628a3ee04a49265191b43b2b2de5aa60",
-                "reference": "a6738810628a3ee04a49265191b43b2b2de5aa60",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/e9bbd6d45dddc02157ea675b557c604feb31c80d",
+                "reference": "e9bbd6d45dddc02157ea675b557c604feb31c80d",
                 "shasum": ""
             },
             "require": {
@@ -2202,7 +2203,7 @@
                 "doctrine/annotations": "1.13.1",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.2.5",
+                "drupal/core": "9.2.6",
                 "egulias/email-validator": "2.1.25",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.4.1",
@@ -2264,7 +2265,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2021-09-01T21:51:44+00:00"
+            "time": "2021-09-14T22:07:47+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -2861,6 +2862,60 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/schema_metatag",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/schema_metatag.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "dac50842bcac35607b0be8e28518e08fa3f6b66f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/metatag": "^1.0"
+            },
+            "require-dev": {
+                "drupal/metatag_views": "*",
+                "drupal/schema_article": "*",
+                "drupal/schema_organization": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1599905688",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                }
+            ],
+            "description": "Metatag implementation of Schema.org structured data (JSON-LD)",
+            "homepage": "https://www.drupal.org/project/schema_metatag",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/schema_metatag",
+                "issues": "https://www.drupal.org/project/issues/schema_metatag"
             }
         },
         {
@@ -3560,17 +3615,17 @@
         },
         {
             "name": "drupal/xmlsitemap",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xmlsitemap.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "29395aa9eea8a58edefa3f9e0999d4d3a7f6b08f"
+                "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f8b0a9c44931afc70ea908506ab6595d2468538f"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3586,8 +3641,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1593451044",
+                    "version": "8.x-1.1",
+                    "datestamp": "1631307009",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
