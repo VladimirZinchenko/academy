@@ -1574,6 +1574,8 @@ display:
         metatag_display_extender:
           metatags:
             description: '[view:description]'
+            og_title: '[current-page:title]'
+            og_description: '[view:description]'
       path: courses
       menu:
         type: normal

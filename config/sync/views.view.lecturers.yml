@@ -1007,6 +1007,8 @@ display:
         metatag_display_extender:
           metatags:
             description: '[view:description]'
+            og_title: '[current-page:title]'
+            og_description: '[view:description]'
       defaults:
         query: true
         arguments: false
