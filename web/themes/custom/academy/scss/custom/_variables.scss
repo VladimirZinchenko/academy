@@ -278,6 +278,7 @@ width: 50%;
 & .webform-submission-consultation-form {
 padding: 2rem;
 z-index: 1;
+position: relative;
 @media (min-width: 768px) {
 padding-right: 4rem;
 }
