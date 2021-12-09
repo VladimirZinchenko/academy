@@ -43,6 +43,7 @@
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
         "drupal/xmlsitemap": "^1.0",
+        "drupal/youtube": "^1.2",
         "drush/drush": "^10.4"
     },
     "conflict": {
