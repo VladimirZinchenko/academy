@@ -39,7 +39,7 @@
         "drupal/twig_tweak": "^3.0",
         "drupal/views_bootstrap": "^4.3",
         "drupal/views_bulk_edit": "^2.5",
-        "drupal/views_bulk_operations": "^3.10",
+        "drupal/views_bulk_operations": "^4.1",
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
         "drupal/xmlsitemap": "^1.0",
@@ -52,7 +52,12 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
