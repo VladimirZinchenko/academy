@@ -254,6 +254,30 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
   background-image: url("/sites/default/files/upload/filler-12.jpg");
 }
 
+.filler-13 {
+  background-image: url("/sites/default/files/upload/filler-13.jpg");
+}
+
+.filler-14 {
+  background-image: url("/sites/default/files/upload/filler-14.jpg");
+}
+
+.filler-15 {
+  background-image: url("/sites/default/files/upload/filler-15.jpg");
+}
+
+.filler-16 {
+  background-image: url("/sites/default/files/upload/filler-16.jpg");
+}
+
+.filler-17 {
+  background-image: url("/sites/default/files/upload/filler-17.jpg");
+}
+
+.filler-18 {
+  background-image: url("/sites/default/files/upload/filler-18.jpg");
+}
+
 .paragraph--type--feedback {
   display: flex;
   flex-direction: column;
@@ -337,9 +361,9 @@ ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 /*!
- * Bootstrap v4.6.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
+ * Bootstrap v4.6.2 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
@@ -801,7 +825,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 0.875em;
   font-weight: 400;
 }
 
@@ -840,7 +864,7 @@ mark,
 
 .blockquote-footer {
   display: block;
-  font-size: 80%;
+  font-size: 0.875em;
   color: #6c757d;
 }
 .blockquote-footer::before {
@@ -2513,7 +2537,7 @@ textarea.form-control {
   display: none;
   width: 100%;
   margin-top: 0;
-  font-size: 80%;
+  font-size: 0.875em;
   color: #008a00;
 }
 
@@ -2614,7 +2638,7 @@ textarea.form-control {
   display: none;
   width: 100%;
   margin-top: 0;
-  font-size: 80%;
+  font-size: 0.875em;
   color: #dc3545;
 }
 
@@ -3305,6 +3329,11 @@ input[type=button].btn-block {
   overflow: hidden;
   transition: height 0.35s ease;
 }
+.collapsing.width {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
 
 .dropup,
 .dropright,
@@ -3862,7 +3891,7 @@ input[type=button].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -3916,7 +3945,7 @@ input[type=button].btn-block {
   pointer-events: none;
   content: "";
   background-color: #fff;
-  border: #adb5bd solid 1px;
+  border: 1px solid #adb5bd;
 }
 .custom-control-label::after {
   position: absolute;
@@ -4252,11 +4281,13 @@ input[type=button].btn-block {
 }
 .nav-tabs .nav-link {
   margin-bottom: -1px;
+  background-color: transparent;
   border: 1px solid transparent;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  isolation: isolate;
   border-color: #e9ecef #e9ecef #dee2e6;
 }
 .nav-tabs .nav-link.disabled {
@@ -4277,6 +4308,8 @@ input[type=button].btn-block {
 }
 
 .nav-pills .nav-link {
+  background: none;
+  border: 0;
   border-radius: 0;
 }
 .nav-pills .nav-link.active,
@@ -5916,8 +5949,8 @@ a.close.disabled {
   text-transform: none;
   letter-spacing: normal;
   word-break: normal;
-  word-spacing: normal;
   white-space: normal;
+  word-spacing: normal;
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
@@ -6018,8 +6051,8 @@ a.close.disabled {
   text-transform: none;
   letter-spacing: normal;
   word-break: normal;
-  word-spacing: normal;
   white-space: normal;
+  word-spacing: normal;
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
@@ -6314,7 +6347,7 @@ a.close.disabled {
   width: 2rem;
   height: 2rem;
   vertical-align: -0.125em;
-  border: 0.25em solid currentColor;
+  border: 0.25em solid currentcolor;
   border-right-color: transparent;
   border-radius: 50%;
   animation: 0.75s linear infinite spinner-border;
@@ -6340,7 +6373,7 @@ a.close.disabled {
   width: 2rem;
   height: 2rem;
   vertical-align: -0.125em;
-  background-color: currentColor;
+  background-color: currentcolor;
   border-radius: 50%;
   opacity: 0;
   animation: 0.75s linear infinite spinner-grow;
