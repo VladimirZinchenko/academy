@@ -12,6 +12,12 @@ border-radius: 50%;
 padding: 2rem;
 }
 
+
+ol, ul, dl {
+@media (max-width: 768px){
+padding-left: 1rem;
+}
+}
 //Брендинг
 .navbar-brand .site-title {
 font-size: 1.25rem !important;

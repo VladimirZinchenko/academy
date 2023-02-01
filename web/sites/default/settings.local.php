@@ -1,6 +1,6 @@
 <?php
 
-// @codingStandardsIgnoreFile
+// phpcs:ignoreFile
 
 /**
  * @file
@@ -38,7 +38,7 @@ assert_options(ASSERT_ACTIVE, TRUE);
 /**
  * Enable local development services.
  */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';
 
 /**
  * Show all error messages, with backtrace information.
@@ -66,7 +66,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  *
  * Only use this setting once the site has been installed.
  */
- $settings['cache']['bins']['render'] = 'cache.backend.null';
+# $settings['cache']['bins']['render'] = 'cache.backend.null';
 
 /**
  * Disable caching for migrations.
@@ -88,7 +88,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  *
  * Only use this setting once the site has been installed.
  */
- $settings['cache']['bins']['page'] = 'cache.backend.null';
+# $settings['cache']['bins']['page'] = 'cache.backend.null';
 
 /**
  * Disable Dynamic Page Cache.
@@ -97,7 +97,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * cacheability metadata is present (and hence the expected behavior). However,
  * in the early stages of development, you may want to disable it.
  */
- $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+# $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 /**
  * Allow test modules and themes to be installed.
@@ -130,37 +130,26 @@ $settings['rebuild_access'] = TRUE;
  */
 $settings['skip_permissions_hardening'] = TRUE;
 
-
-#if (stripos($_SERVER['VIRTUAL_HOST'], '.docksal')) {
-#  // Docksal DB connection settings.
-#  $databases['default']['default'] = [
-#    'database' => 'default',
-#    'username' => getenv('MYSQL_USER'),
-#    'password' => getenv('MYSQL_PASSWORD'),
-#    'host' => 'db',
-#    'driver' => 'mysql',
-#  ];
-#}
-
-
-// Workaround for permission issues with NFS shares
-$settings['file_chmod_directory'] = 0777;
-$settings['file_chmod_file'] = 0666;
-
-# File system settings.
-$config['system.file']['path']['temporary'] = '/tmp';
-
-// Reverse proxy configuration (Docksal vhost-proxy)
-if (PHP_SAPI !== 'cli') {
-	$settings['reverse_proxy'] = TRUE;
-	$settings['reverse_proxy_addresses'] = array($_SERVER['REMOTE_ADDR']);
-	// HTTPS behind reverse-proxy
-	if (
-		isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' &&
-		!empty($settings['reverse_proxy']) && in_array($_SERVER['REMOTE_ADDR'], $settings['reverse_proxy_addresses'])
-	) {
-		$_SERVER['HTTPS'] = 'on';
-		// This is hardcoded because there is no header specifying the original port.
-		$_SERVER['SERVER_PORT'] = 443;
-	}
-}
+/**
+ * Exclude modules from configuration synchronization.
+ *
+ * On config export sync, no config or dependent config of any excluded module
+ * is exported. On config import sync, any config of any installed excluded
+ * module is ignored. In the exported configuration, it will be as if the
+ * excluded module had never been installed. When syncing configuration, if an
+ * excluded module is already installed, it will not be uninstalled by the
+ * configuration synchronization, and dependent configuration will remain
+ * intact. This affects only configuration synchronization; single import and
+ * export of configuration are not affected.
+ *
+ * Drupal does not validate or sanity check the list of excluded modules. For
+ * instance, it is your own responsibility to never exclude required modules,
+ * because it would mean that the exported configuration can not be imported
+ * anymore.
+ *
+ * This is an advanced feature and using it means opting out of some of the
+ * guarantees the configuration synchronization provides. It is not recommended
+ * to use this feature with modules that affect Drupal in a major way such as
+ * the language or field module.
+ */
+# $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
