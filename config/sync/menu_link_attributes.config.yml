@@ -1,3 +1,4 @@
+langcode: uk
 attributes:
   rel:
     label: Relation
@@ -8,4 +9,3 @@ attributes:
   target:
     label: Target
     description: 'Set target'
-langcode: uk

@@ -1,0 +1,7 @@
+uuid: 6f76d2e1-4746-43ef-a56b-68d9098a1df8
+langcode: uk
+status: true
+dependencies: {  }
+formId: webform_submission_course_registration_add_form
+captchaType: captcha/Math
+label: webform_submission_course_registration_add_form

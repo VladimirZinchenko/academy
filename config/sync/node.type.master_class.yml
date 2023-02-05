@@ -1,0 +1,18 @@
+uuid: 5cb97733-d906-4e9f-8328-8f6800512608
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Майстер клас'
+type: master_class
+description: 'Майстер клас, вебінар, лекція'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

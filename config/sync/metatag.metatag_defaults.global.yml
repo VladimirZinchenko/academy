@@ -7,10 +7,10 @@ _core:
 id: global
 label: Global
 tags:
-  canonical_url: '[current-page:url]'
-  title: '[current-page:title] | [site:name]'
   article_author: UkrainianDistillationAcademy
   article_publisher: '[site:name]'
+  canonical_url: '[current-page:url]'
+  facebook_domain_verification: d11ku8eq924zgj1kso9bckf4zy6mn3
   og_country_name: Україна
   og_email: kate.lev99@gmail.com
   og_image: 'https://distillingacademy.com.ua/sites/default/files/upload/schema-image.jpg'
@@ -34,8 +34,8 @@ tags:
   schema_organization_logo: 'a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:75:"https://distillingacademy.com.ua/sites/default/files/upload/schema-logo.png";s:5:"width";s:4:"1558";s:6:"height";s:4:"1558";}'
   schema_organization_name: '[site:name]'
   schema_organization_opening_hours_specification: 'a:4:{s:5:"@type";s:25:"OpeningHoursSpecification";s:9:"dayOfWeek";s:9:"1.2.3.4.5";s:5:"opens";s:8:"10:00:00";s:6:"closes";s:8:"18:00:00";}'
-  schema_organization_price_range: $$
   schema_organization_same_as: 'https://www.facebook.com/UkrainianDistillationAcademy'
   schema_organization_telephone: '+380677511110'
   schema_organization_type: EducationalOrganization
   schema_organization_url: 'https://distillingacademy.com.ua/'
+  title: '[current-page:title] | [site:name]'

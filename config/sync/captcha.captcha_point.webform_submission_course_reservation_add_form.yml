@@ -1,0 +1,7 @@
+uuid: 657372d5-7288-4422-b7c3-30effd6ee197
+langcode: uk
+status: true
+dependencies: {  }
+formId: webform_submission_course_reservation_add_form
+captchaType: captcha/Math
+label: webform_submission_course_reservation_add_form

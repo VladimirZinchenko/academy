@@ -21,27 +21,29 @@ bundle: mod
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_ico:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   field_image_mod:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: square
       image_link: ''
+      image_style: square
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
 hidden:
   field_link: true

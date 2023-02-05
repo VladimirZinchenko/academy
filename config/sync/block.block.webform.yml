@@ -12,19 +12,19 @@ dependencies:
 id: webform
 theme: academy
 region: content
-weight: 1
+weight: -1
 provider: null
 plugin: webform_block
 settings:
   id: webform_block
   label: 'Зворотний зв''язок'
+  label_display: visible
   provider: webform
-  label_display: '0'
   webform_id: contact
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: /contacts
     negate: false
+    pages: /contacts

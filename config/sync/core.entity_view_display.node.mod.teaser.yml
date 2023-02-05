@@ -22,38 +22,40 @@ bundle: mod
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 2
     region: content
   field_ico:
     type: text_default
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_image_mod:
     type: image
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: square
       image_link: ''
+      image_style: square
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_tags:
     type: entity_reference_entity_view
-    weight: 3
-    region: content
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   field_link: true
   field_metatags: true

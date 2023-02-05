@@ -1,0 +1,7 @@
+uuid: 4e4f3d19-7291-48f4-bf4d-d4e23601fcc3
+langcode: uk
+status: false
+dependencies: {  }
+formId: node_mod_form
+captchaType: default
+label: node_mod_form

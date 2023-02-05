@@ -1,0 +1,23 @@
+uuid: 30953c9c-61a5-49a5-827a-7dc2522e0dee
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.master_class
+  module:
+    - metatag
+id: node.master_class.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: master_class
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:6:{s:33:"schema_organization_contact_point";s:343:"a:7:{s:5:"@type";s:12:"ContactPoint";s:9:"telephone";s:13:"+380677511110";s:17:"availableLanguage";s:27:"English, Russian, Ukrainian";s:11:"contactType";s:16:"customer service";s:13:"contactOption";s:8:"TollFree";s:5:"email";s:26:"craft.spirits.ua@gmail.com";s:10:"areaServed";a:2:{s:5:"@type";s:7:"Country";s:4:"name";s:14:"Україна";}}";s:25:"schema_organization_image";s:178:"a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:76:"https://distillingacademy.com.ua/sites/default/files/upload/schema-image.jpg";s:5:"width";s:4:"1920";s:6:"height";s:4:"1280";}";s:24:"schema_organization_logo";s:177:"a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:75:"https://distillingacademy.com.ua/sites/default/files/upload/schema-logo.png";s:5:"width";s:4:"1558";s:6:"height";s:4:"1558";}";s:47:"schema_organization_opening_hours_specification";s:138:"a:4:{s:5:"@type";s:25:"OpeningHoursSpecification";s:9:"dayOfWeek";s:9:"1.2.3.4.5";s:5:"opens";s:8:"10:00:00";s:6:"closes";s:8:"18:00:00";}";s:27:"schema_organization_address";s:203:"a:5:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:22:"Радунська, 20";s:15:"addressLocality";s:9:"Київ ";s:10:"postalCode";s:5:"02034";s:14:"addressCountry";s:14:"Україна";}";s:23:"schema_organization_geo";s:122:"a:3:{s:5:"@type";s:14:"GeoCoordinates";s:8:"latitude";s:18:"50.522374032659954";s:9:"longitude";s:17:"30.59923136441814";}";}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

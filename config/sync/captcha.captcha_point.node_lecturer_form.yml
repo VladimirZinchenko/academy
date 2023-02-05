@@ -1,0 +1,7 @@
+uuid: 3c8e7013-fefe-4491-8dad-edcff2d0479d
+langcode: uk
+status: false
+dependencies: {  }
+formId: node_lecturer_form
+captchaType: default
+label: node_lecturer_form

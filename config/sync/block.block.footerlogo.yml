@@ -17,8 +17,8 @@ plugin: 'block_content:71711f0b-cb53-4f69-8f12-030664741604'
 settings:
   id: 'block_content:71711f0b-cb53-4f69-8f12-030664741604'
   label: 'Footer logo'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

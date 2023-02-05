@@ -1,0 +1,21 @@
+uuid: c6e6cf13-01f3-49ee-99fd-10cd2ac7640f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_start
+    - node.type.master_class
+  module:
+    - datetime
+id: node.master_class.field_date_start
+field_name: field_date_start
+entity_type: node
+bundle: master_class
+label: 'Старт класу'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

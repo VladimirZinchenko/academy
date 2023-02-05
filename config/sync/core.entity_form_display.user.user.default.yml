@@ -45,13 +45,13 @@ content:
     third_party_settings: {  }
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
-      preview_image_style: thumbnail
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings:
       imce:
         enabled: true
-    weight: -1
-    region: content
 hidden:
   langcode: true

@@ -1,0 +1,7 @@
+uuid: f981620a-a0af-4b40-940b-2eb7fd545f7a
+langcode: uk
+status: true
+dependencies: {  }
+formId: webform_submission_make_request_add_form
+captchaType: captcha/Math
+label: webform_submission_make_request_add_form

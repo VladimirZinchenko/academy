@@ -24,8 +24,7 @@ mode: teaser
 content:
   body:
     type: advanced_text
-    weight: 1
-    region: content
+    label: hidden
     settings:
       trim_length: '200'
       ellipsis: '1'
@@ -51,21 +50,24 @@ content:
       token_replace: 0
       autop: 0
     third_party_settings: {  }
-    label: hidden
+    weight: 1
+    region: content
   field_image:
     type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings:
-      image_style: teaser
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
   links:
-    weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   comment: true
   field_metatags: true

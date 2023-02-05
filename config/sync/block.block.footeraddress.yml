@@ -17,8 +17,8 @@ plugin: 'block_content:eb1c1088-c10c-4fe3-95cf-0f3e376003ab'
 settings:
   id: 'block_content:eb1c1088-c10c-4fe3-95cf-0f3e376003ab'
   label: 'Footer address'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

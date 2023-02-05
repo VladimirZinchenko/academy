@@ -1,0 +1,11 @@
+uuid: 23747fa5-74f2-4ad4-ba0f-0230d48c0330
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.master_class
+id: node.master_class
+target_entity_type_id: node
+target_bundle: master_class
+default_langcode: site_default
+language_alterable: false

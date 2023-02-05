@@ -1,0 +1,19 @@
+uuid: 8b9bf93a-da4d-435d-85ad-f11ce43929ca
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_class_duration
+    - node.type.master_class
+id: node.master_class.field_class_duration
+field_name: field_class_duration
+entity_type: node
+bundle: master_class
+label: 'Тривалість класу'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

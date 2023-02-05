@@ -13,10 +13,10 @@ bundle: text
 mode: default
 content:
   field_body:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
 hidden: {  }

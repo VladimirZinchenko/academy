@@ -1,0 +1,38 @@
+uuid: d33a00aa-de00-458d-a6d1-dcb8b8a91c26
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.master_class
+  module:
+    - entity_reference_revisions
+id: node.master_class.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: master_class
+label: Paragraph
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      feedback:
+        weight: 5
+        enabled: false
+      text:
+        weight: 6
+        enabled: false
+      views_reference_field:
+        weight: 7
+        enabled: false
+      webform:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

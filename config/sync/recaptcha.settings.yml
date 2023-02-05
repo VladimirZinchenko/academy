@@ -1,0 +1,13 @@
+_core:
+  default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0
+langcode: uk
+site_key: 6LfWNyEUAAAAAKi2SzhfAuyAXEJ8tsUJctZSEKpR
+secret_key: 6LfWNyEUAAAAALxcYAX_AlZ8Hk28RGqAN19vwqnL
+verify_hostname: false
+use_globally: false
+widget:
+  theme: light
+  type: image
+  size: ''
+  tabindex: 0
+  noscript: false

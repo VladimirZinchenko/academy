@@ -11,14 +11,14 @@ dependencies:
 id: bottomcontact
 theme: academy
 region: content
-weight: 2
+weight: 0
 provider: null
 plugin: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
 settings:
   id: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
   label: 'Bottom contact'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

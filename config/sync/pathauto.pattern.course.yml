@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'courses/[node:title]'
 selection_criteria:
   8b6f0a9d-df1f-4bcc-b98b-93124d6f5443:
-    id: node_type
-    bundles:
-      course: course
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 8b6f0a9d-df1f-4bcc-b98b-93124d6f5443
     context_mapping:
       node: node
-    uuid: 8b6f0a9d-df1f-4bcc-b98b-93124d6f5443
+    bundles:
+      course: course
 selection_logic: and
 weight: -5
 relationships: {  }

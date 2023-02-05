@@ -1,0 +1,5 @@
+title: Registration
+description: 'A registration webform template.'
+elements: |
+  actions:
+    '#submit__label': Register

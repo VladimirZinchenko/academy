@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'shop/[node:title]'
 selection_criteria:
   7445f82d-ac7b-4cea-aaa7-c6673a78c787:
-    id: node_type
-    bundles:
-      product: product
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 7445f82d-ac7b-4cea-aaa7-c6673a78c787
     context_mapping:
       node: node
-    uuid: 7445f82d-ac7b-4cea-aaa7-c6673a78c787
+    bundles:
+      product: product
 selection_logic: and
 weight: -5
 relationships: {  }

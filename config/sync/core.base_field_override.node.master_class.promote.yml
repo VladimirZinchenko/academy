@@ -1,0 +1,22 @@
+uuid: db9e9971-6383-447c-a7d8-22496b49f518
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.master_class
+id: node.master_class.promote
+field_name: promote
+entity_type: node
+bundle: master_class
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

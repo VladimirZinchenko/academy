@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.course.field_paragraph
     - field.field.node.course.field_partner
     - field.field.node.course.field_price
+    - field.field.node.course.field_youtube
     - image.style.wide
     - node.type.course
   module:
@@ -29,29 +30,31 @@ bundle: course
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_image_course:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: wide
       image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_date_end: true
@@ -64,5 +67,6 @@ hidden:
   field_metatags: true
   field_partner: true
   field_price: true
+  field_youtube: true
   langcode: true
   links: true

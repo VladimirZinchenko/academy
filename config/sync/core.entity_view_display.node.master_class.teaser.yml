@@ -1,0 +1,51 @@
+uuid: c6778e5d-f0be-44ee-98b3-62671effca79
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.master_class.body
+    - field.field.node.master_class.field_class_duration
+    - field.field.node.master_class.field_date_start
+    - field.field.node.master_class.field_format
+    - field.field.node.master_class.field_image_class
+    - field.field.node.master_class.field_lecturer
+    - field.field.node.master_class.field_metatags
+    - field.field.node.master_class.field_paragraph
+    - field.field.node.master_class.field_price
+    - field.field.node.master_class.field_start_time
+    - field.field.node.master_class.field_tags
+    - node.type.master_class
+  module:
+    - text
+    - user
+id: node.master_class.teaser
+targetEntityType: node
+bundle: master_class
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_class_duration: true
+  field_date_start: true
+  field_format: true
+  field_image_class: true
+  field_lecturer: true
+  field_metatags: true
+  field_paragraph: true
+  field_price: true
+  field_start_time: true
+  field_tags: true
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 17871afe-2431-4543-824b-53193061d642
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+id: class
+label: class
+type: 'canonical_entities:node'
+pattern: 'classes/[node:title]'
+selection_criteria:
+  66d109ee-8467-43d4-96c2-fdcfe31fbeae:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 66d109ee-8467-43d4-96c2-fdcfe31fbeae
+    context_mapping:
+      node: node
+    bundles:
+      master_class: master_class
+selection_logic: and
+weight: -5
+relationships: {  }

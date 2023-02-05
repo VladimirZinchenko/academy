@@ -1,0 +1,29 @@
+uuid: 0df34585-7823-4715-9fc2-2e1ec67e9a5a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lecturer
+    - node.type.lecturer
+    - node.type.master_class
+id: node.master_class.field_lecturer
+field_name: field_lecturer
+entity_type: node
+bundle: master_class
+label: Лектори
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lecturer: lecturer
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

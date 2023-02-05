@@ -11,12 +11,12 @@ _core:
 id: academy_messages
 theme: academy
 region: content
-weight: -8
+weight: -11
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
   label: Messages
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

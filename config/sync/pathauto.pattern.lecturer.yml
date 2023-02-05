@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'lecturers/[node:title]'
 selection_criteria:
   48d8e6ed-f7a8-48eb-a36c-9a6f7ca3595b:
-    id: node_type
-    bundles:
-      lecturer: lecturer
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 48d8e6ed-f7a8-48eb-a36c-9a6f7ca3595b
     context_mapping:
       node: node
-    uuid: 48d8e6ed-f7a8-48eb-a36c-9a6f7ca3595b
+    bundles:
+      lecturer: lecturer
 selection_logic: and
 weight: -5
 relationships: {  }
