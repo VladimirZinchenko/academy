@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a0d2bc3006f8136ffd5da458921981b",
+    "content-hash": "d66c51e92108939d1c3bec67cad129a5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1878,26 +1878,26 @@
         },
         {
             "name": "drupal/bootstrap4",
-            "version": "2.1.17",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap4.git",
-                "reference": "2.1.17"
+                "reference": "3.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap4-2.1.17.zip",
-                "reference": "2.1.17",
-                "shasum": "edb432260d78b98006212c274adbb9594e8f69a9"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap4-3.0.5.zip",
+                "reference": "3.0.5",
+                "shasum": "7e945b451b1849774c1d7b7f77f1d412e72c0098"
             },
             "require": {
-                "drupal/core": "^9.4"
+                "drupal/core": "^9.4 || ^10"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "2.1.17",
-                    "datestamp": "1679447279",
+                    "version": "3.0.5",
+                    "datestamp": "1679973272",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2735,26 +2735,26 @@
         },
         {
             "name": "drupal/imce",
-            "version": "2.5.0",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/imce.git",
-                "reference": "8.x-2.5"
+                "reference": "3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/imce-8.x-2.5.zip",
-                "reference": "8.x-2.5",
-                "shasum": "0326482a1d6cb5f52ed00473bc5693e192149fdb"
+                "url": "https://ftp.drupal.org/files/projects/imce-3.0.7.zip",
+                "reference": "3.0.7",
+                "shasum": "c31fcf2e94f6e0be4609cf0603a51d32d5d1731e"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.5",
-                    "datestamp": "1664293755",
+                    "version": "3.0.7",
+                    "datestamp": "1675193633",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2780,7 +2780,7 @@
             "homepage": "https://drupal.org/project/imce",
             "support": {
                 "source": "https://git.drupalcode.org/project/imce",
-                "issues": "https://www.drupal.org/project/issues/imce?version=8.x"
+                "issues": "https://www.drupal.org/project/issues/imce"
             }
         },
         {
