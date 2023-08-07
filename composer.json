@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/admin_toolbar": "^3.3",
         "drupal/advanced_text_formatter": "^3.0@RC",
         "drupal/bootstrap4": "^3.0",
         "drupal/captcha": "^2.0",
