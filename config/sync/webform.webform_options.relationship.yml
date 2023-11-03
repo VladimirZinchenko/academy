@@ -9,11 +9,6 @@ _core:
   default_config_hash: 4J2RPG4JmsD4Fm1NlIQY0JHkrJ08UUl0qTF0_EjUxvw
 id: relationship
 label: Relationship
-category: Demographic
+category: Демографічна
 likert: false
-options: |
-  Parent: Parent
-  'Significant Other': 'Significant Other'
-  Sibling: Sibling
-  Child: Child
-  Friend: Friend
+options: "Батьки: Батьки \r\nІнші близькі родичі: Інші близькі родичі\r\nБрат/сестра: Брат/сестра\r\nДитина: Дитина\r\nДруг: Друг\n"

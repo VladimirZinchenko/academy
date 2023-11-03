@@ -122,6 +122,7 @@ content:
     region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_paragraph:
     type: entity_reference_paragraphs

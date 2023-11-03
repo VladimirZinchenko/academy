@@ -9,7 +9,7 @@ _core:
 id: academy_page_title
 theme: academy
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: page_title_block
 settings:

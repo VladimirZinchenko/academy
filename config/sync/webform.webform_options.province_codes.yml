@@ -8,20 +8,7 @@ dependencies:
 _core:
   default_config_hash: cR3A6XXinVGC9g5vLS-vVvTC2ppZXRNXLPWA8xBUMew
 id: province_codes
-label: 'Province codes'
-category: Geographic
+label: 'Коди провінцій'
+category: Географічний
 likert: false
-options: |
-  AB: Alberta
-  BC: 'British Columbia'
-  MB: Manitoba
-  NB: 'New Brunswick'
-  NL: 'Newfoundland and Labrador'
-  NS: 'Nova Scotia'
-  NT: 'Northwest Territories'
-  NU: Nunavut
-  'ON': Ontario
-  PE: 'Prince Edward Island'
-  QC: Quebec
-  SK: Saskatchewan
-  YT: Yukon
+options: "AB: Альберта\r\nBC: 'Британська Колумбія'\r\nMB: Манітоба\r\nNB: 'Нью-Брансвік'\r\nNL: 'Ньюфаундленд і Лабрадор'\r\nNS: 'Нова Шотландія'\r\nNT: 'Північно-західні території'\r\nNU: Нунавут\r\n'ON': Онтаріо\r\nPE: 'Острів принца Едварда'\r\nQC: Квебек\r\nSK: Саскачеван\r\nYT: Юкон\n"

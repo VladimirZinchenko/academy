@@ -8,11 +8,7 @@ dependencies:
 _core:
   default_config_hash: mII4acOv33s-j8PINywrCag4OITbeJGxdPO373dnHHw
 id: education
-label: Education
-category: Demographic
+label: Освіта
+category: Демографічна
 likert: false
-options: |
-  High School: High School
-  Associate Degree: Associate Degree
-  Graduate or Professional Degree: Graduate or Professional Degree
-  Some College: Some College
+options: "Середня школа: Середня школа\r\nСтупінь спеціаліста: Ступінь спеціаліста\r\nВища освіта або професійний ступінь: Вища освіта або професійний ступінь \r\nДеякі коледжі: Деякі коледжі\n"

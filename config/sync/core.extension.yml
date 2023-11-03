@@ -2,6 +2,8 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 langcode: uk
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   advanced_text_formatter: 0
   automated_cron: 0
   big_pipe: 0
@@ -9,8 +11,7 @@ module:
   block_content: 0
   breakpoint: 0
   captcha: 0
-  ckeditor: 0
-  color: 0
+  ckeditor5: 0
   comment: 0
   config: 0
   config_translation: 0
@@ -50,7 +51,6 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  quickedit: 0
   recaptcha: 0
   responsive_image: 0
   schema_article: 0
@@ -86,9 +86,8 @@ module:
   paragraphs: 11
   standard: 1000
 theme:
-  seven: 0
-  stable: 0
-  classy: 0
   bootstrap4: 0
   academy: 0
+  stable9: 0
+  claro: 0
 profile: standard

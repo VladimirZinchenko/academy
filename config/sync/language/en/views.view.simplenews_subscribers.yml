@@ -45,9 +45,6 @@ display:
         status:
           expose:
             label: Active
-        subscriptions_status:
-          expose:
-            label: Status
       title: Subscribers
       empty:
         area:

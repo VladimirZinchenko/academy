@@ -13,14 +13,18 @@ archive: false
 id: make_request
 title: 'Зробити заявку'
 description: 'Заявка на послуги чи консультацію'
-category: ''
+categories: {  }
 elements: |-
   contact:
     '#type': webform_contact
     '#title': Contact
     '#name__title': 'Ім''я'
+    '#name__required': true
     '#company__title': Компанія
+    '#company__required': true
+    '#email__required': true
     '#phone__title': Телефон
+    '#phone__required': true
     '#address__access': false
     '#address_2__access': false
     '#city__access': false
@@ -121,6 +125,8 @@ settings:
   wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h4
   preview: 0
   preview_label: ''
   preview_title: ''

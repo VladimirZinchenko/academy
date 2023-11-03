@@ -12,7 +12,7 @@ dependencies:
 id: views_block__lecturers_block_1
 theme: academy
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: 'views_block:lecturers-block_1'
 settings:

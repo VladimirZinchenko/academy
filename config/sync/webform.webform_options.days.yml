@@ -11,11 +11,4 @@ id: days
 label: Дні(в)
 category: 'Date and time'
 likert: false
-options: |
-  Sunday: Sunday
-  Monday: Monday
-  Tuesday: Tuesday
-  Wednesday: Wednesday
-  Thursday: Thursday
-  Friday: Friday
-  Saturday: Saturday
+options: "Понеділок: Понеділок\r\nВівторок: Вівторок\r\nСереда: Середа\r\nЧетвер: Четвер\r\nП’ятниця: П’ятниця\r\nСубота: Субота\r\nНеділя: Неділя\n"

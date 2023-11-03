@@ -34,7 +34,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
         "drupal/schema_metatag": "^3.0",
-        "drupal/semanticviews": "^2.3",
+        "drupal/semanticviews": "^3.0",
         "drupal/simplenews": "^4.0@alpha",
         "drupal/swiftmailer": "^2.0",
         "drupal/token": "^1.9",

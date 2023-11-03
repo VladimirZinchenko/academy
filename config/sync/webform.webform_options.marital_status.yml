@@ -8,11 +8,7 @@ dependencies:
 _core:
   default_config_hash: cjVDbAE5BlopGrY-tfxsxMoyEibwBBNgdQwDdxOSkow
 id: marital_status
-label: 'Marital status'
-category: Demographic
+label: 'Сімейний стан'
+category: Демографічна
 likert: false
-options: |
-  Single: Single
-  Married: Married
-  Divorced: Divorced
-  Widowed: Widowed
+options: "Неодружений: Неодружений\r\nОдружений: Одружений\r\nРозлучений: Розлучений\r\nВдівець: Вдівець\n"

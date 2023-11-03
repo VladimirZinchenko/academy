@@ -13,7 +13,7 @@ archive: false
 id: consultation
 title: 'Залишились питання?'
 description: 'Замовити консультацію'
-category: ''
+categories: {  }
 elements: |-
   contact:
     '#type': webform_contact
@@ -126,6 +126,8 @@ settings:
   wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h4
   preview: 0
   preview_label: ''
   preview_title: ''

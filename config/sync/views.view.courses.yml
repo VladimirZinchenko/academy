@@ -666,22 +666,20 @@ display:
             label: ''
             field_identifier: sticky
           exposed: false
-        created:
-          id: created
-          table: node_field_data
-          field: created
+        field_date_start_value:
+          id: field_date_start_value
+          table: node__field_date_start
+          field: field_date_start_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          plugin_id: datetime
+          order: ASC
           expose:
             label: ''
-            field_identifier: created
+            field_identifier: ''
           exposed: false
-          granularity: second
+          granularity: day
       arguments: {  }
       filters:
         status:
@@ -1602,7 +1600,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"row mb-5\">\r\n<div class=\"col-lg-4\">\r\n<h3 class=\"block-title mb-3 py-3 h5 text-center\">Навчальні програми та курси</h3>\r\n\r\n<div class=\"card mb-3 bg-light\">\r\n<div class=\"card-img-top\" style=\"min-height: 15rem; height: 100%; background-image: url(/sites/default/files/upload/treelogy-3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;\">&nbsp;</div>\r\n\r\n<div class=\"card-body\" style=\"min-height: 12rem;\">\r\n<p class=\"card-title h5 mb-3\">Сертифікаційна програма - курс «Майстер дистиляції»</p>\r\n\r\n<p class=\"card-text\">Перший в Україні повний теоретичний і практичний курс для крафтових виробників.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-6\"><a class=\"btn btn-dark webform-dialog webform-dialog-narrow\" href=\"/form/course-registration\" role=\"button\">Зареєструватись</a></div>\r\n\r\n<div class=\"col-6 text-align-right\"><a class=\"btn btn-warning\" href=\"/courses\" role=\"button\">Вибрати курс</a></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-lg-4\">\r\n<h3 class=\"block-title mb-3 py-3 h5 text-center\">Консалтинг та послуги</h3>\r\n\r\n<div class=\"card mb-3 bg-light\">\r\n<div class=\"card-img-top\" style=\"min-height: 15rem; height: 100%; background-image: url(/sites/default/files/upload/treelogy-2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;\">&nbsp;</div>\r\n\r\n<div class=\"card-body\" style=\"min-height: 12rem;\">\r\n<p class=\"card-text\">Проектування, кошторис, авторський нагляд.</p>\r\n\r\n<p class=\"card-text\">Підготовка нормативно-технічної документації.</p>\r\n\r\n<p class=\"card-text\">Консультації на місці.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-6\"><a class=\"btn btn-dark webform-dialog webform-dialog-narrow\" href=\"form/make-request\" role=\"button\">Зробити заявку</a></div>\r\n\r\n<div class=\"col-6 text-align-right\"><a class=\"btn btn-warning\" href=\"/#\" role=\"button\">Детально</a></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-lg-4\">\r\n<h3 class=\"block-title mb-3 py-3 h5 text-center\">Розробка напоїв та технології</h3>\r\n\r\n<div class=\"card mb-3 bg-light\">\r\n<div class=\"card-img-top\" style=\"min-height: 15rem; height: 100%; background-image: url(/sites/default/files/upload/treelogy-1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;\">&nbsp;</div>\r\n\r\n<div class=\"card-body\" style=\"min-height: 12rem;\">\r\n<p class=\"card-title h5 mb-3\">Лабораторія напоїв</p>\r\n\r\n<p class=\"card-text\">Що ви хочете зробити? Який напій? Який він буде на смак та аромат?</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-6\"><a class=\"btn btn-dark webform-dialog webform-dialog-narrow\" href=\"form/make-request\" role=\"button\">Зробити заявку</a></div>\r\n\r\n<div class=\"col-6 text-align-right\"><a class=\"btn btn-warning\" href=\"/laboratoriya-napoyiv\" role=\"button\">Детально</a></div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"block-title py-3 mb-5 text-center\">Кому буде цікаво</h2>"
+            value: "<div class=\"row mb-5\">\r\n<div class=\"col-lg-4\">\r\n<h3 class=\"block-title mb-3 py-3 h5 text-center\">Навчальні програми та курси</h3>\r\n\r\n<div class=\"card mb-3 bg-light\">\r\n<div class=\"card-img-top\" style=\"min-height: 15rem; height: 100%; background-image: url(/sites/default/files/upload/treelogy-3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;\">&nbsp;</div>\r\n\r\n<div class=\"card-body\" style=\"min-height: 12rem;\">\r\n<p class=\"card-title h5 mb-3\">Сертифікаційна програма - курс «Майстер дистиляції»</p>\r\n\r\n<p class=\"card-text\">Перший в Україні повний теоретичний і практичний курс для крафтових виробників.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-6\"><a class=\"btn btn-dark webform-dialog webform-dialog-narrow\" href=\"/form/course-registration\" role=\"button\">Зареєструватись</a></div>\r\n\r\n<div class=\"col-6 text-align-right\"><a class=\"btn btn-warning\" href=\"/courses\" role=\"button\">Вибрати курс</a></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-lg-4\">\r\n<h3 class=\"block-title mb-3 py-3 h5 text-center\">Консалтинг та послуги</h3>\r\n\r\n<div class=\"card mb-3 bg-light\">\r\n<div class=\"card-img-top\" style=\"min-height: 15rem; height: 100%; background-image: url(/sites/default/files/upload/treelogy-2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;\">&nbsp;</div>\r\n\r\n<div class=\"card-body\" style=\"min-height: 12rem;\">\r\n<p class=\"card-text\">Проектування, кошторис, авторський нагляд.</p>\r\n\r\n<p class=\"card-text\">Підготовка нормативно-технічної документації.</p>\r\n\r\n<p class=\"card-text\">Консультації на місці.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-6\"><a class=\"btn btn-dark webform-dialog webform-dialog-narrow\" href=\"form/make-request\" role=\"button\">Зробити заявку</a></div>\r\n\r\n<div class=\"col-6 text-align-right\"><a class=\"btn btn-warning\" href=\"/services/vlasna-dystyleriya-ideyi-realizatsiyi\" role=\"button\">Детально</a></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-lg-4\">\r\n<h3 class=\"block-title mb-3 py-3 h5 text-center\">Розробка напоїв та технології</h3>\r\n\r\n<div class=\"card mb-3 bg-light\">\r\n<div class=\"card-img-top\" style=\"min-height: 15rem; height: 100%; background-image: url(/sites/default/files/upload/treelogy-1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;\">&nbsp;</div>\r\n\r\n<div class=\"card-body\" style=\"min-height: 12rem;\">\r\n<p class=\"card-title h5 mb-3\">Лабораторія напоїв</p>\r\n\r\n<p class=\"card-text\">Що ви хочете зробити? Який напій? Який він буде на смак та аромат?</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-6\"><a class=\"btn btn-dark webform-dialog webform-dialog-narrow\" href=\"form/make-request\" role=\"button\">Зробити заявку</a></div>\r\n\r\n<div class=\"col-6 text-align-right\"><a class=\"btn btn-warning\" href=\"/services/laboratoriya-napoyiv\" role=\"button\">Детально</a></div>\r\n</div>\r\n</div>\r\n</div>\r\n<h2 class=\"block-title py-3 mb-5 text-center\">Кому буде цікаво</h2>"
             format: full_html
           tokenize: false
         view:

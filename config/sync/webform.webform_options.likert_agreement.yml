@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: '-NQROvgYPm-rqn_e6mytSaxmdhSViUinffVfQhp7APs'
 id: likert_agreement
-label: 'Likert: Agreement'
+label: 'Likert: Погодження'
 category: Likert
 likert: true
 options: |

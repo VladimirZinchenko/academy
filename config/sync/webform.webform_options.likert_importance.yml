@@ -8,12 +8,7 @@ dependencies:
 _core:
   default_config_hash: Hbc8n5HtVZVs5fSBSpSbuY07CVvqkKP76csvRHN9pK8
 id: likert_importance
-label: 'Likert: Importance'
+label: 'Likert: Важливість'
 category: Likert
 likert: true
-options: |
-  1: Not at all Important
-  2: Somewhat Important
-  3: Neutral
-  4: Important
-  5: Very Important
+options: "1: Зовсім не важливо\r\n2: Дещо важливо\r\n3: Байдуже\r\n4: Важливо\r\n5: Дуже важливо\n"

@@ -11,6 +11,7 @@ dependencies:
     - taxonomy.vocabulary.tags
   content:
     - 'taxonomy_term:tags:a13cb42f-1d0b-4a5b-b038-7b4500ae0718'
+    - 'taxonomy_term:tags:f4d0e1c7-e90e-4092-b827-8c9cb8c76dbd'
   module:
     - image
     - node
@@ -508,8 +509,9 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: empty
-          value: {  }
+          operator: or
+          value:
+            - 4
           group: 1
           exposed: false
           expose:
@@ -783,8 +785,9 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: empty
-          value: {  }
+          operator: or
+          value:
+            - 4
           group: 1
           exposed: false
           expose:
@@ -843,7 +846,10 @@ display:
           plugin_id: entity_reverse
           required: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1150,8 +1156,9 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: empty
-          value: {  }
+          operator: or
+          value:
+            - 4
           group: 1
           exposed: false
           expose:

@@ -8,12 +8,7 @@ dependencies:
 _core:
   default_config_hash: qBS2TmfAJB37Qn3TnrNM8x4AWimmDapcizzRllgo0fo
 id: likert_would_you
-label: 'Likert: Would You'
+label: 'Likert: Чи ви будете'
 category: Likert
 likert: true
-options: |
-  1: Definitely Not
-  2: Probably Not
-  3: Not Sure
-  4: Probably
-  5: Definitely
+options: "1: Однозначно ні \r\n2: Ймовірно ні \r\n3: Не впевнений \r\n4: Ймовірно так\r\n5: Однозначно так\n"

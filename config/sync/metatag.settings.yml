@@ -1,3 +1,4 @@
+langcode: uk
 entity_type_groups:
   node:
     article:

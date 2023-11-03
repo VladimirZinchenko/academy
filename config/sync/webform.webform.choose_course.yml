@@ -1,0 +1,335 @@
+uuid: 80273f5a-84e1-43d2-bf7a-7ebbbafb1258
+langcode: uk
+status: open
+dependencies: {  }
+_core:
+  default_config_hash: nb2hXlHauS5tjBpWkLS23QBV0nl14NgqtQs5quidEkc
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: choose_course
+title: choose-course
+description: '<p>Заявка на навчальний курс</p>'
+categories: {  }
+elements: |-
+  personal_information:
+    '#title': 'Персональна інформація'
+    '#type': webform_section
+    first_name:
+      '#type': textfield
+      '#title': 'Ім''я'
+      '#required': true
+      '#default_value': '[current-user:display-name]'
+    last_name:
+      '#title': Прізвище
+      '#type': textfield
+      '#required': true
+  contact_information:
+    '#title': 'Контактна інформація'
+    '#type': webform_section
+    contact:
+      '#type': webform_contact
+      '#title': Contact
+      '#name__access': false
+      '#company__access': false
+      '#email__title': email
+      '#email__required': true
+      '#phone__title': Телефон
+      '#phone__required': true
+      '#address__access': false
+      '#address_2__access': false
+      '#city__access': false
+      '#state_province__access': false
+      '#postal_code__access': false
+      '#country__access': false
+  mailinglist:
+    '#type': webform_section
+    '#title': 'Mailing List'
+    '#access': false
+    subscribe:
+      '#type': checkbox
+      '#title': 'Please subscribe me to your mailing list.'
+      '#disabled': true
+  choose_course:
+    '#type': webform_section
+    '#title': Зареєструватись
+    course:
+      '#type': select
+      '#title': 'Виберіть курс'
+      '#options': courses
+      '#required': true
+  additional_information:
+    '#title': 'Додаткова інформація'
+    '#type': webform_section
+    '#open': true
+    notes:
+      '#title': Коментар
+      '#type': textarea
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Зареєструватись
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: true
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h4
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: 'Thank you for registering.'
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email_notification:
+    id: email
+    handler_id: email_notification
+    label: 'Email Notification'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'ACADEMY: заявка на курс'
+      body: _default
+      excluded_elements:
+        subscribe: subscribe
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_confirmation:
+    id: email
+    handler_id: email_confirmation
+    label: 'Email Confirmation'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:contact:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Реєстрація заявки на навчальний курс'
+      body: '<p><img style="display:block;height:auto;margin-bottom:1rem;margin-left:auto;margin-right:auto;max-width:100%;" alt="Українська Академія дисиляції" height="437" src="/sites/default/files/upload/mail-header.png" width="1200"></p><div style="text-align:center;"><h3>Вітаємо!</h3><h3>Дякуємо, що приєдналися до нас!</h3><p>Ви успішно зареєстрували заявку, щодо навчання в Академії дистиляції.</p><p>Наш керівник відділу обслуговування клієнтів зв''яжеться з вами, щоб більш детально розповісти про Академію та навчання.<br>Додатково ми відправимо Вам всю необхідну інформацію.</p><h3>Дякуємо!</h3></div><div style="align-items:center;display:flex;"><div style="margin-right:1rem;"><img alt="Екатерина Лавренова" height="150" src="/sites/default/files/upload/mail-signature.png" width="150"></div><div><p><em>Катерина Камишева</em><br><em>Директор Української Академії дистиляції</em><br><br><em>Голова Спілки</em><br><em>«Асоціація крафтових дистилерів України»</em></p></div></div><div style="padding:1rem;text-align:center;"><p>Підписуйтесь на сторінки «Українська Академія дисиляції» в соц. мережах,<br>щоб не пропускати новини та заходи!</p><p><a href="https://www.facebook.com/UkrainianDistillationAcademy" rel="noopener nofollow" target="_blank"><img alt="facebook" height="60" src="/sites/default/files/upload/mail-facebook.png" width="60"></a> <a href="https://www.youtube.com/channel/UCj0aNvONBd_UIPCIwGsI_jw" rel="noopener nofollow" target="_blank"><img alt="youtube" height="60" src="/sites/default/files/upload/mail-youtube.png" width="60"></a> <img alt="instagram" height="60" src="/sites/default/files/upload/mail-instagram.png" width="60"> <a href="https://t.me/distillingacademy" rel="noopener nofollow" target="_blank"><img alt="telegram" height="60" src="/sites/default/files/upload/mail-telegram.png" width="60"></a></p></div>'
+      excluded_elements:
+        subscribe: subscribe
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
