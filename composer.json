@@ -20,9 +20,9 @@
         "drupal/advanced_text_formatter": "^3.0@RC",
         "drupal/bootstrap4": "^3.0",
         "drupal/captcha": "^2.0",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/core-project-message": "^9.1",
-        "drupal/core-recommended": "^9.1",
+        "drupal/core-composer-scaffold": "^10.1",
+        "drupal/core-project-message": "^10.1",
+        "drupal/core-recommended": "^10.0",
         "drupal/ctools": "^4.0",
         "drupal/devel": "^5.1",
         "drupal/easy_breadcrumb": "^2.0",
@@ -36,10 +36,9 @@
         "drupal/schema_metatag": "^3.0",
         "drupal/semanticviews": "^3.0",
         "drupal/simplenews": "^4.0@alpha",
-        "drupal/swiftmailer": "^2.0",
+        "drupal/symfony_mailer": "^1.4",
         "drupal/token": "^1.9",
         "drupal/twig_tweak": "^3.0",
-        "drupal/upgrade_status": "^4.0",
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/views_bulk_edit": "^2.5",
         "drupal/views_bulk_operations": "^4.1",
@@ -47,7 +46,7 @@
         "drupal/webform": "^6.2@beta",
         "drupal/xmlsitemap": "^1.0",
         "drupal/youtube": "^2.0",
-        "drush/drush": "^10.4"
+        "drush/drush": "^12"
     },
     "conflict": {
         "drupal/drupal": "*"
