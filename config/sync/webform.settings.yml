@@ -21,7 +21,7 @@ settings:
   default_form_novalidate: false
   default_form_disable_inline_errors: false
   default_form_required: false
-  default_form_required_label: 'Вказує обов''язкові для заповнення поля'
+  default_form_required_label: "Вказує обов'язкові для заповнення поля"
   default_form_unsaved: false
   default_form_disable_back: false
   default_form_submit_back: false
@@ -62,7 +62,7 @@ settings:
     node_routes: {  }
   default_results_customize: false
   default_submission_access_denied_message: 'Увійдіть, щоб отримати доступ до цього надсилання.'
-  default_submission_exception_message: 'Неможливо обробити це надсилання. Будь ласка, зв''яжіться з адміністратором сайту.'
+  default_submission_exception_message: "Неможливо обробити це надсилання. Будь ласка, зв'яжіться з адміністратором сайту."
   default_submission_locked_message: 'Це надсилання заблоковано.'
   default_previous_submission_message: 'Ця вебформа вже була надіслана. <a href="#">Переглянути попереднє надсилання</a> .'
   default_previous_submissions_message: 'Ця вебформа вже була надіслана. <a href="#">Переглянути попередні надсилання</a> .'

@@ -10,8 +10,8 @@ description: 'Конфігурація для адміністраторів с�
 conf:
   usertab: true
   extensions: '*'
-  maxsize: !!float 0
-  quota: !!float 0
+  maxsize: 0.0
+  quota: 0.0
   maxwidth: 0
   maxheight: 0
   replace: 1

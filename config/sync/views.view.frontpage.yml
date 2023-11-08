@@ -342,7 +342,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: 'Заголовок Зворотний зв''язок'
+          admin_label: "Заголовок Зворотний зв'язок"
           plugin_id: text
           empty: false
           content:

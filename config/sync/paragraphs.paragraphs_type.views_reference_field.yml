@@ -6,5 +6,5 @@ id: views_reference_field
 label: 'Views Reference Field'
 icon_uuid: null
 icon_default: null
-description: 'Блоки пов''язанних Views'
+description: "Блоки пов'язанних Views"
 behavior_plugins: {  }

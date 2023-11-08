@@ -9,7 +9,7 @@ field_name: uid
 entity_type: node
 bundle: simplenews_issue
 label: Автор
-description: 'Ім''я користувача автора матеріалу.'
+description: "Ім'я користувача автора матеріалу."
 required: false
 translatable: false
 default_value: {  }

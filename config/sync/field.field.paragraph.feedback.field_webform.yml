@@ -13,7 +13,7 @@ field_name: field_webform
 entity_type: paragraph
 bundle: feedback
 label: Webform
-description: 'Форма зворотнього зв''язку'
+description: "Форма зворотнього зв'язку"
 required: false
 translatable: true
 default_value:

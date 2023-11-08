@@ -8,7 +8,7 @@ id: shortcut.default.title
 field_name: title
 entity_type: shortcut
 bundle: default
-label: 'Назва (ім''я)'
+label: "Назва (ім'я)"
 description: 'Назва швидкої кнопки.'
 required: true
 translatable: false

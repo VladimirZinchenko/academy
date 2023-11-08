@@ -8,8 +8,8 @@ id: comment.comment.name
 field_name: name
 entity_type: comment
 bundle: comment
-label: 'Назва (ім''я)'
-description: 'Ім''я автора коментаря.'
+label: "Назва (ім'я)"
+description: "Ім'я автора коментаря."
 required: false
 translatable: false
 default_value:

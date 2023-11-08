@@ -14,7 +14,7 @@ uid: null
 template: false
 archive: false
 id: contact
-title: 'Зворотний зв''язок'
+title: "Зворотний зв'язок"
 description: 'Проста електронна контактна вебформа.'
 categories: {  }
 elements: |-
