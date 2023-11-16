@@ -766,7 +766,7 @@ display:
             attributes: ''
           row:
             element_type: div
-            attributes: "class|mb-5 row\r\nstyle|background-color:#ebe4c1"
+            attributes: "class|mb-5 row g-0\r\nstyle|background-color:#ebe4c1"
             last_every_nth: '0'
             first_class: ''
             last_class: ''
@@ -2480,6 +2480,7 @@ display:
             description: '[view:description]'
             og_title: '[current-page:title]'
             og_description: '[view:description]'
+          tokenize: false
       path: courses
       menu:
         type: normal
