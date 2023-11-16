@@ -1,0 +1,17 @@
+// Bootstrap variables (overrides).
+$form-text-margin-top: 0;
+$legend-font-size: 1rem;
+$table-cell-padding-x: .75rem;
+
+//Add
+$enable-rounded:              	false !default;
+$enable-reduced-motion:       	false !default;
+
+$breadcrumb-divider:			quote("»");
+
+$gray-100:						#ebe4c1;
+$gray-800:						#281500;
+$yellow:						#ed7600;
+$blue: 							#0056b3;
+
+$dark:          				$gray-800 !default;

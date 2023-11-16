@@ -1,0 +1,27 @@
+uuid: aea1e04b-ae9f-459a-9d0c-a0d284a375af
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - b5academy
+_core:
+  default_config_hash: T8tV-G1tseOm54xMTv78CDSCO6SKHekmp_cZD8EfEUg
+id: b5academy_account_menu
+theme: b5academy
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

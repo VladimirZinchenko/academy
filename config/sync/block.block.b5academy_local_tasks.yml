@@ -1,0 +1,22 @@
+uuid: bdf80e00-e31e-4d36-86cd-b71304876ccc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5academy
+_core:
+  default_config_hash: ghDbTza8wrFsUBZI_oIIZTks6MQjjZI_TA0aTWPxv10
+id: b5academy_local_tasks
+theme: b5academy
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: b9626eb0-8466-43e0-a836-8a947c1b34b0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - system
+    - webform
+  theme:
+    - b5academy
+id: b5academy_vebforma
+theme: b5academy
+region: content
+weight: 1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Вебформа
+  label_display: '0'
+  provider: webform
+  webform_id: contact
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contacts

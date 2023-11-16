@@ -1,0 +1,22 @@
+uuid: cb89bc76-db87-4014-a59c-2a85640f8862
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5academy
+_core:
+  default_config_hash: UVY7BMEwnAMM7B0Az-_EjX-WsS3F88jIx9oY2-eFDyQ
+id: b5academy_messages
+theme: b5academy
+region: content
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

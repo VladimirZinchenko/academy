@@ -1,0 +1,346 @@
+// Custom sccs.
+
+//Заголовок сторінки
+.block-page-title-block {
+	margin-bottom: 3rem;
+	.path-frontpage & {
+		padding-top: 3rem;
+	}
+}
+
+//Лектор
+.field--name-field-image-lecturer img {
+	border-radius: 50%;
+	padding: 2rem;
+}
+
+//Відступ списку
+ol, ul, dl {
+	@media (max-width: 768px){
+		padding-left: 1rem;
+	}
+}
+
+//Брендинг
+.navbar-brand .site-title {
+	font-size: 1.25rem !important;
+	line-height: 1.25rem;
+	& small {
+		letter-spacing: 4.2px;
+		text-transform: lowercase;
+		font-weight: 400;
+	}
+}
+
+.navbar-dark .navbar-brand img {
+filter: none !important;
+}
+
+//Зображення (тимчасово)
+.field--type-image img,
+.view img {
+	max-width: 100%;
+	height: auto;
+}
+.image-style-wide {
+	margin-bottom: 1.25rem;
+	max-width: 100%;
+	height: auto;
+}
+
+//Заголовки у тизерах
+.views-view-grid h2 {
+	font-size: 1.5rem;
+}
+
+//Слайдер
+.slide-item {
+	height: 25rem;
+	padding-bottom: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(0.5);
+	@media (min-width: 768px) {
+		padding-bottom: 400px;
+	}
+	@media (min-width: 992px) {
+		padding-bottom: 500px;
+	}
+	@media (min-width: 1200px) {
+		padding-bottom: 600px;
+	}
+}
+
+.slide-1 {
+	background-image: url("./../../../sites/default/files/field/image/slide/slide-1.jpg");
+}
+.slide-2 {
+	background-image: url("./../../../sites/default/files/field/image/slide/slide-2.jpg");
+}
+.slide-3 {
+	background-image: url("./../../../sites/default/files/field/image/slide/slide-3.jpg");
+}
+.slide-4 {
+	background-image: url("./../../../sites/default/files/field/image/slide/slide-4.jpg");
+}
+.slide-5 {
+	background-image: url("./../../../sites/default/files/field/image/slide/slide-5.jpg");
+}
+
+//Футер
+@media (min-width: 768px) {
+	.region.region-footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+footer.footer-dark a {
+	color: rgba(255, 255, 255, 0.6) !important;
+	&:hover {
+		color: #f8f9fa !important;
+	}
+}
+
+#block-b5academy-footeraddress {
+	color: rgba(255, 255, 255, 0.6);
+	& .bi {
+		font-size: 1.55rem;
+	}
+	& .social {
+		padding-left: 0.5rem;
+		margin-bottom: 4px;
+	}
+	& .social .list-inline-item {
+		margin-right: 0.75rem;
+	}
+}
+
+//Навбар
+.navbar-dark .social {
+	margin-bottom: 0;
+	padding-left: 0.5rem;
+	padding-bottom: 4px;
+	padding-top: 6px;
+	font-size: 20px;
+	& a {
+		color: rgba(255, 255, 255, 0.6);
+	}
+	& a:hover,
+	& a:focus {
+		color: rgba(255, 255, 255, 0.75);
+	}
+}
+
+.region-nav-additional {
+	display: flex;
+	flex-basis: auto;
+}
+
+.navbar-nav {
+	& .dropdown-toggle::after {
+		display: none;
+	}
+	& .dropdown-menu {
+		min-width: 12rem;
+	}
+}
+
+ul.navbar-nav > li.dropdown:hover > ul.dropdown-menu {
+	color: #f8f9fa;
+		background-color: $dark;
+	@media (min-width: 768px) {
+		top: 30px;
+		display: block;
+		& li:first-child {
+			padding-top: 1.25rem;
+		}
+	}
+}
+
+//Посилання у тизерах (вимкнено)
+.node-readmore {
+	&::after {
+		display: inline-block;
+		font-family: bootstrap-icons !important;
+		font-style: normal;
+		font-weight: normal !important;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		vertical-align: -.125em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: "\f134";
+		padding-left: 0.25rem;
+	}
+}
+
+//Курси на головній (вимкнено)
+.view-courses {
+	.card-img-overlay {
+		background-color: rgb(0 0 0 / 60%);
+		display: none;
+		color: #fff;
+	}
+	& .h1,.h2,.h5 {
+		margin-bottom: 0;
+	}
+	& .card:hover .card-img-overlay {
+		display: block;
+	}
+}
+
+//Заголовки
+.display-4.page-title,
+.carousel-caption .display-4 {
+	font-weight: 500;
+}
+.display-4.page-title {
+	text-transform: uppercase;
+	color: #281500;
+}
+.block-title {
+	color: #281500;
+	border-bottom: solid 1px #ed7600;
+	.path-frontpage & {
+		text-transform: uppercase;
+	}
+}
+
+//Заполнитель подложки на странице курса
+.bg-filler {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 15rem;
+}
+.filler-1 {
+	background-image: url("./../../../sites/default/files/upload/filler-1.jpg");
+}
+.filler-2 {
+	background-image: url("./../../../sites/default/files/upload/filler-2.jpg");
+}
+.filler-3 {
+	background-image: url("./../../../sites/default/files/upload/filler-3.jpg");
+}
+.filler-4 {
+	background-image: url("./../../../sites/default/files/upload/filler-4.jpg");
+}
+.filler-5 {
+	background-image: url("./../../../sites/default/files/upload/filler-5.jpg");
+}
+.filler-6 {
+	background-image: url("./../../../sites/default/files/upload/filler-6.jpg");
+}
+.filler-7 {
+	background-image: url("./../../../sites/default/files/upload/filler-7.jpg");
+}
+.filler-8 {
+	background-image: url("./../../../sites/default/files/upload/filler-8.jpg");
+}
+.filler-9 {
+	background-image: url("./../../../sites/default/files/upload/filler-9.jpg");
+}
+.filler-10 {
+	background-image: url("./../../../sites/default/files/upload/filler-10.jpg");
+}
+.filler-11 {
+	background-image: url("./../../../sites/default/files/upload/filler-11.jpg");
+}
+.filler-12 {
+	background-image: url("./../../../sites/default/files/upload/filler-12.jpg");
+}
+.filler-13 {
+	background-image: url("./../../../sites/default/files/upload/filler-13.jpg");
+}
+.filler-14 {
+	background-image: url("./../../../sites/default/files/upload/filler-14.jpg");
+}
+.filler-15 {
+	background-image: url("./../../../sites/default/files/upload/filler-15.jpg");
+}
+.filler-16 {
+	background-image: url("./../../../sites/default/files/upload/filler-16.jpg");
+}
+.filler-17 {
+	background-image: url("./../../../sites/default/files/upload/filler-17.jpg");
+}
+.filler-18 {
+	background-image: url("./../../../sites/default/files/upload/filler-18.jpg");
+}
+
+//Параграф feedback
+.paragraph--type--feedback {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	position: relative;
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+	& .field--name-field-body {
+		@media (min-width: 768px) {
+		width: 50%;
+		}
+	}
+	& .field--name-field-webform {
+		background-color: #ebe4c1;
+		@media (min-width: 768px) {
+			width: 50%;
+		}
+	}
+	& .webform-submission-consultation-form {
+		padding: 2rem;
+		z-index: 1;
+		position: relative;
+		@media (min-width: 768px) {
+			padding-right: 4rem;
+		}
+		@media (min-width: 992px) {
+			padding: 3rem;
+			padding-right: 5rem;
+		}
+	}
+	& .border {
+		position: absolute;
+		left: 1rem;
+		top: 1rem;
+		bottom: 1rem;
+		right: 1rem;
+		@media (min-width: 768px) {
+			left: 2rem;
+			top: 2rem;
+			bottom: 2rem;
+			right: 2rem;
+		}
+	}
+}
+
+.view-id-mods.view-display-id-block_4 .card .bi,
+.view-id-mods.view-display-id-block_2 .card .bi {
+	font-size: 3rem;
+}
+
+.filler-bottom {
+	background-image: url("./../../../sites/default/files/upload/filler-bottom.jpg");
+	.row {
+		@media (min-width: 768px) {
+			height: 300px;
+			position: relative;
+			bottom: 3rem;
+		}
+	}
+	.bi {
+		font-size: 3rem;
+	}
+	a {
+		color: #FFF;
+	}
+	a:hover,
+	a:focus {
+		color: rgba(255, 255, 255, 0.75);
+	}
+}

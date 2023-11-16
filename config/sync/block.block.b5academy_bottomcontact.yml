@@ -1,0 +1,25 @@
+uuid: 5cec253c-3864-44da-827e-da5b6dbd42bc
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
+  module:
+    - block_content
+  theme:
+    - b5academy
+id: b5academy_bottomcontact
+theme: b5academy
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
+settings:
+  id: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
+  label: 'Bottom contact'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

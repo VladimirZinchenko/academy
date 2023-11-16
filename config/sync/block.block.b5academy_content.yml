@@ -1,0 +1,22 @@
+uuid: beb3dc6d-146b-4089-9198-35206467f10c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5academy
+_core:
+  default_config_hash: KBLMY6RqA4eTCDsaNzwbVuS556EhW1YD7KVI6IeZQOQ
+id: b5academy_content
+theme: b5academy
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

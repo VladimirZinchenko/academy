@@ -1,0 +1,25 @@
+uuid: 74403287-867a-46bf-9ef5-6fa3773600d8
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:71711f0b-cb53-4f69-8f12-030664741604'
+  module:
+    - block_content
+  theme:
+    - b5academy
+id: b5academy_footerlogo
+theme: b5academy
+region: footer
+weight: -11
+provider: null
+plugin: 'block_content:71711f0b-cb53-4f69-8f12-030664741604'
+settings:
+  id: 'block_content:71711f0b-cb53-4f69-8f12-030664741604'
+  label: 'Footer logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

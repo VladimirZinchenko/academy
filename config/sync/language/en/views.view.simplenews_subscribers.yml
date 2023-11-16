@@ -30,7 +30,7 @@ display:
           label: Subscriptions
           separator: ', '
         status:
-          label: Active
+          label: Status
         created:
           label: Created
         operations:
@@ -44,7 +44,7 @@ display:
             label: Newsletters
         status:
           expose:
-            label: Active
+            label: Status
       title: Subscribers
       empty:
         area:

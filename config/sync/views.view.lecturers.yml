@@ -589,7 +589,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"row justify-content-center mb-5\">\r\n<div class=\"col-md-4\">\r\n<a href=\"/lecturers\" role=\"button\" title=\"Дізнатись про всіх лекторів\" class=\"btn btn-dark btn-lg btn-block\"><b>Дізнатись про всіх лекторів</b></a></div></div>"
+            value: "<div class=\"text-center mb-5\">\r\n<a href=\"/lecturers\" role=\"button\" title=\"Дізнатись про всіх лекторів\" class=\"btn btn-dark btn-lg btn-block\"><b>Дізнатись про всіх лекторів</b></a></div>"
             format: full_html
           tokenize: false
       display_extenders: {  }

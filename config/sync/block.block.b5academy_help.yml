@@ -1,0 +1,22 @@
+uuid: 6344680e-6157-49cc-b718-3f27160245bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b5academy
+_core:
+  default_config_hash: BmIBzB2B6ejCT9Q_GdfB4XiO7zs7iObDjY4CHkMNn24
+id: b5academy_help
+theme: b5academy
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

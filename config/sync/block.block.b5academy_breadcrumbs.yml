@@ -1,0 +1,22 @@
+uuid: 4b643d6d-46f9-46a3-b1a3-4db4f60758ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5academy
+_core:
+  default_config_hash: nKSDci1OfAbTr0wOtZaAtTwVF3mOaV9Y2W323Ljx_L4
+id: b5academy_breadcrumbs
+theme: b5academy
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -80,14 +80,15 @@ module:
   webform_ui: 0
   youtube: 0
   pathauto: 1
+  scss_compiler: 1
   xmlsitemap: 1
   content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000
 theme:
-  bootstrap4: 0
-  academy: 0
   stable9: 0
   claro: 0
+  bootstrap5: 0
+  b5academy: 0
 profile: standard

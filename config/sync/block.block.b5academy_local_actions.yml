@@ -1,0 +1,20 @@
+uuid: 90c95286-23ac-473a-9ed7-2eb7f86aebd9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5academy
+_core:
+  default_config_hash: IEDF_VkPTBuA20VOQNE2uy7fVZzvavjYMRlgt17y6Pk
+id: b5academy_local_actions
+theme: b5academy
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
