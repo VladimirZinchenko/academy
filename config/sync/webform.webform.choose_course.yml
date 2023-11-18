@@ -261,7 +261,7 @@ handlers:
     handler_id: email_notification
     label: 'Email Notification'
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 1
     settings:
