@@ -14,7 +14,7 @@ filters:
     id: filter_html
     provider: filter
     status: false
-    weight: -10
+    weight: -47
     settings:
       allowed_html: ''
       filter_html_help: false
@@ -31,16 +31,10 @@ filters:
     status: true
     weight: 8
     settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: true
-    weight: 9
-    settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
-    status: false
+    status: true
     weight: 11
     settings: {  }
   filter_image_lazy_load:
@@ -48,4 +42,35 @@ filters:
     provider: filter
     status: true
     weight: 12
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -48
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -46
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -45
     settings: {  }
