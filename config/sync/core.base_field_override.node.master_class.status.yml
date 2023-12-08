@@ -1,0 +1,22 @@
+uuid: 486f1c88-2a20-4e82-986a-83391802624a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.master_class
+id: node.master_class.status
+field_name: status
+entity_type: node
+bundle: master_class
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

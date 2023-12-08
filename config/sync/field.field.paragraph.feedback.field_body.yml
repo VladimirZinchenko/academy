@@ -14,11 +14,12 @@ bundle: feedback
 label: Body
 description: "Кнопки з посиланнями на канали зв'язку"
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: "<div class=\"h-100 bg-dark p-3\">\r\n<div class=\"p-3 p-md-5\">\r\n<div class=\"h1 text-warning mb-3\">Не визначились з курсом?</div>\r\n\r\n<p class=\"h4 text-white\">Залишайте заявку і отримаєте безкоштовну консультацію у одного з наших менеджерів</p>\r\n</div>\r\n</div>\r\n"
     format: full_html
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 2b6fc682-81f3-4d18-86e6-1ffed184db86
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.slide
+  module:
+    - path
+id: node.slide.path
+field_name: path
+entity_type: node
+bundle: slide
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

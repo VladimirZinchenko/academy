@@ -1,0 +1,18 @@
+uuid: 31604f8a-f801-43d2-ac45-36674cb30f53
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.master_class
+id: node.master_class.title
+field_name: title
+entity_type: node
+bundle: master_class
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

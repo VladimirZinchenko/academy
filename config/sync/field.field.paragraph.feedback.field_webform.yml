@@ -15,7 +15,7 @@ bundle: feedback
 label: Webform
 description: "Форма зворотнього зв'язку"
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     target_uuid: 442acbb5-5d8d-4e56-997f-df037f29fb3b

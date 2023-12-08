@@ -14,7 +14,7 @@ bundle: course
 label: 'Повна програма'
 description: 'Файл з повною програмою курсу. Дозволені формати txt, xlsx, docx. Назва файлу без пробілів.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

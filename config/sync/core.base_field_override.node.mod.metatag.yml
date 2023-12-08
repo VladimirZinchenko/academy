@@ -1,0 +1,20 @@
+uuid: fdef7199-730b-4176-9841-eddd49c67c06
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.mod
+  module:
+    - metatag
+id: node.mod.metatag
+field_name: metatag
+entity_type: node
+bundle: mod
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

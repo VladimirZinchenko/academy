@@ -1,0 +1,20 @@
+uuid: 7467f2bf-13fe-4987-85f3-ce5c64c9618e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.master_class
+  module:
+    - path
+id: node.master_class.path
+field_name: path
+entity_type: node
+bundle: master_class
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 7ba850df-a747-40d8-b194-19eabf504c73
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.mod
+id: node.mod.title
+field_name: title
+entity_type: node
+bundle: mod
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

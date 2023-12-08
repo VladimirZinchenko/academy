@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.master_class
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.master_class
 target_entity_type_id: node
 target_bundle: master_class

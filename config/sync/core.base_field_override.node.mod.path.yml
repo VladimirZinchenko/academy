@@ -1,0 +1,20 @@
+uuid: 8960c83f-a052-4004-8d36-9bd04d33e823
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.mod
+  module:
+    - path
+id: node.mod.path
+field_name: path
+entity_type: node
+bundle: mod
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,20 @@
+uuid: aae748b4-0259-454a-89c0-b8a67f0cf448
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.lecturer
+  module:
+    - metatag
+id: node.lecturer.metatag
+field_name: metatag
+entity_type: node
+bundle: lecturer
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed
