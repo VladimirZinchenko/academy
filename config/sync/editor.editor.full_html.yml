@@ -1,0 +1,57 @@
+uuid: 1e6d0726-5a52-4be1-9ea9-89f29a3dd0f4
+langcode: uk
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor5
+format: full_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - subscript
+      - superscript
+      - blockQuote
+      - removeFormat
+      - '|'
+      - alignment
+      - bulletedList
+      - numberedList
+      - indent
+      - outdent
+      - '|'
+      - drupalInsertImage
+      - imce_image
+      - link
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: 0
+    height: 0
