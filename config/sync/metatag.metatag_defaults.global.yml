@@ -26,8 +26,8 @@ tags:
   og_site_name: '[site:name]'
   og_street_address: 'Радунська, 20'
   og_type: website
-  schema_organization_address: 'a:5:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:22:"Радунська, 20";s:15:"addressLocality";s:9:"Київ ";s:10:"postalCode";s:5:"02034";s:14:"addressCountry";s:14:"Україна";}'
-  schema_organization_contact_point: 'a:7:{s:5:"@type";s:12:"ContactPoint";s:9:"telephone";s:13:"+380677511110";s:17:"availableLanguage";s:27:"English, Russian, Ukrainian";s:11:"contactType";s:16:"customer service";s:13:"contactOption";s:8:"TollFree";s:5:"email";s:26:"craft.spirits.ua@gmail.com";s:10:"areaServed";a:2:{s:5:"@type";s:7:"Country";s:4:"name";s:14:"Україна";}}'
+  schema_organization_address: 'a:6:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:22:"Радунська, 20";s:15:"addressLocality";s:8:"Київ";s:13:"addressRegion";s:8:"Київ";s:10:"postalCode";s:5:"02034";s:14:"addressCountry";s:2:"UA";}'
+  schema_organization_contact_point: 'a:7:{s:5:"@type";s:12:"ContactPoint";s:9:"telephone";s:13:"+380677511110";s:5:"email";s:26:"craft.spirits.ua@gmail.com";s:17:"availableLanguage";s:27:"English, Russian, Ukrainian";s:11:"contactType";s:16:"customer service";s:13:"contactOption";s:8:"TollFree";s:10:"areaServed";a:2:{s:5:"@type";s:7:"Country";s:4:"name";s:14:"Україна";}}'
   schema_organization_description: '[site:slogan]'
   schema_organization_geo: 'a:3:{s:5:"@type";s:14:"GeoCoordinates";s:8:"latitude";s:18:"50.522374032659954";s:9:"longitude";s:17:"30.59923136441814";}'
   schema_organization_id: 'https://distillingacademy.com.ua/'
