@@ -1,6 +1,6 @@
 uuid: 69ef4099-5c3d-4e92-b5bf-df17aeb659cf
 langcode: uk
-status: open
+status: closed
 dependencies: {  }
 _core:
   default_config_hash: nb2hXlHauS5tjBpWkLS23QBV0nl14NgqtQs5quidEkc
@@ -20,7 +20,7 @@ elements: |-
     '#type': webform_section
     first_name:
       '#type': textfield
-      '#title': 'Ім''я'
+      '#title': "Ім'я"
       '#required': true
     last_name:
       '#title': Прізвище

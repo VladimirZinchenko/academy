@@ -35,7 +35,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ''
+      title: Лектори
       fields:
         body:
           id: body
@@ -1222,6 +1222,7 @@ display:
             description: '[view:description]'
             og_title: '[current-page:title]'
             og_description: '[view:description]'
+          tokenize: false
       path: lecturers
       menu:
         type: normal

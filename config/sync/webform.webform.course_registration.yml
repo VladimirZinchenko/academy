@@ -1,6 +1,6 @@
 uuid: 41089013-0545-4329-aeb2-736e0564c653
 langcode: uk
-status: open
+status: closed
 dependencies: {  }
 _core:
   default_config_hash: nb2hXlHauS5tjBpWkLS23QBV0nl14NgqtQs5quidEkc
@@ -20,7 +20,7 @@ elements: |-
     '#type': webform_section
     first_name:
       '#type': textfield
-      '#title': 'Ім''я'
+      '#title': "Ім'я"
       '#required': true
     last_name:
       '#title': Прізвище
@@ -60,7 +60,6 @@ elements: |-
       '#type': select
       '#title': 'Виберіть курс'
       '#options': courses
-      '#required': true
   additional_information:
     '#title': 'Додаткова інформація'
     '#type': webform_section

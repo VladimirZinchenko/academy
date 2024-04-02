@@ -1,6 +1,6 @@
 uuid: 5980d452-4e50-453a-9011-149b7908f608
 langcode: uk
-status: open
+status: closed
 dependencies: {  }
 _core:
   default_config_hash: nb2hXlHauS5tjBpWkLS23QBV0nl14NgqtQs5quidEkc
@@ -18,7 +18,7 @@ elements: |-
   contact:
     '#type': webform_contact
     '#title': Contact
-    '#name__title': 'Ім''я'
+    '#name__title': "Ім'я"
     '#name__required': true
     '#company__title': Компанія
     '#company__required': true

@@ -1,0 +1,7 @@
+uuid: b440e6ff-16a0-4f10-8a00-bdc211ae41dd
+langcode: uk
+status: true
+dependencies: {  }
+formId: webform_submission_choose_class_add_form
+captchaType: captcha/Math
+label: webform_submission_choose_class_add_form
