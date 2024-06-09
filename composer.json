@@ -43,7 +43,7 @@
         "drupal/token": "^1.9",
         "drupal/twig_tweak": "^3.0",
         "drupal/views_bootstrap": "^5.5@alpha",
-        "drupal/views_bulk_edit": "^2.5",
+        "drupal/views_bulk_edit": "^2.9",
         "drupal/views_bulk_operations": "^4.1",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.2@beta",
