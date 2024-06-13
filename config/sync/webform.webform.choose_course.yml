@@ -20,7 +20,7 @@ elements: |-
     '#type': webform_section
     first_name:
       '#type': textfield
-      '#title': 'Ім''я'
+      '#title': "Ім'я"
       '#required': true
       '#default_value': '[current-user:display-name]'
     last_name:
@@ -60,7 +60,6 @@ elements: |-
       '#type': select
       '#title': 'Виберіть курс'
       '#options': courses
-      '#required': true
   additional_information:
     '#title': 'Додаткова інформація'
     '#type': webform_section
@@ -319,7 +318,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Реєстрація заявки на навчальний курс'
-      body: '<p><img style="display:block;height:auto;margin-bottom:1rem;margin-left:auto;margin-right:auto;max-width:100%;" alt="Українська Академія дисиляції" height="437" src="/sites/default/files/upload/mail-header.png" width="1200"></p><div style="text-align:center;"><h3>Вітаємо!</h3><h3>Дякуємо, що приєдналися до нас!</h3><p>Ви успішно зареєстрували заявку, щодо навчання в Академії дистиляції.</p><p>Наш керівник відділу обслуговування клієнтів зв''яжеться з вами, щоб більш детально розповісти про Академію та навчання.<br>Додатково ми відправимо Вам всю необхідну інформацію.</p><h3>Дякуємо!</h3></div><div style="align-items:center;display:flex;"><div style="margin-right:1rem;"><img alt="Екатерина Лавренова" height="150" src="/sites/default/files/upload/mail-signature.png" width="150"></div><div><p><em>Катерина Камишева</em><br><em>Директор Української Академії дистиляції</em><br><br><em>Голова Спілки</em><br><em>«Асоціація крафтових дистилерів України»</em></p></div></div><div style="padding:1rem;text-align:center;"><p>Підписуйтесь на сторінки «Українська Академія дисиляції» в соц. мережах,<br>щоб не пропускати новини та заходи!</p><p><a href="https://www.facebook.com/UkrainianDistillationAcademy" rel="noopener nofollow" target="_blank"><img alt="facebook" height="60" src="/sites/default/files/upload/mail-facebook.png" width="60"></a> <a href="https://www.youtube.com/channel/UCj0aNvONBd_UIPCIwGsI_jw" rel="noopener nofollow" target="_blank"><img alt="youtube" height="60" src="/sites/default/files/upload/mail-youtube.png" width="60"></a> <img alt="instagram" height="60" src="/sites/default/files/upload/mail-instagram.png" width="60"> <a href="https://t.me/distillingacademy" rel="noopener nofollow" target="_blank"><img alt="telegram" height="60" src="/sites/default/files/upload/mail-telegram.png" width="60"></a></p></div>'
+      body: '<p><img style="display:block;height:auto;margin-bottom:1rem;margin-left:auto;margin-right:auto;max-width:100%;" alt="Українська Академія дисиляції" height="437" src="/sites/default/files/upload/mail-header.png" width="1200"></p><div style="text-align:center;"><h3>Вітаємо!</h3><h3>Дякуємо, що приєдналися до нас!</h3><p>Ви успішно зареєстрували заявку, щодо навчання в Академії дистиляції.</p><p>Наш керівник відділу обслуговування клієнтів зв''яжеться з вами, щоб більш детально розповісти про Академію та навчання.<br>Додатково ми відправимо Вам всю необхідну інформацію.</p><p><span style="-webkit-text-stroke-width:0px;background-color:rgb(245, 248, 255);color:rgb(35, 36, 41);display:inline !important;float:none;font-family:BlinkMacSystemFont, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:13.6px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">[webform_submission:values:456]</span></p><h3>Дякуємо!</h3></div><div style="align-items:center;display:flex;"><div style="margin-right:1rem;"><img alt="Екатерина Лавренова" height="150" src="/sites/default/files/upload/mail-signature.png" width="150"></div><div><p><em>Катерина Камишева</em><br><em>Директор Української Академії дистиляції</em><br><br><em>Голова Спілки</em><br><em>«Асоціація крафтових дистилерів України»</em></p></div></div><div style="padding:1rem;text-align:center;"><p>Підписуйтесь на сторінки «Українська Академія дистиляції» в соц. мережах,<br>щоб не пропускати новини та заходи!</p><p><a href="https://www.facebook.com/UkrainianDistillationAcademy" rel="noopener nofollow" target="_blank"><img alt="facebook" height="60" src="/sites/default/files/upload/mail-facebook.png" width="60"></a> <a href="https://www.youtube.com/channel/UCj0aNvONBd_UIPCIwGsI_jw" rel="noopener nofollow" target="_blank"><img alt="youtube" height="60" src="/sites/default/files/upload/mail-youtube.png" width="60"></a> <img alt="instagram" height="60" src="/sites/default/files/upload/mail-instagram.png" width="60"> <a href="https://t.me/distillingacademy" rel="noopener nofollow" target="_blank"><img alt="telegram" height="60" src="/sites/default/files/upload/mail-telegram.png" width="60"></a></p></div>'
       excluded_elements:
         subscribe: subscribe
       ignore_access: false
