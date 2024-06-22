@@ -300,7 +300,7 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: field
-          label: Мова
+          label: Language
           exclude: false
           alter:
             alter_text: false
@@ -409,6 +409,7 @@ display:
       pager:
         type: full
         options:
+          pagination_heading_level: h4
           items_per_page: 50
           tags:
             next: 'Наступна ›'
