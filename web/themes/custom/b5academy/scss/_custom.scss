@@ -344,3 +344,10 @@ ul.navbar-nav > li.dropdown:hover > ul.dropdown-menu {
 		color: rgba(255, 255, 255, 0.75);
 	}
 }
+
+.g-recaptcha {
+@media (max-width: 333px) {
+    transform: scale(0.95);
+    transform-origin: 0 0;
+	}
+}

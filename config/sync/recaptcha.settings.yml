@@ -7,6 +7,6 @@ use_globally: false
 widget:
   theme: light
   type: image
-  size: compact
+  size: ''
   noscript: false
   tabindex: 0
