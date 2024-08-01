@@ -61,7 +61,7 @@ settings:
       - entity.webform.user.submissions
     node_routes: {  }
   default_results_customize: false
-  default_submission_access_denied_message: 'Увійдіть, щоб отримати доступ до цього надсилання.'
+  default_submission_access_denied_message: 'Будь ласка, увійдіть, щоб отримати доступ до цього надсилання.'
   default_submission_exception_message: "Неможливо обробити це надсилання. Будь ласка, зв'яжіться з адміністратором сайту."
   default_submission_locked_message: 'Це надсилання заблоковано.'
   default_previous_submission_message: 'Ця вебформа вже була надіслана. <a href="#">Переглянути попереднє надсилання</a> .'
@@ -132,7 +132,7 @@ html_editor:
 file:
   file_public: false
   file_private_redirect: true
-  file_private_redirect_message: 'Увійдіть, щоб отримати доступ до викладеного файлу.'
+  file_private_redirect_message: 'Будь ласка, увійдіть, щоб отримати доступ до викладеного файлу.'
   default_max_filesize: ''
   default_managed_file_extensions: 'gif jpg jpeg png bmp eps tif pict psd txt rtf html odf pdf doc docx ppt pptx xls xlsx xml avi mov mp3 mp4 ogg wav bz2 dmg gz jar rar sit svg tar zip'
   default_image_file_extensions: 'gif jpg jpeg png'

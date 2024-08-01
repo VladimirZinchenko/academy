@@ -219,11 +219,13 @@ display:
           row_class: mb-5
           default_row_class: false
           uses_fields: false
+          grid_class: ''
           col_xs: col-12
           col_sm: col-sm-6
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
+          col_xxl: none
       row:
         type: 'entity:node'
         options:
@@ -314,6 +316,7 @@ display:
       display_extenders:
         metatag_display_extender:
           metatags: {  }
+          tokenize: false
       path: taxonomy/term/%
     cache_metadata:
       max-age: -1

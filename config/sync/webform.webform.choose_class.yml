@@ -20,7 +20,7 @@ elements: |-
     '#type': webform_section
     first_name:
       '#type': textfield
-      '#title': 'Ім''я'
+      '#title': "Ім'я"
       '#required': true
     last_name:
       '#title': Прізвище

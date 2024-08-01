@@ -10,8 +10,8 @@ dependencies:
     - b5academy
 id: b5academy_bottomcontact
 theme: b5academy
-region: content
-weight: 2
+region: footer_top
+weight: -11
 provider: null
 plugin: 'block_content:fdfeb807-c32e-48c4-b623-1ebc6e7d801e'
 settings:

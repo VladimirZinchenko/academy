@@ -12,7 +12,7 @@ dependencies:
 id: b5academy_vebforma
 theme: b5academy
 region: content
-weight: 1
+weight: -1
 provider: null
 plugin: webform_block
 settings:

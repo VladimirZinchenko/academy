@@ -11,7 +11,7 @@ _core:
 id: b5academy_help
 theme: b5academy
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: help_block
 settings:

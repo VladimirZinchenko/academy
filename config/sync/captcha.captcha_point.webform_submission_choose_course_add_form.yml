@@ -3,5 +3,5 @@ langcode: uk
 status: true
 dependencies: {  }
 formId: webform_submission_choose_course_add_form
-captchaType: default
+captchaType: captcha/Math
 label: webform_submission_choose_course_add_form
