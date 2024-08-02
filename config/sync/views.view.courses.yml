@@ -618,6 +618,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 12
           total_pages: null
           id: 0
@@ -632,7 +633,6 @@ display:
             items_per_page_options_all_label: '- Усе -'
             offset: false
             offset_label: Зміщення
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -2486,10 +2486,10 @@ display:
       menu:
         type: normal
         title: Курси
-        description: ''
-        weight: -50
+        description: null
+        weight: 0
         enabled: true
-        expanded: true
+        expanded: false
         menu_name: main
         parent: 'menu_link_content:db9e185d-5a1c-4989-8b4b-7925b4a4605a'
         context: '0'
