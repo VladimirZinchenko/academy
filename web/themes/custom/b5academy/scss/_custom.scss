@@ -529,6 +529,11 @@ display: block;
 .menu-item--expanded.menu-item--active-trail a.sf-with-ul {
 	color: var(--bs-dropdown-link-active-color);
 }
+/* Added */
+.menu-item.menu-item--expanded {
+    list-style-type: none;
+    list-style-image: none;
+}
 
 /*.off-canvas-wrapper {
 	display: block;
