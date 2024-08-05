@@ -1642,6 +1642,19 @@ display:
           tokenize: true
           bypass_access: false
       footer:
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: Відгуки
+          plugin_id: text
+          empty: false
+          content:
+            value: "<h2 class=\"block-title py-3 mb-5 text-center\">Відгуки</h2>\r\n<div class=\"row justify-content-center\">\r\n    <div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/dlQrEtZtuSo\" title=\"Відгук на сертифікаційну програму - курс «Майстер дистиляції»\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n</div>"
+            format: full_html
+          tokenize: false
         view:
           id: view
           table: views
