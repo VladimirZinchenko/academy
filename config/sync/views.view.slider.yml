@@ -480,7 +480,7 @@ display:
           grouping: {  }
           interval: '5000'
           keyboard: 0
-          ride: null
+          ride: 0
           navigation: 0
           indicators: 0
           pause: 0
@@ -490,7 +490,6 @@ display:
           image: field_bg
           title: title
           description: body
-          caption_breakpoints: 'd-none d-md-block'
       row:
         type: fields
       query:

@@ -313,12 +313,12 @@ display:
           group_column: value
           group_columns: {  }
           group_rows: true
-          delta_limit: 0
+          delta_limit: 3
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: '<br>'
           field_api_classes: false
         field_date_start:
           id: field_date_start
@@ -1085,12 +1085,12 @@ display:
           group_column: value
           group_columns: {  }
           group_rows: true
-          delta_limit: 0
+          delta_limit: 3
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: '<br>'
           field_api_classes: false
         field_date_start:
           id: field_date_start
@@ -1329,13 +1329,13 @@ display:
             prefix_suffix: true
           group_column: value
           group_columns: {  }
-          group_rows: false
-          delta_limit: 1
+          group_rows: true
+          delta_limit: 3
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: '<br>'
           field_api_classes: false
         nothing:
           id: nothing
@@ -1652,7 +1652,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h2 class=\"block-title py-3 mb-5 text-center\">Відгуки</h2>\r\n<div class=\"row justify-content-center\">\r\n    <div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/dlQrEtZtuSo\" title=\"Відгук на сертифікаційну програму - курс «Майстер дистиляції»\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n</div>"
+            value: "<h2 class=\"block-title py-3 mb-5 text-center\">Відгуки</h2>\r\n<div class=\"row justify-content-center\">\r\n    <div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/dlQrEtZtuSo\" title=\"Відгук на сертифікаційну програму - курс «Майстер дистиляції»\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n      \t<div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/zLiLN7L0cb4\" title=\"Відгук на сертифікаційну програму - курс «Майстер дистиляції»\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/PeV5h1hNLag\" title=\"Відгук на сертифікаційну програму - курс «Майстер дистиляції»\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n\t<div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://youtube.com/embed/08jxvvXia0c\" title=\"Відгук на сертифікаційну програму - курс «Майстер дистиляції»\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n\t<div class=\"col-md-6 col-lg-3 mb-5\">\r\n        <div class=\"ratio\" style=\"--bs-aspect-ratio:180%;\">\r\n            <iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/mxFGeoMvAFw\" title=\"Відгук дистилера Михайла Дробока, ТМ Файна Фляшка, на курс &quot;Зернові дистиляти/горілка&quot;\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n</div>"
             format: full_html
           tokenize: false
         view:

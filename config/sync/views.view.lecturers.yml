@@ -35,7 +35,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ''
+      title: Лектори
       fields:
         body:
           id: body
@@ -608,6 +608,7 @@ display:
     display_plugin: block
     position: 3
     display_options:
+      title: ''
       sorts:
         sticky:
           id: sticky
@@ -825,6 +826,7 @@ display:
         groups:
           1: AND
       defaults:
+        title: false
         css_class: true
         relationships: false
         sorts: false
@@ -1044,7 +1046,6 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      title: Лектори
       arguments: {  }
       filters:
         status:
@@ -1196,7 +1197,7 @@ display:
           1: AND
       defaults:
         query: true
-        title: false
+        title: true
         relationships: false
         arguments: false
         filters: false
