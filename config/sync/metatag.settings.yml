@@ -8,3 +8,4 @@ entity_type_groups:
       schema_course: schema_course
     page:
       advanced: advanced
+tag_trim_end: '|.,-:;/+&([{"'''
