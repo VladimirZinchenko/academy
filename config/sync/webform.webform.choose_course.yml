@@ -60,6 +60,16 @@ elements: |-
       '#type': select
       '#title': 'Виберіть курс'
       '#options': courses
+  promocode:
+    '#type': textfield
+    '#title': Промокод
+    '#placeholder': 'Введіть промокод, якщо він у вас є'
+    '#unique': true
+    '#unique_entity': true
+  yak_vy_diznalysya_pro_akademiyu:
+    '#type': textfield
+    '#title': 'Як ви дізналися про Академію?'
+    '#placeholder': 'Інтернет, ЗМІ, рекомендація тощо'
   additional_information:
     '#title': 'Додаткова інформація'
     '#type': webform_section
