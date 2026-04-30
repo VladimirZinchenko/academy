@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7e8330f9ffc0c36e84e05fd0e9cdc9c",
+    "content-hash": "89e7fe4263d94a4ab7232f4ac6c4a4e1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3895,33 +3895,34 @@
         },
         {
             "name": "drupal/youtube",
-            "version": "2.0.0",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/youtube.git",
-                "reference": "2.0.0"
+                "reference": "3.0.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/youtube-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "e79e58b4ad9e3ccdfea6820f82d19c15dc09a14b"
+                "url": "https://ftp.drupal.org/files/projects/youtube-3.0.0-beta1.zip",
+                "reference": "3.0.0-beta1",
+                "shasum": "5232934bb07ecfcc9b98169c903fcdbdd4708de7"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^10.1 || ^11"
             },
             "require-dev": {
                 "drupal/coder": "^8.3",
+                "drupal/feeds": "*",
                 "phpstan/phpstan-deprecation-rules": "^1.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1679360586",
+                    "version": "3.0.0-beta1",
+                    "datestamp": "1748615759",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -8975,7 +8976,8 @@
         "drupal/views_bulk_operations": 10,
         "drupal/viewsreference": 10,
         "drupal/webform": 10,
-        "drupal/xmlsitemap": 10
+        "drupal/xmlsitemap": 10,
+        "drupal/youtube": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
